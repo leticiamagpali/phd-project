@@ -1,0 +1,260 @@
+IQ-TREE 2.2.0-beta COVID-edition built Dec 21 2021
+
+Input file name: translated/RYR2_codon_aligned.translated.fasta
+Type of analysis: tree reconstruction
+Random seed number: 903577
+
+REFERENCES
+----------
+
+To cite IQ-TREE please use:
+
+Bui Quang Minh, Heiko A. Schmidt, Olga Chernomor, Dominik Schrempf,
+Michael D. Woodhams, Arndt von Haeseler, and Robert Lanfear (2020)
+IQ-TREE 2: New models and efficient methods for phylogenetic inference
+in the genomic era. Mol. Biol. Evol., in press.
+https://doi.org/10.1093/molbev/msaa015
+
+SEQUENCE ALIGNMENT
+------------------
+
+Input data: 94 sequences with 4975 amino-acid sites
+Number of constant sites: 4484 (= 90.1307% of all sites)
+Number of invariant (constant or ambiguous constant) sites: 4484 (= 90.1307% of all sites)
+Number of parsimony informative sites: 221
+Number of distinct site patterns: 2100
+
+SUBSTITUTION PROCESS
+--------------------
+
+Model of substitution: WAG+G4
+
+State frequencies: (model)
+
+Model of rate heterogeneity: Gamma with 4 categories
+Gamma shape alpha: 0.0200
+
+ Category  Relative_rate  Proportion
+  1         0.0000         0.2500
+  2         0.0000         0.2500
+  3         0.0000         0.2500
+  4         4.0000         0.2500
+Relative rates are computed as MEAN of the portion of the Gamma distribution falling in the category.
+
+MAXIMUM LIKELIHOOD TREE
+-----------------------
+
+Log-likelihood of the tree: -21172.3496 (s.e. 316.8845)
+Unconstrained log-likelihood (without tree): -35325.8759
+Number of free parameters (#branches + #model parameters): 186
+Akaike information criterion (AIC) score: 42716.6992
+Corrected Akaike information criterion (AICc) score: 42731.2281
+Bayesian information criterion (BIC) score: 43927.9648
+
+Total tree length (sum of branch lengths): 0.1941
+Sum of internal branch lengths: 0.0620 (31.9340% of tree length)
+
+WARNING: 42 near-zero internal branches (<0.0002) should be treated with caution
+         Such branches are denoted by '**' in the figure below
+
+NOTE: Tree is UNROOTED although outgroup taxon 'Bacu_RYR2' is drawn at root
+
++---Bacu_RYR2
+|
+|                             +--Barn_RYR2
+|                       +-----|
+|                       |     +**Bbai76728_RYR2
+|              +--------|
+|              |        |           +--Hamp_RYR2
+|              |        |        +**|
+|              |        |        |  |  +**Mper_RYR2
+|              |        |        |  +--|
+|              |        |        |     +---Mpni_RYR2
+|              |        |     +--|
+|              |        |     |  |              +--Mbid_RYR2
+|              |        |     |  |           +**|
+|              |        |     |  |           |  +--Mmir_RYR2
+|              |        |     |  |        +--|
+|              |        |     |  |        |  |  +--Meur_RYR2
+|              |        |     |  |        |  +--|
+|              |        |     |  |        |     +--Mgin_RYR2
+|              |        |     |  |     +**|
+|              |        |     |  |     |  |        +--Mbow_RYR2
+|              |        |     |  |     |  |     +**|
+|              |        |     |  |     |  |     |  +--Mden_RYR2
+|              |        |     |  |     |  |  +**|
+|              |        |     |  |     |  |  |  +--Mhec_RYR2
+|              |        |     |  |     |  +**|
+|              |        |     |  |     |     |  +--MgraAUS_RYR2
+|              |        |     |  |     |     +--|
+|              |        |     |  |     |        +--MlayAUS_RYR2
+|              |        |     |  |  +**|
+|              |        |     |  |  |  +--Mste_RYR2
+|              |        |     |  +**|
+|              |        |     |     +--Mcar_RYR2
+|              |        |  +**|
+|              |        |  |  +--Tshe_RYR2
+|              |        +--|
+|              |           +------Zcav_RYR2
+|           +--|
+|           |  |                                                              +--Ccom40_RYR2
+|           |  |                                                           +--|
+|           |  |                                                           |  +**Laus_RYR2
+|           |  |                                                        +--|
+|           |  |                                                        |  +--Chea7320_RYR2
+|           |  |                                                     +**|
+|           |  |                                                     |  |     +**Lbor_RYR2
+|           |  |                                                     |  |  +**|
+|           |  |                                                     |  |  |  |  +--Lobl_RYR2
+|           |  |                                                     |  |  |  +**|
+|           |  |                                                     |  |  |     +--LperAUS_RYR2
+|           |  |                                                     |  +**|
+|           |  |                                                     |     +**Schi_RYR2
+|           |  |                                                  +--|
+|           |  |                                                  |  +--Lobs_RYR2
+|           |  |                                               +**|
+|           |  |                                               |  |                       +-----Lalb_RYR2
+|           |  |                                               |  |                    +--|
+|           |  |                                               |  |                    |  +--Oorc_RYR2
+|           |  |                                               |  |                 +**|
+|           |  |                                               |  |                 |  +--Sfro7782_RYR2
+|           |  |                                               |  |              +**|
+|           |  |                                               |  |              |  +--Scly1726_RYR2
+|           |  |                                               |  |           +**|
+|           |  |                                               |  |           |  +**Sfro7784_RYR2
+|           |  |                                               |  |        +**|
+|           |  |                                               |  |        |  +**Satt38219_RYR2
+|           |  |                                               |  |     +**|
+|           |  |                                               |  |     |  +**Slon24923_RYR2
+|           |  |                                               |  |  +**|
+|           |  |                                               |  |  |  +**Satt18473_RYR2
+|           |  |                                               |  +--|
+|           |  |                                               |     +--Slon16012_RYR2
+|           |  |                                            +**|
+|           |  |                                            |  |     +--Ggri_RYR2
+|           |  |                                            |  |  +**|
+|           |  |                                            |  |  |  +--Pele_RYR2
+|           |  |                                            |  +--|
+|           |  |                                            |     +--Gmac39091_RYR2
+|           |  |                                         +**|
+|           |  |                                         |  +--Pcra123188_RYR2
+|           |  |                                      +**|
+|           |  |                                      |  +**Lhos452_RYR2
+|           |  |                                   +--|
+|           |  |                                   |  +**Fatt_RYR2
+|           |  |                                +--|
+|           |  |                                |  |  +**Sbre116871_RYR2
+|           |  |                                |  +--|
+|           |  |                                |     +**Sbre18437_RYR2
+|           |  |                             +**|
+|           |  |                             |  +--Lacu_RYR2
+|           |  |                          +**|
+|           |  |                          |  +--Obre_RYR2
+|           |  |                       +**|
+|           |  |                       |  |  +--Lhos30470_RYR2
+|           |  |                       |  +--|
+|           |  |                       |     |  +--Tadu79924_RYR2
+|           |  |                       |     +**|
+|           |  |                       |        +**Ttru_RYR2
+|           |  |                    +**|
+|           |  |                    |  +**Scoe_RYR2
+|           |  |                 +--|
+|           |  |                 |  +--Sflu9837_RYR2
+|           |  |              +**|
+|           |  |              |  +--Scly1724_RYR2
+|           |  |           +**|
+|           |  |           |  +--Ohei_RYR2
+|           |  |        +--|
+|           |  |        |  |           +**Dcap108471_RYR2
+|           |  |        |  |        +**|
+|           |  |        |  |        |  |  +**Dcap79929_RYR2
+|           |  |        |  |        |  +**|
+|           |  |        |  |        |     +**Ddeltrop4525_RYR2
+|           |  |        |  |     +**|
+|           |  |        |  |     |  +**DdelSJR_RYR2
+|           |  |        |  |  +--|
+|           |  |        |  |  |  +--Ddel_RYR2
+|           |  |        |  +**|
+|           |  |        |     +--Gmel_RYR2
+|           |  |     +--|
+|           |  |     |  |     +**Dleu_RYR2
+|           |  |     |  |  +--|
+|           |  |     |  |  |  +--Mmon_RYR2
+|           |  |     |  +--|
+|           |  |     |     |           +--Naasi_RYR2
+|           |  |     |     |        +--|
+|           |  |     |     |        |  +--Npho_RYR2
+|           |  |     |     |     +**|
+|           |  |     |     |     |  +--Ppho_RYR2
+|           |  |     |     |  +--|
+|           |  |     |     |  |  |     +**Pdio_RYR2
+|           |  |     |     |  |  |  +--|
+|           |  |     |     |  |  |  |  +-------Psin_RYR2
+|           |  |     |     |  |  +**|
+|           |  |     |     |  |     +--Pspi_RYR2
+|           |  |     |     +--|
+|           |  |     |        +--Pdal_RYR2
+|           |  |  +**|
+|           |  |  |  +---Igeo_RYR2
+|           |  +--|
+|           |     +--Pbla7349_RYR2
+|        +**|
+|        |  |                      +---Btau_RYR2
+|        |  |                   +--|
+|        |  |                   |  +--Oari_RYR2
+|        |  |         +---------|
+|        |  |         |         +--------------------------------Ovtex_RYR2
+|        |  |      +--|
+|        |  |      |  |  +--------------------Ecab_RYR2
+|        |  |      |  +--|
+|        |  |      |     +-----------------Sscr_RYR2
+|        |  +------|
+|        |         +---------------------Hippo_RYR2
+|     +--|
+|     |  |                   +--Kbre_RYR2
+|     |  |              +----|
+|     |  |              |    +--Ksim_RYR2
+|     |  +--------------|
+|     |                 |   +**Pcat_RYR2
+|     |                 +---|
+|     |                     +**Pmac_RYR2
+|  +--|
+|  |  |     +-----------------------------------------Bmys_RYR2
+|  |  |  +--|
+|  |  |  |  |  +--EausAUS_RYR2
+|  |  |  |  +--|
+|  |  |  |     |  +**Egla13086_RYR2
+|  |  |  |     +--|
+|  |  |  |        +--Ejap43864_RYR2
+|  |  +--|
+|  |     +--------Cmar59905_RYR2
++**|
+|  |      +--BbonAUS_RYR2
+|  +------|
+|         |  +--Bphy_baits_RYR2
+|         +**|
+|            +---Erob133443_RYR2
+|
+|        +**Bbor_RYR2
+|     +--|
+|     |  |     +**Bede66737_RYR2
+|     |  |  +**|
+|     |  |  |  +--Bric_RYR2
+|     |  +--|
+|     |     +**BedeAUS_RYR2
+|  +--|
+|  |  +----------Bmus_RYR2
++--|
+   +**Bphy_RYR2
+
+Tree in newick format:
+
+(Bacu_RYR2:0.0022387546,(((((((Barn_RYR2:0.0003421535,Bbai76728_RYR2:0.0000022211):0.0029712852,((((Hamp_RYR2:0.0012136091,(Mper_RYR2:0.0001971239,Mpni_RYR2:0.0021996637):0.0003328602):0.0000020754,(((((Mbid_RYR2:0.0012190533,Mmir_RYR2:0.0005335018):0.0000029029,(Meur_RYR2:0.0002460558,Mgin_RYR2:0.0003242387):0.0003213264):0.0003194806,(((Mbow_RYR2:0.0004970249,Mden_RYR2:0.0007353311):0.0000027011,Mhec_RYR2:0.0002555879):0.0000010587,(MgraAUS_RYR2:0.0003609636,MlayAUS_RYR2:0.0004850286):0.0002422413):0.0000020157):0.0000022589,Mste_RYR2:0.0007481780):0.0000020269,Mcar_RYR2:0.0007308754):0.0000021165):0.0003685188,Tshe_RYR2:0.0012266611):0.0000024343,Zcav_RYR2:0.0034081165):0.0009165074):0.0046616496,(((((((((((((((((((((Ccom40_RYR2:0.0002730102,Laus_RYR2:0.0000025644):0.0002401398,Chea7320_RYR2:0.0002471441):0.0002386720,((Lbor_RYR2:0.0000025644,(Lobl_RYR2:0.0003307309,LperAUS_RYR2:0.0004993432):0.0000020735):0.0000027234,Schi_RYR2:0.0000025644):0.0000022051):0.0000023223,Lobs_RYR2:0.0004976629):0.0003311924,((((((((Lalb_RYR2:0.0029918249,Oorc_RYR2:0.0006749025):0.0003709919,Sfro7782_RYR2:0.0002702187):0.0000024454,Scly1726_RYR2:0.0004844031):0.0000021550,Sfro7784_RYR2:0.0000025644):0.0000021316,Satt38219_RYR2:0.0000025644):0.0000023814,Slon24923_RYR2:0.0000025644):0.0000020841,Satt18473_RYR2:0.0000025644):0.0000024300,Slon16012_RYR2:0.0002453996):0.0003709774):0.0000288626,((Ggri_RYR2:0.0002417925,Pele_RYR2:0.0002472492):0.0000022637,Gmac39091_RYR2:0.0003657082):0.0003541611):0.0000021662,Pcra123188_RYR2:0.0004942121):0.0000014628,Lhos452_RYR2:0.0000020271):0.0000025181,Fatt_RYR2:0.0000010000):0.0012056373,(Sbre116871_RYR2:0.0000028966,Sbre18437_RYR2:0.0000024282):0.0002388707):0.0012503726,Lacu_RYR2:0.0010008985):0.0000027236,Obre_RYR2:0.0007260526):0.0000020629,(Lhos30470_RYR2:0.0002701325,(Tadu79924_RYR2:0.0004994271,Ttru_RYR2:0.0000020137):0.0000020538):0.0009880384):0.0000025164,Scoe_RYR2:0.0000022396):0.0001137603,Sflu9837_RYR2:0.0002492981):0.0005607410,Scly1724_RYR2:0.0016164296):0.0000021898,Ohei_RYR2:0.0002460266):0.0000026840,((((Dcap108471_RYR2:0.0000025644,(Dcap79929_RYR2:0.0000025644,Ddeltrop4525_RYR2:0.0000025644):0.0000029027):0.0000026176,DdelSJR_RYR2:0.0000025644):0.0000020746,Ddel_RYR2:0.0002197718):0.0004396556,Gmel_RYR2:0.0006580506):0.0000023316):0.0010907713,((Dleu_RYR2:0.0000022947,Mmon_RYR2:0.0006633616):0.0006574080,((((Naasi_RYR2:0.0009536431,Npho_RYR2:0.0002401319):0.0009516365,Ppho_RYR2:0.0002574869):0.0000029376,((Pdio_RYR2:0.0000026924,Psin_RYR2:0.0039783187):0.0009678148,Pspi_RYR2:0.0002650222):0.0000020569):0.0012399011,Pdal_RYR2:0.0016644164):0.0018705789):0.0002162600):0.0008717750,Igeo_RYR2:0.0022208017):0.0000021309,Pbla7349_RYR2:0.0015444689):0.0006495808):0.0013843611,((((Btau_RYR2:0.0021694665,Oari_RYR2:0.0017352030):0.0008737835,Ovtex_RYR2:0.0162773175):0.0051129052,(Ecab_RYR2:0.0104355380,Sscr_RYR2:0.0090523576):0.0012657700):0.0012432256,Hippo_RYR2:0.0108537133):0.0034688165):0.0000025391,((Kbre_RYR2:0.0004710729,Ksim_RYR2:0.0002561492):0.0028513631,(Pcat_RYR2:0.0000022856,Pmac_RYR2:0.0000025145):0.0021254604):0.0074253627):0.0015680906,((Bmys_RYR2:0.0204005954,(EausAUS_RYR2:0.0007277672,(Egla13086_RYR2:0.0000023066,Ejap43864_RYR2:0.0002490440):0.0002456781):0.0010582476):0.0010598569,Cmar59905_RYR2:0.0044436649):0.0003021729):0.0013008833,(BbonAUS_RYR2:0.0015272063,(Bphy_baits_RYR2:0.0007798349,Erob133443_RYR2:0.0020885319):0.0000020684):0.0033973162):0.0000020305,(((Bbor_RYR2:0.0000020969,((Bede66737_RYR2:0.0000029420,Bric_RYR2:0.0003822679):0.0000023143,BedeAUS_RYR2:0.0000022927):0.0013343029):0.0013472287,Bmus_RYR2:0.0057239985):0.0012107249,Bphy_RYR2:0.0000020243):0.0003042899);
+
+TIME STAMP
+----------
+
+Date and time: Fri Jan 26 12:28:13 2024
+Total CPU time used: 140472 seconds (39h:1m:12s)
+Total wall-clock time used: 35170.2 seconds (9h:46m:10s)
+

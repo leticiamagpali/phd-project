@@ -1,0 +1,133 @@
+---
+title: "Plotting chapter 2"
+output: html_notebook
+---
+
+# Importing packages
+
+```{r}
+library(ggplot2)
+library(showtext)
+library(extrafont)
+library(ggmsa)
+```
+
+
+# Loading data
+```{r}
+lrt_codeml <- read.csv("results_chapter2_gene_tree - LRTs.csv")
+```
+
+# Plotting LTRs 
+```{r}
+
+# Plot with all LRTs
+
+p <- ggplot(lrt_codeml, aes(x = Gene)) +
+    geom_point(aes(y = twomodel_H2, size = twomodel_H2), color = "plum") +
+    geom_point(aes(y = twomodel_H3, size = twomodel_H3), color = "plum2", alpha = 0.5) + 
+    geom_point(aes(y = Amodel_H2, size = Amodel_H2), color = "plum3", alpha = 0.5) +
+    geom_point(aes(y = Amodel_H3, size = Amodel_H3), color = "plum4", alpha = 0.5) +
+    geom_point(aes(y = Bmodel_H2, size = Bmodel_H2), color = "mediumpurple1", alpha = 0.5) + 
+    geom_point(aes(y = Bmodel_H3, size = Bmodel_H3), color = "mediumpurple3", alpha = 0.5) +
+    geom_hline(yintercept = 3.84, linetype = "solid", color = "steelblue3", alpha = 0.5) +
+    geom_hline(yintercept = 5.99, linetype = "solid", color = "steelblue3", alpha = 0.5) +
+    scale_size_continuous(range = c(2, 10)) +  # Adjust range as needed
+    scale_y_continuous(limits = c(-1, 135), breaks = seq(-1, 130, by = 30)) +  
+    ylab("LRT values") + 
+    theme_minimal() +
+    theme(panel.background = element_rect(fill = "transparent"),
+    plot.background = element_rect(fill = "transparent", color = NA)) + 
+    theme(axis.text.x = element_text(family = "Montserrat", angle = 45, hjust = 1),
+          axis.title.x = element_text(family = "Montserrat"),
+          axis.title.y = element_text(family = "Montserrat"))
+
+png("lrt_plot_transparent.png", width = 6, height = 7, units = "in", res = 300, bg = "transparent")
+
+# Print the plot
+print(p)
+
+# Close the device
+dev.off()
+
+# Plot with some LRTs
+
+p2 <- ggplot(lrt_codeml, aes(x = Gene)) +
+    geom_point(aes(y = twomodel_H2, size = twomodel_H2), color = "plum") +
+    geom_point(aes(y = twomodel_H3, size = twomodel_H3), color = "plum2", alpha = 0.5) + 
+    geom_point(aes(y = Amodel_H2, size = Amodel_H2), color = "plum3", alpha = 0.5) +
+    geom_point(aes(y = Amodel_H3, size = Amodel_H3), color = "plum4", alpha = 0.5) +
+    geom_point(aes(y = Bmodel_H2, size = Bmodel_H2), color = "mediumpurple1", alpha = 0.5) + 
+    geom_point(aes(y = Bmodel_H3, size = Bmodel_H3), color = "mediumpurple3", alpha = 0.5) +
+    geom_hline(yintercept = 3.84, linetype = "solid", color = "steelblue3", alpha = 0.5) +
+    geom_hline(yintercept = 5.99, linetype = "solid", color = "steelblue3", alpha = 0.5) +
+    scale_size_continuous(range = c(1, 20)) +  # Adjust range as needed
+    scale_y_continuous(limits = c(-1, 35), breaks = seq(-1, 130, by = 30)) +  
+    labs(y = "LRT values") +
+    theme_minimal() +
+    theme(panel.background = element_rect(fill = "transparent"),
+    plot.background = element_rect(fill = "transparent", color = NA)) +
+    theme(axis.text.x = element_text(family = "Montserrat", angle = 45, hjust = 1),
+          axis.title.x = element_text(family = "Montserrat"),
+          axis.title.y = element_text(family = "Montserrat"))
+
+png("lrt_plot2_transparent.png", width = 8, height = 9, units = "in", res = 300, bg = "transparent")
+
+# Print the plot
+print(p2)
+
+# Close the device
+dev.off()
+```
+
+# Plotting amino acid positions
+```{r}
+PCDH15_codon_align <- "evol_models/codeml/small_dataset/cml_align/PCDH15_codon_aligned.phy"
+PCDH15_prot_align <- "evol_models/RERconverge/PCDH15_codon_aligned.translated.fasta"
+OTOFP_prot_align <- "evol_models/RERconverge/OTOF_codon_aligned.translated.fasta"
+
+PCDH_align <- ggmsa(PCDH15_prot_align, start = 1330, end = 1361, color = "Chemistry_AA", seq_name = TRUE, char_width = 0.5, font = "DroidSansMono") +
+  theme(axis.text.x = element_text(angle = 90, hjust = 1))
+
+OTOF_align1 <- ggmsa(OTOFP_prot_align, start = 1330, end = 1347, color = "Chemistry_AA", seq_name = TRUE, char_width = 0.5, font = "DroidSansMono") +
+  theme(axis.text.x = element_text(angle = 90, hjust = 1))
+
+OTOF_align2 <- ggmsa(OTOFP_prot_align, start = 55, end = 60, color = "Chemistry_AA", seq_name = TRUE, char_width = 0.5, font = "DroidSansMono") +
+  theme(axis.text.x = element_text(angle = 90, hjust = 1))
+
+OTOF_align3 <- ggmsa(OTOFP_prot_align, start = 640, end = 650, color = "Chemistry_AA", seq_name = TRUE, char_width = 0.5, font = "DroidSansMono") +
+  theme(axis.text.x = element_text(angle = 90, hjust = 1))
+
+png("PCDH15_prot_align.png", width = 6, height = 8, units = "in", res = 300, bg = "transparent")
+
+# Print the plot
+print(PCDH_align)
+
+# Close the device
+dev.off()
+
+png("OTOF_prot_alig1.png", width = 4, height = 6, units = "in", res = 300, bg = "transparent")
+
+# Print the plot
+print(OTOF_align1)
+
+# Close the device
+dev.off()
+
+png("OTOF_prot_alig2.png", width = 4, height = 6, units = "in", res = 300, bg = "transparent")
+
+# Print the plot
+print(OTOF_align2)
+
+# Close the device
+dev.off()
+
+png("OTOF_prot_alig3.png", width = 4, height = 6, units = "in", res = 300, bg = "transparent")
+
+# Print the plot
+print(OTOF_align3)
+
+# Close the device
+dev.off()
+```
+

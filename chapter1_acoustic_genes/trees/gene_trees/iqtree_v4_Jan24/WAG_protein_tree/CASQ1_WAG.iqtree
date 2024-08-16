@@ -1,0 +1,238 @@
+IQ-TREE 2.2.0-beta COVID-edition built Dec 21 2021
+
+Input file name: translated/CASQ1_codon_aligned.translated.fasta
+Type of analysis: tree reconstruction
+Random seed number: 774453
+
+REFERENCES
+----------
+
+To cite IQ-TREE please use:
+
+Bui Quang Minh, Heiko A. Schmidt, Olga Chernomor, Dominik Schrempf,
+Michael D. Woodhams, Arndt von Haeseler, and Robert Lanfear (2020)
+IQ-TREE 2: New models and efficient methods for phylogenetic inference
+in the genomic era. Mol. Biol. Evol., in press.
+https://doi.org/10.1093/molbev/msaa015
+
+SEQUENCE ALIGNMENT
+------------------
+
+Input data: 87 sequences with 398 amino-acid sites
+Number of constant sites: 340 (= 85.4271% of all sites)
+Number of invariant (constant or ambiguous constant) sites: 340 (= 85.4271% of all sites)
+Number of parsimony informative sites: 35
+Number of distinct site patterns: 238
+
+SUBSTITUTION PROCESS
+--------------------
+
+Model of substitution: WAG+G4
+
+State frequencies: (model)
+
+Model of rate heterogeneity: Gamma with 4 categories
+Gamma shape alpha: 0.1634
+
+ Category  Relative_rate  Proportion
+  1         0.0001         0.2500
+  2         0.0157         0.2500
+  3         0.2817         0.2500
+  4         3.7026         0.2500
+Relative rates are computed as MEAN of the portion of the Gamma distribution falling in the category.
+
+MAXIMUM LIKELIHOOD TREE
+-----------------------
+
+Log-likelihood of the tree: -1833.5176 (s.e. 86.3796)
+Unconstrained log-likelihood (without tree): -2094.7563
+Number of free parameters (#branches + #model parameters): 164
+Akaike information criterion (AIC) score: 3995.0352
+Corrected Akaike information criterion (AICc) score: 4227.3099
+Bayesian information criterion (BIC) score: 4648.8133
+
+Total tree length (sum of branch lengths): 0.2393
+Sum of internal branch lengths: 0.1087 (45.4332% of tree length)
+
+WARNING: 55 near-zero internal branches (<0.0025) should be treated with caution
+         Such branches are denoted by '**' in the figure below
+
+NOTE: Tree is UNROOTED although outgroup taxon 'Bacu_CASQ1' is drawn at root
+
++**Bacu_CASQ1
+|
+|                                                                         +**Barn_CASQ1
+|                                                                      +**|
+|                                                                      |  +**Hamp_CASQ1
+|                                                                   +--|
+|                                                                   |  |     +--Mden_CASQ1
+|                                                                   |  |  +**|
+|                                                                   |  |  |  +**Mpni_CASQ1
+|                                                                   |  +**|
+|                                                                   |     +**Mper_CASQ1
+|                                                                +**|
+|                                                                |  |     +**Hpla9120_CASQ1
+|                                                                |  |  +**|
+|                                                                |  |  |  +--MlayAUS_CASQ1
+|                                                                |  +**|
+|                                                                |     +**MgraAUS_CASQ1
+|                                                             +**|
+|                                                             |  |   +----------Meur_CASQ1
+|                                                             |  +---|
+|                                                             |      +------Mgin_CASQ1
+|                                                          +**|
+|                                                          |  +**Mbow_CASQ1
+|                                                       +--|
+|                                                       |  +----------Zcav_CASQ1
+|                                                    +**|
+|                                                    |  +**Mcar_CASQ1
+|                                                 +**|
+|                                                 |  +**Mbid_CASQ1
+|                                              +**|
+|                                              |  |  +**Mhec_CASQ1
+|                                              |  +--|
+|                                              |     +--Mmir_CASQ1
+|                                           +**|
+|                                           |  +**Mste_CASQ1
+|                                        +**|
+|                                        |  +**Tshe_CASQ1
+|                        +---------------|
+|                        |               +**Bbai76728_CASQ1
+|                     +--|
+|                     |  |        +--Kbre_CASQ1
+|                     |  |     +--|
+|                     |  |     |  +--Ksim_CASQ1
+|                     |  +-----|
+|                     |        |  +**Pcat_CASQ1
+|                     |        +--|
+|                     |           +**Pmac_CASQ1
+|         +-----------|
+|         |           |                                  +**Ccom40_CASQ1
+|         |           |                               +**|
+|         |           |                               |  +--Lbor_CASQ1
+|         |           |                            +**|
+|         |           |                            |  +**Laus_CASQ1
+|         |           |                         +**|
+|         |           |                         |  +**LperAUS_CASQ1
+|         |           |                      +--|
+|         |           |                      |  |     +**Chea7320_CASQ1
+|         |           |                      |  |  +**|
+|         |           |                      |  |  |  +**Lobs_CASQ1
+|         |           |                      |  +**|
+|         |           |                      |     +**Lobl_CASQ1
+|         |           |                   +--|
+|         |           |                   |  |                                +**Dcap108471_CASQ1
+|         |           |                   |  |                             +**|
+|         |           |                   |  |                             |  |  +**DdelSJR_CASQ1
+|         |           |                   |  |                             |  +**|
+|         |           |                   |  |                             |     |  +--Lalb_CASQ1
+|         |           |                   |  |                             |     +**|
+|         |           |                   |  |                             |        +**Tadu79924_CASQ1
+|         |           |                   |  |                          +**|
+|         |           |                   |  |                          |  +**Sfro7784_CASQ1
+|         |           |                   |  |                       +**|
+|         |           |                   |  |                       |  +**Sflu9837_CASQ1
+|         |           |                   |  |                    +**|
+|         |           |                   |  |                    |  |           +**Fatt_CASQ1
+|         |           |                   |  |                    |  |        +**|
+|         |           |                   |  |                    |  |        |  +**Pele_CASQ1
+|         |           |                   |  |                    |  |     +**|
+|         |           |                   |  |                    |  |     |  +**Gmel_CASQ1
+|         |           |                   |  |                    |  |  +--|
+|         |           |                   |  |                    |  |  |  |  +**Gmac39091_CASQ1
+|         |           |                   |  |                    |  |  |  +**|
+|         |           |                   |  |                    |  |  |     +----Pcra123188_CASQ1
+|         |           |                   |  |                    |  +**|
+|         |           |                   |  |                    |     +--Schi_CASQ1
+|         |           |                   |  |                 +**|
+|         |           |                   |  |                 |  |  +**Ddeltrop4525_CASQ1
+|         |           |                   |  |                 |  +**|
+|         |           |                   |  |                 |     +**Satt18473_CASQ1
+|         |           |                   |  |              +**|
+|         |           |                   |  |              |  |  +**Dcap79929_CASQ1
+|         |           |                   |  |              |  +**|
+|         |           |                   |  |              |     |     +**Satt38219_CASQ1
+|         |           |                   |  |              |     |  +**|
+|         |           |                   |  |              |     |  |  +**Scoe_CASQ1
+|         |           |                   |  |              |     +**|
+|         |           |                   |  |              |        +**Sfro7782_CASQ1
+|         |           |                   |  |           +--|
+|         |           |                   |  |           |  |  +**Lhos30470_CASQ1
+|         |           |                   |  |           |  +--|
+|         |           |                   |  |           |     +--Lhos452_CASQ1
+|         |           |                   |  |        +--|
+|         |           |                   |  |        |  |     +**Ggri_CASQ1
+|         |           |                   |  |        |  |  +**|
+|         |           |                   |  |        |  |  |  +**Sbre116871_CASQ1
+|         |           |                   |  |        |  +**|
+|         |           |                   |  |        |     +**Sbre18437_CASQ1
+|         |           |                   |  |     +**|
+|         |           |                   |  |     |  +**Obre_CASQ1
+|         |           |                   |  |  +**|
+|         |           |                   |  |  |  |     +----Lacu_CASQ1
+|         |           |                   |  |  |  |  +**|
+|         |           |                   |  |  |  |  |  +**Scly1724_CASQ1
+|         |           |                   |  |  |  +**|
+|         |           |                   |  |  |     +**Ohei_CASQ1
+|         |           |                   |  +--|
+|         |           |                   |     +---Oorc_CASQ1
+|         |           |                +**|
+|         |           |                |  |    +--Dleu_CASQ1
+|         |           |                |  +----|
+|         |           |                |       +**Mmon_CASQ1
+|         |           |             +**|
+|         |           |             |  |  +------Naasi_CASQ1
+|         |           |             |  +--|
+|         |           |             |     |     +**Npho_CASQ1
+|         |           |             |     |  +**|
+|         |           |             |     |  |  +**Ppho_CASQ1
+|         |           |             |     +**|
+|         |           |             |        |       +**Pdio_CASQ1
+|         |           |             |        |    +**|
+|         |           |             |        |    |  +**Psin_CASQ1
+|         |           |             |        +----|
+|         |           |             |             +**Pspi_CASQ1
+|         |           |          +--|
+|         |           |          |  +---Pdal_CASQ1
+|         |           |       +--|
+|         |           |       |  +------Igeo_CASQ1
+|         |           |    +**|
+|         |           |    |  +**Pbla7349_CASQ1
+|         |           +----|
+|         |                +--Lvex_CASQ1
++---------|
+|         |              +**Bbor_CASQ1
+|         |           +**|
+|         |           |  |  +**Bede66737_CASQ1
+|         |           |  +**|
+|         |           |     +-------Cmar59905_CASQ1
+|         |        +**|
+|         |        |  +**BedeAUS_CASQ1
+|         |     +**|
+|         |     |  +------Erob133443_CASQ1
+|         |  +**|
+|         |  |  |          +**Bmys_CASQ1
+|         |  |  |       +**|
+|         |  |  |       |  +**Ejap43864_CASQ1
+|         |  |  |  +----|
+|         |  |  |  |    |  +**EausAUS_CASQ1
+|         |  |  |  |    +**|
+|         |  |  |  |       +--Egla13086_CASQ1
+|         |  |  +**|
+|         |  |     +**Bphy_CASQ1
+|         +**|
+|            +--Bmus_CASQ1
+|
++**BbonAUS_CASQ1
+
+Tree in newick format:
+
+(Bacu_CASQ1:0.0000023492,(((((((((((((((Barn_CASQ1:0.0000022446,Hamp_CASQ1:0.0008404204):0.0000015397,((Mden_CASQ1:0.0030773745,Mpni_CASQ1:0.0000024285):0.0000026622,Mper_CASQ1:0.0000022446):0.0023995376):0.0025231162,((Hpla9120_CASQ1:0.0000024953,MlayAUS_CASQ1:0.0029364349):0.0000020619,MgraAUS_CASQ1:0.0000021926):0.0000026481):0.0000012652,(Meur_CASQ1:0.0117706501,Mgin_CASQ1:0.0074385392):0.0043330228):0.0000023175,Mbow_CASQ1:0.0000022989):0.0000021253,Zcav_CASQ1:0.0120828450):0.0027093197,Mcar_CASQ1:0.0000022446):0.0000050742,Mbid_CASQ1:0.0000022446):0.0000023382,(Mhec_CASQ1:0.0000029435,Mmir_CASQ1:0.0032768782):0.0032088749):0.0000025419,Mste_CASQ1:0.0000022446):0.0000020441,Tshe_CASQ1:0.0000023809):0.0000028536,Bbai76728_CASQ1:0.0000024897):0.0168139997,((Kbre_CASQ1:0.0028396248,Ksim_CASQ1:0.0029767738):0.0028159345,(Pcat_CASQ1:0.0000020846,Pmac_CASQ1:0.0000021198):0.0034007700):0.0069259494):0.0025188949,(((((((((((Ccom40_CASQ1:0.0000025474,Lbor_CASQ1:0.0030123725):0.0000022152,Laus_CASQ1:0.0000022446):0.0000026491,LperAUS_CASQ1:0.0000022446):0.0000021836,((Chea7320_CASQ1:0.0000022446,Lobs_CASQ1:0.0000022446):0.0000023027,Lobl_CASQ1:0.0000022446):0.0000021459):0.0025425384,(((((((((((Dcap108471_CASQ1:0.0000022446,(DdelSJR_CASQ1:0.0000022446,(Lalb_CASQ1:0.0027426965,Tadu79924_CASQ1:0.0000022446):0.0000023541):0.0000027748):0.0000022446,Sfro7784_CASQ1:0.0000022446):0.0000020866,Sflu9837_CASQ1:0.0000022446):0.0000022446,((((Fatt_CASQ1:0.0000025786,Pele_CASQ1:0.0000022446):0.0000020384,Gmel_CASQ1:0.0000022446):0.0000025624,(Gmac39091_CASQ1:0.0000022446,Pcra123188_CASQ1:0.0053507802):0.0000022489):0.0025563173,Schi_CASQ1:0.0025484636):0.0000022759):0.0000023407,(Ddeltrop4525_CASQ1:0.0000022446,Satt18473_CASQ1:0.0000022446):0.0000022358):0.0000020702,(Dcap79929_CASQ1:0.0000022446,((Satt38219_CASQ1:0.0000022446,Scoe_CASQ1:0.0000022446):0.0000022539,Sfro7782_CASQ1:0.0000025478):0.0000026425):0.0000023076):0.0000020468,(Lhos30470_CASQ1:0.0000029171,Lhos452_CASQ1:0.0025537983):0.0025479950):0.0025395355,((Ggri_CASQ1:0.0000010000,Sbre116871_CASQ1:0.0000010000):0.0000024290,Sbre18437_CASQ1:0.0000023409):0.0000011110):0.0025407314,Obre_CASQ1:0.0000022446):0.0000020104,((Lacu_CASQ1:0.0061292104,Scly1724_CASQ1:0.0000022446):0.0000023291,Ohei_CASQ1:0.0000020171):0.0000022814):0.0000022502,Oorc_CASQ1:0.0050982397):0.0025605601):0.0025612302,(Dleu_CASQ1:0.0025737547,Mmon_CASQ1:0.0000020239):0.0051675122):0.0000022450,(Naasi_CASQ1:0.0078614752,((Npho_CASQ1:0.0000029780,Ppho_CASQ1:0.0000022446):0.0000021974,((Pdio_CASQ1:0.0000024836,Psin_CASQ1:0.0000022446):0.0000022479,Pspi_CASQ1:0.0000020359):0.0051222428):0.0000022494):0.0025532954):0.0000023701,Pdal_CASQ1:0.0048505381):0.0025459603,Igeo_CASQ1:0.0075235246):0.0025684839,Pbla7349_CASQ1:0.0000020200):0.0000023054,Lvex_CASQ1:0.0025396754):0.0051385714):0.0129374988,(((((Bbor_CASQ1:0.0000022446,(Bede66737_CASQ1:0.0000022446,Cmar59905_CASQ1:0.0083442424):0.0000026727):0.0000023220,BedeAUS_CASQ1:0.0000022446):0.0000020297,Erob133443_CASQ1:0.0081274361):0.0000023562,(((Bmys_CASQ1:0.0000022446,Ejap43864_CASQ1:0.0000026965):0.0000020589,(EausAUS_CASQ1:0.0000029326,Egla13086_CASQ1:0.0028529035):0.0000023281):0.0053598629,Bphy_CASQ1:0.0000022456):0.0000022304):0.0000027894,Bmus_CASQ1:0.0025415007):0.0000022589):0.0102559941,BbonAUS_CASQ1:0.0000024687);
+
+TIME STAMP
+----------
+
+Date and time: Sat Jan 27 10:28:18 2024
+Total CPU time used: 6945.5 seconds (1h:55m:45s)
+Total wall-clock time used: 1836.44 seconds (0h:30m:36s)
+

@@ -1,0 +1,315 @@
+#NEXUS
+[written Sun Oct 24 21:14:01 BRST 2021 by Mesquite  version 3.61 (build 927) at aquas/127.0.1.1]
+
+BEGIN TAXA;
+	TITLE Taxa;
+	DIMENSIONS NTAX=90;
+	TAXLABELS
+		Kogia_breviceps Kogia_sima Physeter_macrocephalus 'Platanista gangetica (minor) ' Berardius_bairdii Berardius_arnuxii Tasmacetus_shepherdi Ziphius_cavirostris Hyperoodon_planifrons Hyperoodon_ampullatus Mesoplodon_hectori Mesoplodon_grayi Mesoplodon_stejnegeri Mesoplodon_densirostris Mesoplodon_peruvianus Mesoplodon_perrini Mesoplodon_layardii Mesoplodon_bowdoini Mesoplodon_carlhubbsi Mesoplodon_bidens Mesoplodon_ginkgodens Mesoplodon_europaeus Mesoplodon_mirus Lipotes_vexillifer Pontoporia_blainvillei_ Inia_geoffrensis_ Monodon_monoceros Delphinapterus_leucas Neophocaena_phocaenoides Phocoenoides_dalli Phocoena_spinipinnis_ Phocoena_dioptrica_ Phocoena_phocoena Leucopleurus_acutus Orcinus_orca Lagenorhynchus_albirostris Cephalorhynchus_commersonii Lagenorhynchus_australis Cephalorhynchus_heavisidii Lagenorhynchus_obliquidens Lagenorhynchus_obscurus Lissodelphis_peronii Lissodelphis_borealis Orcaella_brevirostris_ Orcaella_heinsohni_ Grampus_griseus Pseudorca_crassidens Globicephala_melas Globicephala_macrorhynchus Peponocephala_electra Feresa_attenuata Steno_bredanensis Steno_bredanensis_2 Sotalia_fluviatilis Sousa_chinensis Stenella_coeruleoalba Delphinus_delphis Delphinus_delphis_tropicalis Delphinus_delphis_bairdii Delphinus_delphis_bairdii_2 Lagenodelphis_hosei Lagenodelphis_hosei_2 Stenella_longirostris_ Stenella_longirostris_2 Stenella_clymene Stenella_clymene_2 Tursiops_aduncus Tursiops_truncatus Stenella_attenuata Stenella_attenuata_2 Stenella_frontalis Stenella_frontalis_2 Eschrichtius_robustus Megaptera_novaeangliae 'Balaenoptera physalus (baits)' Balaenoptera_physalus Balaenoptera_musculus 'Balaenoptera edeni (Mexico)' 'Balaenoptera edeni (Australia)' Balaenoptera_borealis Balaenoptera_omurai Balaenoptera_acutorostrata Balaenoptera_bonarensis Caperea_marginata Balaena_mysticetus Eubalaena_japonica Eubalaena_glacialis Eubalaena_australis Sotalia_guianensis Neophocaena_asiaeorientalis_asiaeorientalis 
+	;
+
+END;
+
+
+BEGIN TREES;
+	Title Imported_trees;
+	ID 017cb3a4b8511;
+	LINK Taxa = Taxa;
+	TRANSLATE
+[0] 		n0 Kogia_breviceps,
+[1] 		n1 Kogia_sima,
+[2] 		n2 Physeter_macrocephalus,
+[3] 		n3 'Platanista gangetica (minor) ',
+[4] 		n4 Berardius_bairdii,
+[5] 		n5 Berardius_arnuxii,
+[6] 		n6 Tasmacetus_shepherdi,
+[7] 		n7 Ziphius_cavirostris,
+[8] 		n8 Hyperoodon_planifrons,
+[9] 		n9 Hyperoodon_ampullatus,
+[10] 		n10 Mesoplodon_hectori,
+[11] 		n11 Mesoplodon_grayi,
+[12] 		n12 Mesoplodon_stejnegeri,
+[13] 		n13 Mesoplodon_densirostris,
+[14] 		n14 Mesoplodon_peruvianus,
+[15] 		n15 Mesoplodon_perrini,
+[16] 		n16 Mesoplodon_layardii,
+[17] 		n17 Mesoplodon_bowdoini,
+[18] 		n18 Mesoplodon_carlhubbsi,
+[19] 		n19 Mesoplodon_bidens,
+[20] 		n20 Mesoplodon_ginkgodens,
+[21] 		n21 Mesoplodon_europaeus,
+[22] 		n22 Mesoplodon_mirus,
+[23] 		n23 Lipotes_vexillifer,
+[24] 		n24 Pontoporia_blainvillei_,
+[25] 		n25 Inia_geoffrensis_,
+[26] 		n26 Monodon_monoceros,
+[27] 		n27 Delphinapterus_leucas,
+[28] 		n28 Neophocaena_phocaenoides,
+[29] 		n29 Phocoenoides_dalli,
+[30] 		n30 Phocoena_spinipinnis_,
+[31] 		n31 Phocoena_dioptrica_,
+[32] 		n32 Phocoena_phocoena,
+[33] 		n33 Leucopleurus_acutus,
+[34] 		n34 Orcinus_orca,
+[35] 		n35 Lagenorhynchus_albirostris,
+[36] 		n36 Cephalorhynchus_commersonii,
+[37] 		n37 Lagenorhynchus_australis,
+[38] 		n38 Cephalorhynchus_heavisidii,
+[39] 		n39 Lagenorhynchus_obliquidens,
+[40] 		n40 Lagenorhynchus_obscurus,
+[41] 		n41 Lissodelphis_peronii,
+[42] 		n42 Lissodelphis_borealis,
+[43] 		n43 Orcaella_brevirostris_,
+[44] 		n44 Orcaella_heinsohni_,
+[45] 		n45 Grampus_griseus,
+[46] 		n46 Pseudorca_crassidens,
+[47] 		n47 Globicephala_melas,
+[48] 		n48 Globicephala_macrorhynchus,
+[49] 		n49 Peponocephala_electra,
+[50] 		n50 Feresa_attenuata,
+[51] 		n51 Steno_bredanensis,
+[52] 		n52 Steno_bredanensis_2,
+[53] 		n53 Sotalia_fluviatilis,
+[54] 		n54 Sousa_chinensis,
+[55] 		n55 Stenella_coeruleoalba,
+[56] 		n56 Delphinus_delphis,
+[57] 		n57 Delphinus_delphis_tropicalis,
+[58] 		n58 Delphinus_delphis_bairdii,
+[59] 		n59 Delphinus_delphis_bairdii_2,
+[60] 		n60 Lagenodelphis_hosei,
+[61] 		n61 Lagenodelphis_hosei_2,
+[62] 		n62 Stenella_longirostris_,
+[63] 		n63 Stenella_longirostris_2,
+[64] 		n64 Stenella_clymene,
+[65] 		n65 Stenella_clymene_2,
+[66] 		n66 Tursiops_aduncus,
+[67] 		n67 Tursiops_truncatus,
+[68] 		n68 Stenella_attenuata,
+[69] 		n69 Stenella_attenuata_2,
+[70] 		n70 Stenella_frontalis,
+[71] 		n71 Stenella_frontalis_2,
+[72] 		n72 Eschrichtius_robustus,
+[73] 		n73 Megaptera_novaeangliae,
+[74] 		n74 'Balaenoptera physalus (baits)',
+[75] 		n75 Balaenoptera_physalus,
+[76] 		n76 Balaenoptera_musculus,
+[77] 		n77 'Balaenoptera edeni (Mexico)',
+[78] 		n78 'Balaenoptera edeni (Australia)',
+[79] 		n79 Balaenoptera_borealis,
+[80] 		n80 Balaenoptera_omurai,
+[81] 		n81 Balaenoptera_acutorostrata,
+[82] 		n82 Balaenoptera_bonarensis,
+[83] 		n83 Caperea_marginata,
+[84] 		n84 Balaena_mysticetus,
+[85] 		n85 Eubalaena_japonica,
+[86] 		n86 Eubalaena_glacialis,
+[87] 		n87 Eubalaena_australis,
+[88] 		n88 Sotalia_guianensis,
+[89] 		n89 Neophocaena_asiaeorientalis_asiaeorientalis;
+	TREE 'Imported tree 1++' = ((((n0:0.0034107087990151554,n1:0.0037942986163428025):0.006611132915540451,n2:0.00592351572746297):0.004991850911329262,(n3:0.014529077223486201,(((n4:0.0007595049210285872,n5:0.0012291912527181428):0.003985347772268415,(n6:0.0040212457250983664,(n7:0.004210318831403106,((n8:0.002382272110874675,n9:0.001800028635871768):0.0014679761443728142,(((n10:0.002314465129063043,(n11:0.002343971763903851,(n12:0.0016208486203263923,(n13:0.0020005802545997944,(n14:0.001478311672088153,n15:0.0013921208302749102):0.00038894347880738924):0.00014807808561832355):0.0002692272219320483):0.00023892843484218473):0.0005414042952636448,(n16:0.0020787598065151766,(n17:0.001930725424713885,n18:0.0018329168392231575):0.00035659220495072255):0.00042085014314518994):0.00033275487169860164,(n19:0.0029508784980740686,(n20:0.0019302750162266955,(n21:0.0021527518747639068,n22:0.0018493601486009822):0.00031218968300073137):0.0007645883343511924):0.00023401256840998566):0.0011135711177987428):0.0005182780678360219):0.00035446731903695204):0.001198491886355365):0.005412726411672406,((n23:0.008846972697681433,(n24:0.008014905001969237,n25:0.007237231402270618):0.001874573684671467):0.0005267029193493747,(((n26:0.002407781566410645,n27:0.0018899253621120428):0.002124382151994152,(n28:0.0021349112993699743,(n29:0.00260602700815395,((n30:0.0007988451196487417,n31:0.0006278712638609251):0.0006406051419974851,n32:0.0011941265236426):0.00026384093957118084):0.00034852581808358983):0.003150531575704029):0.0016638739708466845,(n33:0.0031745911981752887,(n34:0.002613600960692423,(n35:0.002828802102985672,((((n36:0.0012800611789136386,(n37:0.0005389433179470072,n38:0.0006094797006154319):0.00017459511748944872):0.0005173439800149162,(n39:0.0005853715995064563,n40:0.0005586245959473398):0.0005221232250851336):0.00011745677790412358,(n41:0.0007121723610144863,n42:0.0008036552559034974):0.0005072096850902052):0.0014524382821462763,(((n43:0.0010035013345253163,n44:0.0009917363265645738):0.001231761526209238,((n45:0.001171724091031721,(n46:0.0010605736467638582,((n47:0.0005085882142659076,n48:0.00044952166565642715):0.0004242260246876009,(n49:0.0007609828367904311,n50:0.0008943470051963053):0.00013704546658955126):0.0002458089195245311):0.0001961418835038425):0.00045543120281348043,(n51:0.0004530337048403114,n52:0.0003578195870132765):0.00135303357734957):0.0005255379837413451):0.00040404013881078783,(n53:0.0014383950533318058,(n54:0.0014801295194931908,((n55:0.000978054410766094,(((n56:0.0005187688035740256,n57:0.0005101749490731575):0.00011018838222160676,(n58:0.00048277746122833953,n59:0.00040857068085098337):0.00013820749754693396):0.0005131615836935793,((n60:0.0007044586829533403,n61:0.0005249121911886264):0.0004494613146710315,((n62:0.000664660811801747,n63:0.0005657545727169514):0.0002045586934067904,(n64:0.0014281649594827127,n65:0.0005759591189363921):0.00019350255882630022):0.00019568255210824):0.00012205913454315497):0.00016741917433283222):0.00014028785305533523,((n66:0.0009905159996561777,n67:0.0012161055198670456):0.0001815225999174356,((n68:0.0004951627869830761,n69:0.0007453420363512552):0.00019763065455256562,(n70:0.0005172132804216332,n71:0.0005376141169021678):0.00023838488469015706):0.0004735458394394381):0.0000960343522135004):0.000387043774140889):0.00033406580062364765):0.0007706232516151001):0.00037176328145028734):0.0003379921991770605):0.00023566111790047402):0.000591050634598379):0.002903509868277909):0.002462191896878095):0.003045866384199446):0.000645894335128915):0.0007611317083026779):0.0012507805444513934,((((n72:0.003876689344139682,((n73:0.003211321222755979,(n74:0.0008900940715763979,n75:0.0005926342459227124):0.0018563132475738345):0.0008348769569250519,(n76:0.002672257067502775,(((n77:0.00025671350315411136,n78:0.0004023726375385982):0.0008575033217448672,n79:0.0010865354051472318):0.0015119023227878159,n80:0.006012726277494989):0.00024575404116412657):0.0006759445997064524):0.00017735991224509227):0.00036170566777120935,(n81:0.0021536771554062886,n82:0.0018566033339448165):0.0021924688078899246):0.0017420099556530932,n83:0.006748549309027703):0.0010376437619619545,(n84:0.00167891715847335,((n85:0.000541403908726459,n86:0.0003999114400718472):0.00030219701756750895,n87:0.0007260546677356723):0.0011156959621587892):0.00306703916080837):0.0039049095620362047):0.05968128305036305;
+
+END;
+
+
+BEGIN NOTES;
+
+	SUT   TAXON = 44 NAME = color INTEGER = 16;
+
+END;
+
+Begin MESQUITE;
+		MESQUITESCRIPTVERSION 2;
+		TITLE AUTO;
+		tell ProjectCoordinator;
+		timeSaved 1635117241285;
+		getEmployee #mesquite.minimal.ManageTaxa.ManageTaxa;
+		tell It;
+			setID 0 1272233055512631267;
+			tell It;
+				setDefaultOrder  1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 53 54 55 56 57 58 59 60 61 62 63 64 65 66 67 68 69 70 71 72 73 74 75 76 77 78 79 80 81 82 83 84 85 86 87 92 88 89;
+				attachments ;
+			endTell;
+		endTell;
+		getWindow;
+		tell It;
+			suppress;
+			setResourcesState false false 100;
+			setPopoutState 300;
+			setExplanationSize 0;
+			setAnnotationSize 0;
+			setFontIncAnnot 0;
+			setFontIncExp 0;
+			setSize 1322 643;
+			setLocation 44 27;
+			setFont SanSerif;
+			setFontSize 10;
+			getToolPalette;
+			tell It;
+			endTell;
+			desuppress;
+		endTell;
+		getEmployee  #mesquite.minimal.ManageTaxa.ManageTaxa;
+		tell It;
+			showTaxa #1272233055512631267 #mesquite.lists.TaxonList.TaxonList;
+			tell It;
+				setTaxa #1272233055512631267;
+				getWindow;
+				tell It;
+					useTargetValue off;
+					setTargetValue ;
+					newAssistant  #mesquite.lists.TaxonListCurrPartition.TaxonListCurrPartition;
+					setExplanationSize 30;
+					setAnnotationSize 20;
+					setFontIncAnnot 0;
+					setFontIncExp 0;
+					setSize 1222 571;
+					setLocation 44 27;
+					setFont SanSerif;
+					setFontSize 10;
+					getToolPalette;
+					tell It;
+						setTool mesquite.lists.TaxonList.TaxonListWindow.ibeam;
+					endTell;
+					setActive;
+				endTell;
+				showWindow;
+				getEmployee #mesquite.lists.ColorTaxon.ColorTaxon;
+				tell It;
+					setColor Red;
+					removeColor off;
+				endTell;
+				getEmployee #mesquite.lists.TaxonListAnnotPanel.TaxonListAnnotPanel;
+				tell It;
+					togglePanel off;
+				endTell;
+			endTell;
+		endTell;
+		getEmployee  #mesquite.trees.BasicTreeWindowCoord.BasicTreeWindowCoord;
+		tell It;
+			makeTreeWindow #1272233055512631267  #mesquite.trees.BasicTreeWindowMaker.BasicTreeWindowMaker;
+			tell It;
+				suppressEPCResponse;
+				setTreeSource  #mesquite.trees.StoredTrees.StoredTrees;
+				tell It;
+					setTreeBlock 1;
+					setTreeBlockID 017cb3a4b8511;
+					toggleUseWeights off;
+				endTell;
+				setAssignedID 967.1635101501924.5476541504413957581;
+				getTreeWindow;
+				tell It;
+					setExplanationSize 30;
+					setAnnotationSize 20;
+					setFontIncAnnot 0;
+					setFontIncExp 0;
+					setSize 1222 571;
+					setLocation 44 27;
+					setFont SanSerif;
+					setFontSize 10;
+					getToolPalette;
+					tell It;
+						setTool mesquite.trees.BasicTreeWindowMaker.BasicTreeWindow.arrow;
+					endTell;
+					getTreeDrawCoordinator #mesquite.trees.BasicTreeDrawCoordinator.BasicTreeDrawCoordinator;
+				tell It;
+					suppress;
+					setTreeDrawer  #mesquite.trees.SquareLineTree.SquareLineTree;
+					tell It;
+						setNodeLocs #mesquite.trees.NodeLocsStandard.NodeLocsStandard;
+						tell It;
+							branchLengthsToggle off;
+							toggleScale on;
+							toggleBroadScale off;
+							toggleCenter on;
+							toggleEven on;
+							setFixedTaxonDistance 0;
+						endTell;
+						setEdgeWidth 4;
+						showEdgeLines on;
+						orientRight;
+					endTell;
+					setBackground White;
+					setBranchColor Black;
+					showNodeNumbers off;
+					showBranchColors on;
+					labelBranchLengths off;
+					centerBrLenLabels on;
+					showBrLensUnspecified on;
+					showBrLenLabelsOnTerminals on;
+					setBrLenLabelColor 0 0 255;
+					setNumBrLenDecimals 6;
+					setSelectedTaxonHighlightMode 1;
+					desuppress;
+					getEmployee #mesquite.trees.BasicDrawTaxonNames.BasicDrawTaxonNames;
+					tell It;
+						setColor Black;
+						setTaxonNameStyler  #mesquite.trees.NoColorForTaxon.NoColorForTaxon;
+						toggleShadePartition off;
+						toggleShowFootnotes on;
+						toggleNodeLabels on;
+						toggleCenterNodeNames off;
+						toggleShowNames on;
+						namesAngle ?;
+					endTell;
+				endTell;
+					setTreeNumber 1;
+					setTree '((((1:0.0034107087990151554,2:0.0037942986163428025):0.006611132915540451,3:0.00592351572746297):0.004991850911329262,(4:0.014529077223486201<color = 16 >,(((5:0.0007595049210285872,6:0.0012291912527181428):0.003985347772268415,(7:0.0040212457250983664,(8:0.004210318831403106,((9:0.002382272110874675,10:0.001800028635871768):0.0014679761443728142,(((11:0.002314465129063043,(12:0.002343971763903851,(13:0.0016208486203263923,(14:0.0020005802545997944,(15:0.001478311672088153,16:0.0013921208302749102):0.00038894347880738924):0.00014807808561832355):0.0002692272219320483):0.00023892843484218473):0.0005414042952636448,(17:0.0020787598065151766,(18:0.001930725424713885,19:0.0018329168392231575):0.00035659220495072255):0.00042085014314518994):0.00033275487169860164,(20:0.0029508784980740686,(21:0.0019302750162266955,(22:0.0021527518747639068,23:0.0018493601486009822):0.00031218968300073137):0.0007645883343511924):0.00023401256840998566):0.0011135711177987428):0.0005182780678360219):0.00035446731903695204):0.001198491886355365):0.005412726411672406,((24:0.008846972697681433<color = 16 >,(25:0.008014905001969237,26:0.007237231402270618<color = 16 >):0.001874573684671467):0.0005267029193493747,(((27:0.002407781566410645,28:0.0018899253621120428):0.002124382151994152,((29:0.0010674556496849872,90<color = 16 >):0.0010674556496849872,(30:0.00260602700815395,((31:0.0007988451196487417,32:0.0006278712638609251):0.0006406051419974851,33:0.0011941265236426):0.00026384093957118084):0.00034852581808358983):0.003150531575704029):0.0016638739708466845,(34:0.0031745911981752887,(35:0.002613600960692423,(36:0.002828802102985672,((((37:0.0012800611789136386,(38:0.0005389433179470072,39:0.0006094797006154319):0.00017459511748944872):0.0005173439800149162,(40:0.0005853715995064563,41:0.0005586245959473398):0.0005221232250851336):0.00011745677790412358,(42:0.0007121723610144863,43:0.0008036552559034974):0.0005072096850902052):0.0014524382821462763,(((44:0.0010035013345253163<color = 16 >,45:0.0009917363265645738):0.001231761526209238,((46:0.001171724091031721,(47:0.0010605736467638582,((48:0.0005085882142659076,49:0.00044952166565642715):0.0004242260246876009,(50:0.0007609828367904311,51:0.0008943470051963053):0.00013704546658955126):0.0002458089195245311):0.0001961418835038425):0.00045543120281348043,(52:0.0004530337048403114,53:0.0003578195870132765):0.00135303357734957):0.0005255379837413451):0.00040404013881078783,((54:0.0007191975266659029<color = 16 >,89):0.0007191975266659029,(55:0.0014801295194931908,((56:0.000978054410766094,(((57:0.0005187688035740256,58:0.0005101749490731575):0.00011018838222160676,(59:0.00048277746122833953,60:0.00040857068085098337):0.00013820749754693396):0.0005131615836935793,((61:0.0007044586829533403,62:0.0005249121911886264):0.0004494613146710315,((63:0.000664660811801747,64:0.0005657545727169514):0.0002045586934067904,(65:0.0014281649594827127,66:0.0005759591189363921):0.00019350255882630022):0.00019568255210824):0.00012205913454315497):0.00016741917433283222):0.00014028785305533523,((67:0.0009905159996561777,68:0.0012161055198670456):0.0001815225999174356,((69:0.0004951627869830761,70:0.0007453420363512552):0.00019763065455256562,(71:0.0005172132804216332,72:0.0005376141169021678):0.00023838488469015706):0.0004735458394394381):0.0000960343522135004):0.000387043774140889):0.00033406580062364765):0.0007706232516151001):0.00037176328145028734):0.0003379921991770605):0.00023566111790047402):0.000591050634598379):0.002903509868277909):0.002462191896878095):0.003045866384199446):0.000645894335128915):0.0007611317083026779):0.0012507805444513934,((((73:0.003876689344139682,((74:0.003211321222755979,(75:0.0008900940715763979,76:0.0005926342459227124):0.0018563132475738345):0.0008348769569250519,(77:0.002672257067502775,(((78:0.00025671350315411136,79:0.0004023726375385982):0.0008575033217448672,80:0.0010865354051472318):0.0015119023227878159,81:0.006012726277494989):0.00024575404116412657):0.0006759445997064524):0.00017735991224509227):0.00036170566777120935,(82:0.0021536771554062886,83:0.0018566033339448165):0.0021924688078899246):0.0017420099556530932,84:0.006748549309027703):0.0010376437619619545,(85:0.00167891715847335,((86:0.000541403908726459,87:0.0003999114400718472):0.00030219701756750895,88:0.0007260546677356723):0.0011156959621587892):0.00306703916080837):0.0039049095620362047):0.05968128305036305<> <> <  setBetweenLong = color >;';
+					setDrawingSizeMode 0;
+					toggleLegendFloat on;
+					scale 0;
+					toggleTextOnTree off;
+					togglePrintName off;
+					showWindow;
+				endTell;
+				desuppressEPCResponse;
+				getEmployee #mesquite.trees.ColorBranches.ColorBranches;
+				tell It;
+					setColor Magenta;
+					removeColor off;
+				endTell;
+				getEmployee #mesquite.ornamental.BranchNotes.BranchNotes;
+				tell It;
+					setAlwaysOn off;
+				endTell;
+				getEmployee #mesquite.ornamental.ColorTreeByPartition.ColorTreeByPartition;
+				tell It;
+					colorByPartition off;
+				endTell;
+				getEmployee #mesquite.ornamental.DrawTreeAssocDoubles.DrawTreeAssocDoubles;
+				tell It;
+					setOn on;
+					toggleShow consensusFrequency;
+					toggleShow posteriorProbability;
+					toggleShow bootstrapFrequency;
+					toggleShow consensusFrequency;
+					toggleShow posteriorProbability;
+					toggleShow bootstrapFrequency;
+					setDigits 4;
+					setThreshold ?;
+					writeAsPercentage off;
+					toggleCentred off;
+					toggleHorizontal on;
+					toggleWhiteEdges on;
+					toggleShowOnTerminals on;
+					setFontSize 10;
+					setOffset 0  0;
+				endTell;
+				getEmployee #mesquite.ornamental.DrawTreeAssocStrings.DrawTreeAssocStrings;
+				tell It;
+					setOn on;
+					toggleCentred on;
+					toggleHorizontal on;
+					setFontSize 10;
+					setOffset 0  0;
+					toggleShowOnTerminals on;
+				endTell;
+				getEmployee #mesquite.trees.TreeInfoValues.TreeInfoValues;
+				tell It;
+					panelOpen false;
+				endTell;
+			endTell;
+		endTell;
+		endTell;
+end;
+
+

@@ -1,0 +1,1 @@
+(((harpsichord:0.25,piano forte:0.25):0.55,(acoustic guitar:0.30,electric guitar:0.25):0.60):1.75,((trumpet:0.25,trombone:0.25):0.65,(cornet:0.25,tuba:0.50):0.50):1.75);

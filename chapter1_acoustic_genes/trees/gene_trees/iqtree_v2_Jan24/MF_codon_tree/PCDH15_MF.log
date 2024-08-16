@@ -1,0 +1,240 @@
+IQ-TREE multicore version 2.2.0-beta COVID-edition for Linux 64-bit built Dec 21 2021 built Dec 21 2021
+Developed by Bui Quang Minh, James Barbetti, Nguyen Lam Tung,
+Olga Chernomor, Heiko Schmidt, Dominik Schrempf, Michael Woodhams, Ly Trong Nhan.
+
+Host:    awarnach14 (SSE3, 3 GB RAM)
+Command: iqtree -s codon_alignments_v2_Jan24/PCDH15_codon_aligned.phy -st CODON -m TEST -pre PCDH15_MF -nt 4
+Seed:    101404 (Using SPRNG - Scalable Parallel Random Number Generator)
+Time:    Thu Jan 25 15:27:29 2024
+Kernel:  SSE2 - 4 threads (4 CPU cores detected)
+
+Reading alignment file codon_alignments_v2_Jan24/PCDH15_codon_aligned.phy ... Fasta format detected
+Reading fasta file: done in 0.0210499 secs using 85.06% CPU
+Alignment most likely contains DNA/RNA sequences
+Converting to codon sequences with genetic code  ...
+WARNING: Sequence Sscr_PCDH15 has ambiguous character NAG at site 2359
+WARNING: Sequence Sscr_PCDH15 has ambiguous character NAG at site 2461
+WARNING: Sequence Sscr_PCDH15 has ambiguous character NGT at site 2497
+WARNING: Sequence Psin_PCDH15 has ambiguous character NAA at site 3961
+Constructing alignment: done in 0.0152106 secs using 100.8% CPU
+Alignment has 91 sequences with 1784 columns, 1541 distinct patterns
+684 parsimony-informative, 424 singleton sites, 676 constant sites
+                     Gap/Ambiguity  Composition  p-value
+Analyzing sequences: done in 0.000711013 secs using 99.3% CPU
+   1  Bacu_PCDH15            2.19%    passed     90.57%
+   2  Barn_PCDH15           45.96%    passed    100.00%
+   3  Bbai76728_PCDH15      35.65%    passed    100.00%
+   4  BbonAUS_PCDH15        23.71%    passed    100.00%
+   5  Bbor_PCDH15           25.11%    passed    100.00%
+   6  Bede66737_PCDH15      25.11%    passed    100.00%
+   7  BedeAUS_PCDH15        25.11%    passed    100.00%
+   8  Bmus_PCDH15            2.19%    passed     85.56%
+   9  Bphy_baits_PCDH15     30.27%    passed    100.00%
+  10  Btau_PCDH15            0.50%    passed     33.52%
+  11  Ccom40_PCDH15         30.66%    passed    100.00%
+  12  Cela_PCDH15            8.74%    passed    100.00%
+  13  Chea7320_PCDH15       29.88%    passed    100.00%
+  14  Cmar59905_PCDH15      26.01%    passed    100.00%
+  15  Dcap108471_PCDH15     23.32%    passed    100.00%
+  16  Dcap79929_PCDH15      34.92%    passed    100.00%
+  17  DdelSJR_PCDH15        23.26%    passed    100.00%
+  18  Ddeltrop4525_PCDH15   25.67%    passed    100.00%
+  19  Dleu_PCDH15            0.50%    passed     67.76%
+  20  EausAUS_PCDH15        23.71%    passed    100.00%
+  21  Ecab_PCDH15            0.39%    failed      0.48%
+  22  Egla13086_PCDH15      27.35%    passed    100.00%
+  23  Ejap43864_PCDH15      23.71%    passed    100.00%
+  24  Erob133443_PCDH15     25.84%    passed    100.00%
+  25  Fatt_PCDH15           23.26%    passed    100.00%
+  26  Ggri_PCDH15           23.26%    passed    100.00%
+  27  Gmac39091_PCDH15      23.26%    passed    100.00%
+  28  Gmel_PCDH15            0.28%    passed     65.24%
+  29  Hamp_PCDH15           23.54%    passed    100.00%
+  30  Hippo_PCDH15           2.19%    passed     42.69%
+  31  Igeo_PCDH15           48.99%    passed    100.00%
+  32  Kbre_PCDH15           24.94%    passed    100.00%
+  33  Ksim_PCDH15           31.89%    passed    100.00%
+  34  Lacu_PCDH15           24.78%    passed    100.00%
+  35  Lalb_PCDH15           23.26%    passed    100.00%
+  36  Laus_PCDH15           26.18%    passed    100.00%
+  37  Lbor_PCDH15           32.17%    passed    100.00%
+  38  Lhos30470_PCDH15      34.98%    passed    100.00%
+  39  Lhos452_PCDH15        23.26%    passed    100.00%
+  40  Lobl_PCDH15            2.30%    passed     81.19%
+  41  Lobs_PCDH15           25.39%    passed    100.00%
+  42  LperAUS_PCDH15        23.32%    passed    100.00%
+  43  Lvex_PCDH15           18.89%    failed      0.45%
+  44  Mbid_PCDH15           41.82%    passed    100.00%
+  45  Mbow_PCDH15           23.54%    passed    100.00%
+  46  Mcar_PCDH15           23.54%    passed    100.00%
+  47  Mden_PCDH15           28.14%    passed    100.00%
+  48  Meur_PCDH15           23.54%    passed    100.00%
+  49  Mgin_PCDH15           23.60%    passed    100.00%
+  50  MgraAUS_PCDH15        38.68%    passed    100.00%
+  51  Mhec_PCDH15           23.54%    passed    100.00%
+  52  MlayAUS_PCDH15        23.54%    passed    100.00%
+  53  Mmir_PCDH15           26.35%    passed    100.00%
+  54  Mmon_PCDH15            0.11%    passed     58.11%
+  55  Mper_PCDH15           23.54%    passed    100.00%
+  56  Mpni_PCDH15           23.65%    passed    100.00%
+  57  Mste_PCDH15           23.54%    passed    100.00%
+  58  Naasi_PCDH15           0.39%    passed     29.56%
+  59  Npho_PCDH15           30.89%    passed    100.00%
+  60  Oari_PCDH15            0.56%    passed     22.39%
+  61  Obre_PCDH15           23.26%    passed    100.00%
+  62  Ohei_PCDH15           27.69%    passed    100.00%
+  63  Oorc_PCDH15            1.74%    passed     66.11%
+  64  Pbla7349_PCDH15       32.34%    passed    100.00%
+  65  Pcat_PCDH15            2.24%    passed     85.98%
+  66  Pcra123188_PCDH15     25.34%    passed    100.00%
+  67  Pdal_PCDH15           52.02%    passed     99.88%
+  68  Pdio_PCDH15           26.18%    passed    100.00%
+  69  Pele_PCDH15           25.34%    passed    100.00%
+  70  Pmac_PCDH15           25.28%    passed    100.00%
+  71  Ppho_PCDH15           29.88%    passed    100.00%
+  72  Psin_PCDH15            0.78%    passed     51.99%
+  73  Pspi_PCDH15           29.93%    passed    100.00%
+  74  Satt18473_PCDH15      26.85%    passed    100.00%
+  75  Satt38219_PCDH15      25.39%    passed    100.00%
+  76  Sbre116871_PCDH15     23.26%    passed    100.00%
+  77  Sbre18437_PCDH15      25.45%    passed    100.00%
+  78  Schi_PCDH15           23.21%    passed    100.00%
+  79  Scly1724_PCDH15       42.99%    passed    100.00%
+  80  Scly1726_PCDH15       25.45%    passed    100.00%
+  81  Scoe_PCDH15           31.45%    passed    100.00%
+  82  Sflu9837_PCDH15       23.32%    passed    100.00%
+  83  Sfro7782_PCDH15       37.56%    passed    100.00%
+  84  Sfro7784_PCDH15       23.26%    passed    100.00%
+  85  Slon16012_PCDH15      23.26%    passed    100.00%
+  86  Slon24923_PCDH15      23.26%    passed    100.00%
+  87  Sscr_PCDH15            0.22%    passed     13.79%
+  88  Tadu79924_PCDH15      23.26%    passed    100.00%
+  89  Tshe_PCDH15           23.54%    passed    100.00%
+  90  Ttru_PCDH15            0.22%    passed     63.95%
+  91  Zcav_PCDH15           31.73%    passed    100.00%
+WARNING: 1 sequences contain more than 50% gaps/ambiguity
+****  TOTAL                 22.75%  2 sequences failed composition chi2 test (p-value<5%; df=60)
+NOTE: BedeAUS_PCDH15 is identical to Bede66737_PCDH15 but kept for subsequent analysis
+Checking for duplicate sequences: done in 0.00218276 secs using 148.8% CPU
+
+Creating fast initial parsimony tree by random order stepwise addition...
+0.155 seconds, parsimony score: 2453 (based on 1108 sites)
+Perform fast likelihood tree search using GY+F3X4+I+G model...
+Estimate model parameters (epsilon = 5.000)
+Perform nearest neighbor interchange...
+Optimizing NNI: done in 35.3357 secs using 389.3% CPU
+Estimate model parameters (epsilon = 1.000)
+1. Initial log-likelihood: -24212.490
+2. Current log-likelihood: -24208.888
+3. Current log-likelihood: -24206.192
+4. Current log-likelihood: -24204.132
+5. Current log-likelihood: -24202.534
+6. Current log-likelihood: -24201.279
+Optimal log-likelihood: -24200.282
+Nonsynonymous/synonymous ratio (omega): 0.279
+Transition/transversion ratio (kappa): 2.196
+Proportion of invariable sites: 0.013
+Gamma shape alpha: 0.536
+Parameters optimization took 6 rounds (320.306 sec)
+Time for fast ML tree search: 710.644 seconds
+
+NOTE: ModelFinder requires 272 MB RAM!
+ModelFinder will test up to 60 codon models (sample size: 1784) ...
+ No. Model         -LnL         df  AIC          AICc         BIC
+  1  GY+F3X4       24765.929    190 49911.857    49957.419    50954.314
+  2  GY+F3X4+I     24239.591    191 48861.182    48907.252    49909.125
+  3  GY+F3X4+G4    23871.610    191 48125.221    48171.291    49173.164
+  4  GY+F3X4+I+G4  23869.191    192 48122.382    48168.964    49175.812
+  7  GY+F1X4+G4    23880.088    185 48130.176    48173.243    49145.200
+  8  GY+F1X4+I+G4  23879.616    186 48131.232    48174.791    49151.742
+ 11  GY+F+G4       23750.126    242 47984.252    48060.574    49312.013
+ 12  GY+F+I+G4     23748.611    243 47983.222    48060.224    49316.469
+ 15  MGK+F3X4+G4   23779.384    191 47940.767    47986.838    48988.710
+ 16  MGK+F3X4+I+G4 23778.439    192 47940.878    47987.460    48994.307
+ 19  MGK+F1X4+G4   23883.688    185 48137.377    48180.443    49152.400
+ 20  MGK+F1X4+I+G4 23883.063    186 48138.127    48181.686    49158.637
+ 23  MG+F3X4+G4    23779.384    190 47938.767    47984.329    48981.224
+ 24  MG+F3X4+I+G4  23778.439    191 47938.878    47984.949    48986.822
+ 27  MG+F1X4+G4    23883.722    184 48135.443    48178.020    49144.980
+ 28  MG+F1X4+I+G4  23883.099    185 48136.198    48179.265    49151.222
+ 31  KOSI07+F3X4+G4 23862.680    189 48103.360    48148.416    49140.330
+ 32  KOSI07+F3X4+I+G4 23862.598    190 48105.196    48150.758    49147.652
+ 35  KOSI07+F1X4+G4 23985.485    183 48336.971    48379.061    49341.021
+ 36  KOSI07+F1X4+I+G4 23984.181    184 48336.362    48378.939    49345.899
+ 39  KOSI07+F+G4   23753.144    240 47986.288    48061.259    49303.076
+ 40  KOSI07+F+I+G4 23753.197    241 47988.395    48064.039    49310.669
+ 43  KOSI07+FU+G4  23860.615    180 48081.231    48121.879    49068.821
+ 44  KOSI07+FU+I+G4 23860.796    181 48083.592    48124.718    49076.669
+ 47  SCHN05+F3X4+G4 24209.235    189 48796.470    48841.527    49833.440
+ 48  SCHN05+F3X4+I+G4 24207.349    190 48794.699    48840.261    49837.155
+ 51  SCHN05+F1X4+G4 24310.556    183 48987.113    49029.203    49991.163
+ 52  SCHN05+F1X4+I+G4 24308.501    184 48985.001    49027.578    49994.538
+ 55  SCHN05+F+G4   24025.629    240 48531.258    48606.229    49848.045
+ 56  SCHN05+F+I+G4 24025.194    241 48532.388    48608.032    49854.662
+ 59  SCHN05+FU+G4  24109.849    180 48579.697    48620.346    49567.288
+ 60  SCHN05+FU+I+G4 24110.064    181 48582.129    48623.255    49575.206
+Akaike Information Criterion:           MG+F3X4+G4
+Corrected Akaike Information Criterion: MG+F3X4+G4
+Bayesian Information Criterion:         MG+F3X4+G4
+Best-fit model: MG+F3X4+G4 chosen according to BIC
+
+All model information printed to PCDH15_MF.model.gz
+CPU time for ModelFinder: 19425.393 seconds (5h:23m:45s)
+Wall-clock time for ModelFinder: 4978.394 seconds (1h:22m:58s)
+
+NOTE: 272 MB RAM (0 GB) is required!
+Estimate model parameters (epsilon = 0.100)
+1. Initial log-likelihood: -23779.384
+Optimal log-likelihood: -23779.384
+Nonsynonymous/synonymous ratio (omega): 0.268
+Transition/transversion ratio (kappa): 2.247
+Gamma shape alpha: 0.572
+Parameters optimization took 1 rounds (45.806 sec)
+Wrote distance file to... 
+Computing ML distances based on estimated model parameters...
+Calculating distance matrix: done in 39.4753 secs using 399.7% CPU
+Computing ML distances took 39.476831 sec (of wall-clock time) 157.770912 sec (of CPU time)
+Setting up auxiliary I and S matrices: done in 0.00150137 secs using 159.5% CPU
+Constructing RapidNJ tree: done in 0.0650745 secs using 59.66% CPU
+Computing RapidNJ tree took 0.066733 sec (of wall-clock time) 0.041308 sec (of CPU time)
+Log-likelihood of RapidNJ tree: -25977.235
+--------------------------------------------------------------------
+|             INITIALIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+Generating 98 parsimony trees... 4.762 second
+Computing log-likelihood of 98 initial trees ... 926.160 seconds
+Current best score: -23779.384
+
+Do NNI search on 20 best initial trees
+Optimizing NNI: done in 35.1949 secs using 390.4% CPU
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 1: -23779.384
+Optimizing NNI: done in 35.544 secs using 390% CPU
+Optimizing NNI: done in 34.511 secs using 389.9% CPU
+Optimizing NNI: done in 33.766 secs using 389.1% CPU
+Optimizing NNI: done in 34.5062 secs using 390.1% CPU
+ERROR: phylokernelnew.h:3332: double PhyloTree::computeLikelihoodFromBufferGenericSIMD() [with VectorClass = Vec2d; bool FMA = false; bool SITE_MODEL = false]: Assertion `std::isfinite(tree_lh) && "Numerical underflow for lh-from-buffer"' failed.
+ERROR: STACK TRACE FOR DEBUGGING:
+ERROR: 1   funcAbort()
+ERROR: 2   ()
+ERROR: 3   gsignal()
+ERROR: 4   abort()
+ERROR: 5   ()
+ERROR: 6   double PhyloTree::computeLikelihoodFromBufferGenericSIMD<Vec2d, false, false>()
+ERROR: 7   PhyloTree::getBestNNIForBran(PhyloNode*, PhyloNode*, NNIMove*)
+ERROR: 8   IQTree::evaluateNNIs(std::map<int, std::pair<Node*, Node*>, std::less<int>, std::allocator<std::pair<int const, std::pair<Node*, Node*> > > >&, std::vector<NNIMove, std::allocator<NNIMove> >&)
+ERROR: 9   IQTree::optimizeNNI(bool)
+ERROR: 10   IQTree::doNNISearch(bool)
+ERROR: 11   IQTree::initCandidateTreeSet(int, int)
+ERROR: 12   IQTree::doTreeSearch()
+ERROR: 13   runTreeReconstruction(Params&, IQTree*&)
+ERROR: 14   runPhyloAnalysis(Params&, Checkpoint*, IQTree*&, Alignment*&)
+ERROR: 15   runPhyloAnalysis(Params&, Checkpoint*)
+ERROR: 16   main()
+ERROR: 17   __libc_start_main()
+ERROR: 18   ()
+ERROR: 
+ERROR: *** IQ-TREE CRASHES WITH SIGNAL ABORTED
+ERROR: *** For bug report please send to developers:
+ERROR: ***    Log file: PCDH15_MF.log
+ERROR: ***    Alignment files (if possible)

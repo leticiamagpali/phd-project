@@ -1,0 +1,250 @@
+IQ-TREE 2.2.0-beta COVID-edition built Dec 21 2021
+
+Input file name: translated/OTOF_codon_aligned.translated.fasta
+Type of analysis: tree reconstruction
+Random seed number: 6983
+
+REFERENCES
+----------
+
+To cite IQ-TREE please use:
+
+Bui Quang Minh, Heiko A. Schmidt, Olga Chernomor, Dominik Schrempf,
+Michael D. Woodhams, Arndt von Haeseler, and Robert Lanfear (2020)
+IQ-TREE 2: New models and efficient methods for phylogenetic inference
+in the genomic era. Mol. Biol. Evol., in press.
+https://doi.org/10.1093/molbev/msaa015
+
+SEQUENCE ALIGNMENT
+------------------
+
+Input data: 89 sequences with 2000 amino-acid sites
+Number of constant sites: 1402 (= 70.1% of all sites)
+Number of invariant (constant or ambiguous constant) sites: 1402 (= 70.1% of all sites)
+Number of parsimony informative sites: 307
+Number of distinct site patterns: 1452
+
+SUBSTITUTION PROCESS
+--------------------
+
+Model of substitution: WAG+G4
+
+State frequencies: (model)
+
+Model of rate heterogeneity: Gamma with 4 categories
+Gamma shape alpha: 0.4047
+
+ Category  Relative_rate  Proportion
+  1         0.0174         0.2500
+  2         0.1853         0.2500
+  3         0.7364         0.2500
+  4         3.0609         0.2500
+Relative rates are computed as MEAN of the portion of the Gamma distribution falling in the category.
+
+MAXIMUM LIKELIHOOD TREE
+-----------------------
+
+Log-likelihood of the tree: -13815.6700 (s.e. 305.4227)
+Unconstrained log-likelihood (without tree): -14228.4053
+Number of free parameters (#branches + #model parameters): 176
+Akaike information criterion (AIC) score: 27983.3400
+Corrected Akaike information criterion (AICc) score: 28017.5166
+Bayesian information criterion (BIC) score: 28969.0988
+
+Total tree length (sum of branch lengths): 0.7432
+Sum of internal branch lengths: 0.2496 (33.5856% of tree length)
+
+WARNING: 33 near-zero internal branches (<0.0005) should be treated with caution
+         Such branches are denoted by '**' in the figure below
+
+NOTE: Tree is UNROOTED although outgroup taxon 'Bacu_OTOF' is drawn at root
+
++**Bacu_OTOF
+|
+|                                                                         +----Barn_OTOF
+|                                                                   +-----|
+|                                                                   |     +--Mhec_OTOF
+|                                                            +------|
+|                                                            |      +--Mper_OTOF
+|                                                         +**|
+|                                                         |  +**Mpni_OTOF
+|                                                      +**|
+|                                                      |  |                  +**Hamp_OTOF
+|                                                      |  |               +--|
+|                                                      |  |               |  +--Tshe_OTOF
+|                                                      |  |            +**|
+|                                                      |  |            |  +-------Mste_OTOF
+|                                                      |  |     +------|
+|                                                      |  |     |      +--Mbow_OTOF
+|                                                      |  |  +--|
+|                                                      |  |  |  +--Mcar_OTOF
+|                                                      |  +**|
+|                                                      |     +-----------------Mden_OTOF
+|                                                +-----|
+|                                                |     +--Mbid_OTOF
+|                                           +----|
+|                                           |    +----------------Mgin_OTOF
+|                                        +--|
+|                                        |  |     +--------Meur_OTOF
+|                                        |  |  +**|
+|                                        |  |  |  +---------------------Mmir_OTOF
+|                                        |  +**|
+|                                        |     +---MlayAUS_OTOF
+|                                     +--|
+|                                     |  +--------Bbai76728_OTOF
+|                                +----|
+|                                |    +---Zcav_OTOF
+|                        +-------|
+|                        |       +----------Ksim_OTOF
+|                     +--|
+|                     |  |                  +--------Ccom40_OTOF
+|                     |  |               +--|
+|                     |  |               |  +**Laus_OTOF
+|                     |  |            +--|
+|                     |  |            |  |                                +--Dcap108471_OTOF
+|                     |  |            |  |                             +--|
+|                     |  |            |  |                             |  +**Pele_OTOF
+|                     |  |            |  |                          +**|
+|                     |  |            |  |                          |  +--Lhos30470_OTOF
+|                     |  |            |  |                       +**|
+|                     |  |            |  |                       |  +**Scoe_OTOF
+|                     |  |            |  |                    +**|
+|                     |  |            |  |                    |  +--Fatt_OTOF
+|                     |  |            |  |                 +**|
+|                     |  |            |  |                 |  |  +--Ddeltrop4525_OTOF
+|                     |  |            |  |                 |  +**|
+|                     |  |            |  |                 |     |  +--Schi_OTOF
+|                     |  |            |  |                 |     +--|
+|                     |  |            |  |                 |        +**Sflu9837_OTOF
+|                     |  |            |  |              +**|
+|                     |  |            |  |              |  |     +**DdelSJR_OTOF
+|                     |  |            |  |              |  |  +**|
+|                     |  |            |  |              |  |  |  |  +--Pcra123188_OTOF
+|                     |  |            |  |              |  |  |  +**|
+|                     |  |            |  |              |  |  |     +**Satt18473_OTOF
+|                     |  |            |  |              |  +**|
+|                     |  |            |  |              |     +--Slon16012_OTOF
+|                     |  |            |  |           +**|
+|                     |  |            |  |           |  |        +**Ggri_OTOF
+|                     |  |            |  |           |  |     +**|
+|                     |  |            |  |           |  |     |  |  +--Lhos452_OTOF
+|                     |  |            |  |           |  |     |  +**|
+|                     |  |            |  |           |  |     |     +**Slon24923_OTOF
+|                     |  |            |  |           |  |  +**|
+|                     |  |            |  |           |  |  |  +--Sfro7784_OTOF
+|                     |  |            |  |           |  +**|
+|                     |  |            |  |           |     |  +--Gmac39091_OTOF
+|                     |  |            |  |           |     +--|
+|                     |  |            |  |           |        +**Gmel_OTOF
+|                     |  |            |  |        +--|
+|                     |  |            |  |        |  +--Ttru_OTOF
+|                     |  |            |  |     +**|
+|                     |  |            |  |     |  |  +--Lalb_OTOF
+|                     |  |            |  |     |  +--|
+|                     |  |            |  |     |     +--Oorc_OTOF
+|                     |  |            |  |  +**|
+|                     |  |            |  |  |  +**Lobl_OTOF
+|                     |  |            |  +**|
+|                     |  |            |     |                     +--Dcap79929_OTOF
+|                     |  |            |     |                  +**|
+|                     |  |            |     |                  |  +**Satt38219_OTOF
+|                     |  |            |     |               +**|
+|                     |  |            |     |               |  +**Tadu79924_OTOF
+|                     |  |            |     |            +--|
+|                     |  |            |     |            |  +--Sfro7782_OTOF
+|                     |  |            |     |         +**|
+|                     |  |            |     |         |  +**Lobs_OTOF
+|                     |  |            |     |  +------|
+|                     |  |            |     |  |      |     +--Obre_OTOF
+|                     |  |            |     |  |      |  +**|
+|                     |  |            |     |  |      |  |  +--Ohei_OTOF
+|                     |  |            |     |  |      +--|
+|                     |  |            |     |  |         |  +**Sbre116871_OTOF
+|                     |  |            |     |  |         +--|
+|                     |  |            |     |  |            +--Sbre18437_OTOF
+|                     |  |            |     +**|
+|                     |  |            |        |  +---------Lbor_OTOF
+|                     |  |            |        +--|
+|                     |  |            |           +**LperAUS_OTOF
+|                     |  |         +--|
+|                     |  |         |  |     +--Chea7320_OTOF
+|                     |  |         |  +-----|
+|                     |  |         |        |  +--Lacu_OTOF
+|                     |  |         |        +**|
+|                     |  |         |           +--Scly1726_OTOF
+|                     |  |      +--|
+|                     |  |      |  |     +--Dleu_OTOF
+|                     |  |      |  |  +--|
+|                     |  |      |  |  |  +--Mmon_OTOF
+|                     |  |      |  +--|
+|                     |  |      |     |              +**Naasi_OTOF
+|                     |  |      |     |           +**|
+|                     |  |      |     |           |  +----------------Ppho_OTOF
+|                     |  |      |     |        +**|
+|                     |  |      |     |        |  +**Pdio_OTOF
+|                     |  |      |     |     +**|
+|                     |  |      |     |     |  +--Pspi_OTOF
+|                     |  |      |     |  +--|
+|                     |  |      |     |  |  +**Psin_OTOF
+|                     |  |      |     +--|
+|                     |  |      |        +--Npho_OTOF
+|                     |  |   +--|
+|                     |  |   |  |  +--Igeo_OTOF
+|                     |  |   |  +--|
+|                     |  |   |     +----Pbla7349_OTOF
+|                     |  +---|
+|                     |      +------Lvex_OTOF
+|                 +---|
+|                 |   |  +-------------Kbre_OTOF
+|                 |   +--|
+|                 |      |    +**Pcat_OTOF
+|                 |      +----|
+|                 |           +---Pmac_OTOF
+|              +--|
+|              |  |                +--Btau_OTOF
+|              |  |             +--|
+|              |  |             |  +--Oari_OTOF
+|              |  |       +-----|
+|              |  |       |     +--Ovtex_OTOF
+|              |  |    +--|
+|              |  |    |  +---------Hippo_OTOF
+|              |  +----|
+|              |       +-------Sscr_OTOF
+|           +--|
+|           |  |  +--Bmys_OTOF
+|           |  +--|
+|           |     |  +--EausAUS_OTOF
+|           |     +--|
+|           |        |  +**Egla13086_OTOF
+|           |        +--|
+|           |           +**Ejap43864_OTOF
+|        +--|
+|        |  +----Cmar59905_OTOF
+|     +--|
+|     |  +--Erob133443_OTOF
+|  +--|
+|  |  |     +--Bbor_OTOF
+|  |  |  +--|
+|  |  |  |  |  +--Bede66737_OTOF
+|  |  |  |  +--|
+|  |  |  |     +-----BedeAUS_OTOF
+|  |  +**|
+|  |     |  +**Bphy_OTOF
+|  |     +--|
+|  |        +--Bphy_baits_OTOF
++--|
+|  +--Bmus_OTOF
+|
++--BbonAUS_OTOF
+
+Tree in newick format:
+
+(Bacu_OTOF:0.0000029371,((((((((((((((((((Barn_OTOF:0.0108603866,Mhec_OTOF:0.0051429023):0.0124215478,Mper_OTOF:0.0015082183):0.0135427469,Mpni_OTOF:0.0000020697):0.0000024950,(((((Hamp_OTOF:0.0000023502,Tshe_OTOF:0.0026420063):0.0012883060,Mste_OTOF:0.0162130151):0.0000023111,Mbow_OTOF:0.0028158154):0.0143320086,Mcar_OTOF:0.0008769888):0.0005796612,Mden_OTOF:0.0350096981):0.0000024592):0.0000029462,Mbid_OTOF:0.0008915646):0.0119734324,Mgin_OTOF:0.0320658724):0.0107836589,((Meur_OTOF:0.0177096241,Mmir_OTOF:0.0424168251):0.0000021098,MlayAUS_OTOF:0.0077058514):0.0000023966):0.0025712074,Bbai76728_OTOF:0.0170310869):0.0007452754,Zcav_OTOF:0.0083983295):0.0104673441,Ksim_OTOF:0.0219783863):0.0149798667,((((((Ccom40_OTOF:0.0171741752,Laus_OTOF:0.0000026220):0.0040393673,(((((((((((Dcap108471_OTOF:0.0023398787,Pele_OTOF:0.0000027709):0.0013629151,Lhos30470_OTOF:0.0012635495):0.0003677387,Scoe_OTOF:0.0000021058):0.0000026536,Fatt_OTOF:0.0025884519):0.0000024983,(Ddeltrop4525_OTOF:0.0013694454,(Schi_OTOF:0.0007121228,Sflu9837_OTOF:0.0000020500):0.0018637753):0.0000023572):0.0000022889,((DdelSJR_OTOF:0.0000029529,(Pcra123188_OTOF:0.0008019700,Satt18473_OTOF:0.0000029529):0.0000026640):0.0000026047,Slon16012_OTOF:0.0006870041):0.0000024604):0.0000020948,(((Ggri_OTOF:0.0000029529,(Lhos452_OTOF:0.0014760174,Slon24923_OTOF:0.0000029529):0.0000029749):0.0000028493,Sfro7784_OTOF:0.0014848716):0.0000020451,(Gmac39091_OTOF:0.0006578599,Gmel_OTOF:0.0000020035):0.0010217100):0.0000020002):0.0000020085,Ttru_OTOF:0.0005111492):0.0005110003,(Lalb_OTOF:0.0014936388,Oorc_OTOF:0.0019180232):0.0006385667):0.0000020667,Lobl_OTOF:0.0000020605):0.0000020084,((((((Dcap79929_OTOF:0.0014266443,Satt38219_OTOF:0.0000029529):0.0000025845,Tadu79924_OTOF:0.0000027198):0.0000027335,Sfro7782_OTOF:0.0007960529):0.0006567938,Lobs_OTOF:0.0000024345):0.0000021359,((Obre_OTOF:0.0007131384,Ohei_OTOF:0.0006661383):0.0000022238,(Sbre116871_OTOF:0.0000022668,Sbre18437_OTOF:0.0015498561):0.0006507391):0.0005830523):0.0142262440,(Lbor_OTOF:0.0202026829,LperAUS_OTOF:0.0000022768):0.0014523636):0.0000022690):0.0000029312):0.0013456623,(Chea7320_OTOF:0.0010547038,(Lacu_OTOF:0.0025015591,Scly1726_OTOF:0.0007076506):0.0000022739):0.0125091953):0.0027621433,((Dleu_OTOF:0.0005119662,Mmon_OTOF:0.0015322665):0.0041100094,(((((Naasi_OTOF:0.0004845366,Ppho_OTOF:0.0322724487):0.0000027298,Pdio_OTOF:0.0000029529):0.0000021354,Pspi_OTOF:0.0010610247):0.0000212563,Psin_OTOF:0.0000021516):0.0010232531,Npho_OTOF:0.0027809059):0.0020438488):0.0015407233):0.0035678621,(Igeo_OTOF:0.0039832241,Pbla7349_OTOF:0.0100491665):0.0042506274):0.0022280922,Lvex_OTOF:0.0145939964):0.0077930403):0.0023128262,(Kbre_OTOF:0.0267128635,(Pcat_OTOF:0.0000022595,Pmac_OTOF:0.0084149310):0.0102330056):0.0044169055):0.0075431588,((((Btau_OTOF:0.0062933550,Oari_OTOF:0.0054678000):0.0035563717,Ovtex_OTOF:0.0072744158):0.0114667703,Hippo_OTOF:0.0193375422):0.0016691632,Sscr_OTOF:0.0161602292):0.0109586519):0.0054052875,(Bmys_OTOF:0.0067119074,(EausAUS_OTOF:0.0010293683,(Egla13086_OTOF:0.0000021755,Ejap43864_OTOF:0.0000026393):0.0008465036):0.0009145362):0.0048086756):0.0006597640,Cmar59905_OTOF:0.0108855988):0.0038573815,Erob133443_OTOF:0.0041984774):0.0007653961,((Bbor_OTOF:0.0020750433,(Bede66737_OTOF:0.0008668769,BedeAUS_OTOF:0.0120377482):0.0068764849):0.0056706511,(Bphy_OTOF:0.0000028128,Bphy_baits_OTOF:0.0007960118):0.0023779539):0.0000025836):0.0010347568,Bmus_OTOF:0.0039183758):0.0007390825,BbonAUS_OTOF:0.0058482142);
+
+TIME STAMP
+----------
+
+Date and time: Wed Feb  7 00:14:51 2024
+Total CPU time used: 88743.3 seconds (24h:39m:3s)
+Total wall-clock time used: 23651 seconds (6h:34m:10s)
+

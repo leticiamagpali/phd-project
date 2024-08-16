@@ -1,0 +1,16 @@
+Entry	Entry name	Status	Protein names	Gene names	Organism	Length	Cross-reference (RefSeq)	Cross-reference (GeneID)	Annotation
+A0A2Y9T2K6	A0A2Y9T2K6_PHYMC	unreviewed	Exostosin-1 (EC 2.4.1.224) (EC 2.4.1.225)	EXT1	Physeter macrocephalus (Sperm whale) (Physeter catodon)	746	XP_023985196.1;		5 out of 5
+A0A2Y9Q038	A0A2Y9Q038_DELLE	unreviewed	transcriptional activator GLI3 isoform X1	GLI3	Delphinapterus leucas (Beluga whale)	1587	XP_022448758.1;		5 out of 5
+A0A2Y9FUN6	A0A2Y9FUN6_PHYMC	unreviewed	neurogenin-1	NEUROG1	Physeter macrocephalus (Sperm whale) (Physeter catodon)	244	XP_007130950.2;		4 out of 5
+A0A2Y9PCD4	A0A2Y9PCD4_DELLE	unreviewed	neurogenin-1	NEUROG1	Delphinapterus leucas (Beluga whale)	244	XP_022444564.1;		4 out of 5
+A0A4U1EVP5	A0A4U1EVP5_MONMO	unreviewed	Neurogenin 1	NEUROG1 EI555_014712	Monodon monoceros (Narwhal) (Ceratodon monodon)	244			4 out of 5
+A0A455B9U2	A0A455B9U2_PHYMC	unreviewed	contactin-associated protein-like 2	CNTNAP2	Physeter macrocephalus (Sperm whale) (Physeter catodon)	1331	XP_028345439.1;		3 out of 5
+A0A2Y9EVC6	A0A2Y9EVC6_PHYMC	unreviewed	Sushi repeat-containing protein SRPX2	SRPX2	Physeter macrocephalus (Sperm whale) (Physeter catodon)	465	XP_007109735.1;XP_007109735.1;XP_023985232.1;	102983911;	3 out of 5
+A0A2Y9NTW7	A0A2Y9NTW7_DELLE	unreviewed	Sushi repeat-containing protein SRPX2	SRPX2	Delphinapterus leucas (Beluga whale)	465	XP_022436416.1;		3 out of 5
+A0A2Y9F3J5	A0A2Y9F3J5_PHYMC	unreviewed	neuroligin-3 isoform X1	NLGN3	Physeter macrocephalus (Sperm whale) (Physeter catodon)	848	XP_007114509.1;	102978692;	3 out of 5
+A0A2Y9M4T8	A0A2Y9M4T8_DELLE	unreviewed	neuroligin-3 isoform X1	NLGN3	Delphinapterus leucas (Beluga whale)	848	XP_022416735.1;		3 out of 5
+A0A2Y9PH09	A0A2Y9PH09_DELLE	unreviewed	TRAF-interacting protein with FHA domain-containing protein B	TIFAB	Delphinapterus leucas (Beluga whale)	197	XP_022444561.1;		2 out of 5
+A0A2Y9NI27	A0A2Y9NI27_DELLE	unreviewed	BMP/retinoic acid-inducible neural-specific protein 1	BRINP1	Delphinapterus leucas (Beluga whale)	761	XP_022434609.1;		2 out of 5
+A0A2Y9SVJ7	A0A2Y9SVJ7_PHYMC	unreviewed	BMP/retinoic acid-inducible neural-specific protein 1	BRINP1	Physeter macrocephalus (Sperm whale) (Physeter catodon)	761	XP_007118681.1;XP_023982203.1;		2 out of 5
+A0A2Y9TDQ8	A0A2Y9TDQ8_PHYMC	unreviewed	SH3 and multiple ankyrin repeat domains protein 2	SHANK2	Physeter macrocephalus (Sperm whale) (Physeter catodon)	1849	XP_023989036.1;		2 out of 5
+A0A2Y9TFF4	A0A2Y9TFF4_PHYMC	unreviewed	neurexin-2-beta isoform X1	NRXN2	Physeter macrocephalus (Sperm whale) (Physeter catodon)	1710	XP_023989008.1;		2 out of 5

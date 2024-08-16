@@ -1,0 +1,353 @@
+IQ-TREE multicore version 2.2.0-beta COVID-edition for Linux 64-bit built Dec 21 2021 built Dec 21 2021
+Developed by Bui Quang Minh, James Barbetti, Nguyen Lam Tung,
+Olga Chernomor, Heiko Schmidt, Dominik Schrempf, Michael Woodhams, Ly Trong Nhan.
+
+Host:    awarnach (SSE3, 15 GB RAM)
+Command: iqtree -s codon_alignments_v3_Jan24/OTOF_codon_aligned.phy -st CODON -m TEST -pre OTOF_MF -nt 4
+Seed:    700525 (Using SPRNG - Scalable Parallel Random Number Generator)
+Time:    Tue Feb  6 11:45:30 2024
+Kernel:  SSE2 - 4 threads (4 CPU cores detected)
+
+Reading alignment file codon_alignments_v3_Jan24/OTOF_codon_aligned.phy ... Fasta format detected
+Reading fasta file: done in 0.0244393 secs using 92.13% CPU
+Alignment most likely contains DNA/RNA sequences
+Converting to codon sequences with genetic code  ...
+WARNING: Sequence Hamp_OTOF has ambiguous character C-- at site 4231
+WARNING: Sequence Hamp_OTOF has ambiguous character -TC at site 4366
+Constructing alignment: done in 0.0164593 secs using 135% CPU
+Alignment has 89 sequences with 2000 columns, 1826 distinct patterns
+716 parsimony-informative, 497 singleton sites, 787 constant sites
+                   Gap/Ambiguity  Composition  p-value
+Analyzing sequences: done in 0.00140899 secs using 99.57% CPU
+   1  Bacu_OTOF            0.00%    passed    100.00%
+   2  Barn_OTOF           66.50%    passed     75.75%
+   3  Bbai76728_OTOF      31.45%    passed    100.00%
+   4  BbonAUS_OTOF        33.70%    passed    100.00%
+   5  Bbor_OTOF           29.65%    passed    100.00%
+   6  Bede66737_OTOF      30.60%    passed    100.00%
+   7  BedeAUS_OTOF        34.30%    passed    100.00%
+   8  Bmus_OTOF            0.00%    passed    100.00%
+   9  Bmys_OTOF           18.30%    passed     89.98%
+  10  Bphy_OTOF            2.00%    passed    100.00%
+  11  Bphy_baits_OTOF     30.15%    passed    100.00%
+  12  Btau_OTOF            0.10%    passed     42.32%
+  13  Ccom40_OTOF         54.90%    passed     99.83%
+  14  Chea7320_OTOF       35.65%    passed    100.00%
+  15  Cmar59905_OTOF      21.70%    passed    100.00%
+  16  Dcap108471_OTOF     24.70%    passed    100.00%
+  17  Dcap79929_OTOF      30.20%    passed    100.00%
+  18  DdelSJR_OTOF        32.70%    passed    100.00%
+  19  Ddeltrop4525_OTOF   20.60%    passed    100.00%
+  20  Dleu_OTOF            0.00%    passed    100.00%
+  21  EausAUS_OTOF        43.70%    passed     99.96%
+  22  Egla13086_OTOF      27.05%    passed    100.00%
+  23  Ejap43864_OTOF      32.70%    passed    100.00%
+  24  Erob133443_OTOF     38.25%    passed    100.00%
+  25  Fatt_OTOF           35.80%    passed    100.00%
+  26  Ggri_OTOF           25.25%    passed    100.00%
+  27  Gmac39091_OTOF      21.85%    passed    100.00%
+  28  Gmel_OTOF            0.00%    passed    100.00%
+  29  Hamp_OTOF           22.90%    passed    100.00%
+  30  Hippo_OTOF           0.10%    passed     46.18%
+  31  Igeo_OTOF           30.50%    passed    100.00%
+  32  Kbre_OTOF           31.25%    passed    100.00%
+  33  Ksim_OTOF           32.80%    passed    100.00%
+  34  Lacu_OTOF           38.15%    passed    100.00%
+  35  Lalb_OTOF           30.10%    passed    100.00%
+  36  Laus_OTOF           29.10%    passed    100.00%
+  37  Lbor_OTOF           55.10%    passed    100.00%
+  38  Lhos30470_OTOF      24.00%    passed    100.00%
+  39  Lhos452_OTOF        28.70%    passed    100.00%
+  40  Lobl_OTOF            0.00%    passed    100.00%
+  41  Lobs_OTOF           32.80%    passed    100.00%
+  42  LperAUS_OTOF        34.85%    passed    100.00%
+  43  Lvex_OTOF            0.50%    passed    100.00%
+  44  Mbid_OTOF           38.80%    passed    100.00%
+  45  Mbow_OTOF           26.95%    passed    100.00%
+  46  Mcar_OTOF           39.35%    passed     99.98%
+  47  Mden_OTOF           51.60%    passed     99.75%
+  48  Meur_OTOF           36.20%    passed    100.00%
+  49  Mgin_OTOF           34.45%    passed    100.00%
+  50  Mhec_OTOF           51.80%    passed     99.76%
+  51  MlayAUS_OTOF        40.65%    passed    100.00%
+  52  Mmir_OTOF           54.20%    passed    100.00%
+  53  Mmon_OTOF            0.00%    passed    100.00%
+  54  Mper_OTOF           31.30%    passed    100.00%
+  55  Mpni_OTOF           43.75%    passed    100.00%
+  56  Mste_OTOF           22.35%    passed    100.00%
+  57  Naasi_OTOF           0.00%    passed    100.00%
+  58  Npho_OTOF            7.50%    passed    100.00%
+  59  Oari_OTOF            0.10%    passed      8.13%
+  60  Obre_OTOF           25.95%    passed    100.00%
+  61  Ohei_OTOF           23.20%    passed    100.00%
+  62  Oorc_OTOF            0.10%    passed    100.00%
+  63  Ovtex_OTOF           0.10%    passed     48.73%
+  64  Pbla7349_OTOF       29.00%    passed     85.53%
+  65  Pcra123188_OTOF     31.80%    passed    100.00%
+  66  Pdio_OTOF           31.30%    passed    100.00%
+  67  Pele_OTOF           26.55%    passed    100.00%
+  68  Pcat_OTOF            0.00%    passed    100.00%
+  69  Pmac_OTOF           43.20%    passed     99.30%
+  70  Ppho_OTOF           32.60%    passed    100.00%
+  71  Psin_OTOF            0.00%    passed    100.00%
+  72  Pspi_OTOF           49.55%    passed    100.00%
+  73  Satt18473_OTOF      29.85%    passed    100.00%
+  74  Satt38219_OTOF      54.80%    passed    100.00%
+  75  Sbre116871_OTOF     22.95%    passed    100.00%
+  76  Sbre18437_OTOF      31.00%    passed    100.00%
+  77  Schi_OTOF           26.90%    passed    100.00%
+  78  Scly1726_OTOF       23.75%    passed    100.00%
+  79  Scoe_OTOF           29.45%    passed    100.00%
+  80  Sflu9837_OTOF       30.55%    passed    100.00%
+  81  Sfro7782_OTOF       32.90%    passed    100.00%
+  82  Sfro7784_OTOF       27.85%    passed    100.00%
+  83  Slon16012_OTOF      22.55%    passed    100.00%
+  84  Slon24923_OTOF      30.10%    passed    100.00%
+  85  Sscr_OTOF            1.15%    passed     92.23%
+  86  Tadu79924_OTOF      47.00%    passed    100.00%
+  87  Tshe_OTOF           37.85%    passed     99.99%
+  88  Ttru_OTOF            0.00%    passed    100.00%
+  89  Zcav_OTOF           35.95%    passed     99.98%
+WARNING: 7 sequences contain more than 50% gaps/ambiguity
+****  TOTAL               26.62%  0 sequences failed composition chi2 test (p-value<5%; df=60)
+Checking for duplicate sequences: done in 0.00290101 secs using 420.4% CPU
+
+Creating fast initial parsimony tree by random order stepwise addition...
+0.173 seconds, parsimony score: 2678 (based on 1213 sites)
+Perform fast likelihood tree search using GY+F3X4+I+G model...
+Estimate model parameters (epsilon = 5.000)
+Perform nearest neighbor interchange...
+Optimizing NNI: done in 48.4565 secs using 366.5% CPU
+Estimate model parameters (epsilon = 1.000)
+1. Initial log-likelihood: -28107.033
+2. Current log-likelihood: -28103.883
+3. Current log-likelihood: -28101.480
+4. Current log-likelihood: -28099.617
+5. Current log-likelihood: -28098.151
+6. Current log-likelihood: -28096.987
+Optimal log-likelihood: -28096.055
+Nonsynonymous/synonymous ratio (omega): 0.122
+Transition/transversion ratio (kappa): 3.167
+Proportion of invariable sites: 0.012
+Gamma shape alpha: 0.668
+Parameters optimization took 6 rounds (394.101 sec)
+Time for fast ML tree search: 1044.905 seconds
+
+NOTE: ModelFinder requires 314 MB RAM!
+ModelFinder will test up to 60 codon models (sample size: 2000) ...
+ No. Model         -LnL         df  AIC          AICc         BIC
+  1  GY+F3X4       28268.038    186 56908.076    56946.446    57949.844
+  2  GY+F3X4+I     27917.764    187 56209.529    56248.332    57256.898
+  3  GY+F3X4+G4    27573.316    187 55520.631    55559.435    56568.000
+  4  GY+F3X4+I+G4  27571.424    188 55518.848    55558.089    56571.818
+  7  GY+F1X4+G4    27882.689    181 56127.378    56163.618    57141.141
+  8  GY+F1X4+I+G4  27879.953    182 56123.907    56160.567    57143.271
+ 11  GY+F+G4       27409.372    238 55294.744    55359.346    56627.759
+ 12  GY+F+I+G4     27407.648    239 55293.295    55358.477    56631.911
+ 15  MGK+F3X4+G4   27363.629    187 55101.258    55140.062    56148.627
+ 16  MGK+F3X4+I+G4 27362.778    188 55101.555    55140.795    56154.525
+ 19  MGK+F1X4+G4   27821.685    181 56005.369    56041.609    57019.133
+ 20  MGK+F1X4+I+G4 27820.568    182 56005.135    56041.795    57024.499
+ 23  MG+F3X4+G4    27363.629    186 55099.258    55137.628    56141.026
+ 24  MG+F3X4+I+G4  27362.778    187 55099.555    55138.359    56146.924
+ 27  MG+F1X4+G4    27844.573    180 56049.146    56084.968    57057.308
+ 28  MG+F1X4+I+G4  27843.474    181 56048.949    56085.189    57062.712
+ 31  KOSI07+F3X4+G4 26918.972    185 54207.944    54245.882    55244.111
+ 32  KOSI07+F3X4+I+G4 26918.594    186 54209.188    54247.558    55250.956
+ 35  KOSI07+F1X4+G4 27710.348    179 55778.695    55814.102    56781.257
+ 36  KOSI07+F1X4+I+G4 27705.079    180 55770.158    55805.980    56778.321
+ 39  KOSI07+F+G4   26653.787    236 53779.575    53843.026    55101.388
+ 40  KOSI07+F+I+G4 26654.110    237 53782.220    53846.245    55109.634
+ 43  KOSI07+FU+G4  27585.700    176 55523.401    55557.577    56509.160
+ 44  KOSI07+FU+I+G4 27585.836    177 55525.671    55560.255    56517.031
+ 47  SCHN05+F3X4+G4 27132.089    185 54634.177    54672.115    55670.344
+ 48  SCHN05+F3X4+I+G4 27130.372    186 54632.745    54671.114    55674.513
+ 51  SCHN05+F1X4+G4 28201.511    179 56761.022    56796.429    57763.584
+ 52  SCHN05+F1X4+I+G4 28195.461    180 56750.921    56786.743    57759.084
+ 55  SCHN05+F+G4   26764.398    236 54000.796    54064.247    55322.609
+ 56  SCHN05+F+I+G4 26764.038    237 54002.076    54066.101    55329.490
+ 59  SCHN05+FU+G4  27855.976    176 56063.953    56098.130    57049.712
+ 60  SCHN05+FU+I+G4 27856.205    177 56066.410    56100.994    57057.770
+Akaike Information Criterion:           KOSI07+F+G4
+Corrected Akaike Information Criterion: KOSI07+F+G4
+Bayesian Information Criterion:         KOSI07+F+G4
+Best-fit model: KOSI07+F+G4 chosen according to BIC
+
+All model information printed to OTOF_MF.model.gz
+CPU time for ModelFinder: 26836.444 seconds (7h:27m:16s)
+Wall-clock time for ModelFinder: 7395.389 seconds (2h:3m:15s)
+WARNING: States(s) TTA rarely appear in alignment and may cause numerical problems
+
+NOTE: 314 MB RAM (0 GB) is required!
+Estimate model parameters (epsilon = 0.100)
+1. Initial log-likelihood: -26653.787
+Optimal log-likelihood: -26653.787
+Nonsynonymous/synonymous ratio (omega): 0.166
+Transition/transversion ratio (kappa): 3.559
+Gamma shape alpha: 0.940
+Parameters optimization took 1 rounds (36.794 sec)
+Wrote distance file to... 
+Computing ML distances based on estimated model parameters...
+Calculating distance matrix: done in 31.8906 secs using 382.6% CPU
+Computing ML distances took 31.893214 sec (of wall-clock time) 122.023270 sec (of CPU time)
+Setting up auxiliary I and S matrices: done in 0.00255533 secs using 66.68% CPU
+Constructing RapidNJ tree: done in 0.227309 secs using 65.44% CPU
+Computing RapidNJ tree took 0.230926 sec (of wall-clock time) 0.150549 sec (of CPU time)
+Log-likelihood of RapidNJ tree: -27249.776
+--------------------------------------------------------------------
+|             INITIALIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+Generating 98 parsimony trees... 5.252 second
+Computing log-likelihood of 98 initial trees ... 1278.870 seconds
+Current best score: -26653.787
+
+Do NNI search on 20 best initial trees
+Optimizing NNI: done in 48.2467 secs using 365.6% CPU
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 1: -26653.787
+Optimizing NNI: done in 47.3944 secs using 365.4% CPU
+Optimizing NNI: done in 47.5507 secs using 364.1% CPU
+Optimizing NNI: done in 62.2703 secs using 364.2% CPU
+Optimizing NNI: done in 62.8977 secs using 364% CPU
+Optimizing NNI: done in 48.9804 secs using 365.6% CPU
+Optimizing NNI: done in 75.1641 secs using 363.7% CPU
+Optimizing NNI: done in 48.1764 secs using 365.9% CPU
+Optimizing NNI: done in 48.8077 secs using 365% CPU
+Optimizing NNI: done in 46.3599 secs using 365.5% CPU
+Iteration 10 / LogL: -26904.069 / Time: 0h:32m:38s
+Optimizing NNI: done in 47.7577 secs using 365.2% CPU
+Optimizing NNI: done in 47.8156 secs using 365.7% CPU
+Optimizing NNI: done in 45.8483 secs using 365.6% CPU
+Optimizing NNI: done in 64.1493 secs using 363.2% CPU
+Optimizing NNI: done in 49.3318 secs using 365.2% CPU
+Optimizing NNI: done in 48.7709 secs using 364.5% CPU
+Optimizing NNI: done in 48.6008 secs using 366% CPU
+Optimizing NNI: done in 46.136 secs using 365.8% CPU
+Optimizing NNI: done in 47.4136 secs using 365% CPU
+Optimizing NNI: done in 47.2382 secs using 365.4% CPU
+Iteration 20 / LogL: -26943.521 / Time: 0h:41m:14s
+Finish initializing candidate tree set (20)
+Current best tree score: -26653.787 / CPU time: 2392.168
+Number of iterations: 20
+--------------------------------------------------------------------
+|               OPTIMIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+Optimizing NNI: done in 104.084 secs using 364.4% CPU
+Optimizing NNI: done in 101.063 secs using 363.6% CPU
+Optimizing NNI: done in 109.391 secs using 363.8% CPU
+Optimizing NNI: done in 109.426 secs using 364.5% CPU
+Optimizing NNI: done in 93.2167 secs using 363.5% CPU
+Optimizing NNI: done in 144.44 secs using 363% CPU
+Optimizing NNI: done in 128.539 secs using 363.7% CPU
+Optimizing NNI: done in 71.8907 secs using 365.9% CPU
+Optimizing NNI: done in 142.214 secs using 363.3% CPU
+Optimizing NNI: done in 152.347 secs using 363.9% CPU
+Iteration 30 / LogL: -28403.992 / Time: 1h:0m:52s (2h:29m:2s left)
+Optimizing NNI: done in 163.974 secs using 364% CPU
+Optimizing NNI: done in 108.22 secs using 363.9% CPU
+Optimizing NNI: done in 115.885 secs using 364.6% CPU
+Optimizing NNI: done in 125.978 secs using 364.2% CPU
+Optimizing NNI: done in 117.192 secs using 364.8% CPU
+Optimizing NNI: done in 76.9838 secs using 363.3% CPU
+Optimizing NNI: done in 109.134 secs using 364.1% CPU
+Optimizing NNI: done in 181.433 secs using 364.8% CPU
+Optimizing NNI: done in 82.7562 secs using 364.9% CPU
+Optimizing NNI: done in 128.224 secs using 362.6% CPU
+Iteration 40 / LogL: -27975.604 / Time: 1h:21m:24s (2h:7m:19s left)
+Optimizing NNI: done in 144.648 secs using 363.9% CPU
+Optimizing NNI: done in 125.651 secs using 364.9% CPU
+Optimizing NNI: done in 75.0016 secs using 364.4% CPU
+Optimizing NNI: done in 94.0166 secs using 363.6% CPU
+Optimizing NNI: done in 118.171 secs using 364.4% CPU
+Optimizing NNI: done in 95.2125 secs using 364.3% CPU
+Optimizing NNI: done in 124.911 secs using 364.8% CPU
+Optimizing NNI: done in 109.309 secs using 363.5% CPU
+Optimizing NNI: done in 159.387 secs using 365.1% CPU
+Optimizing NNI: done in 87.6376 secs using 364.1% CPU
+Iteration 50 / LogL: -28092.660 / Time: 1h:40m:40s (1h:44m:46s left)
+Optimizing NNI: done in 138.721 secs using 365% CPU
+Optimizing NNI: done in 79.5873 secs using 364.2% CPU
+Optimizing NNI: done in 146.852 secs using 362.9% CPU
+Optimizing NNI: done in 83.0413 secs using 363.9% CPU
+Optimizing NNI: done in 77.4421 secs using 363.9% CPU
+Optimizing NNI: done in 100.35 secs using 363.9% CPU
+Optimizing NNI: done in 83.5772 secs using 364.3% CPU
+Optimizing NNI: done in 110.743 secs using 364.4% CPU
+Optimizing NNI: done in 111.011 secs using 364.1% CPU
+Optimizing NNI: done in 132.456 secs using 363.4% CPU
+Iteration 60 / LogL: -27751.385 / Time: 1h:58m:46s (1h:22m:32s left)
+Optimizing NNI: done in 104.312 secs using 364.3% CPU
+Optimizing NNI: done in 115.458 secs using 364.2% CPU
+Optimizing NNI: done in 124.552 secs using 362.9% CPU
+Optimizing NNI: done in 103.974 secs using 363.4% CPU
+Optimizing NNI: done in 181.312 secs using 362.8% CPU
+Optimizing NNI: done in 160.312 secs using 362.8% CPU
+Optimizing NNI: done in 105.218 secs using 363.4% CPU
+Optimizing NNI: done in 79.5783 secs using 364.4% CPU
+Optimizing NNI: done in 129.736 secs using 363.6% CPU
+Optimizing NNI: done in 128.382 secs using 363% CPU
+Iteration 70 / LogL: -28012.360 / Time: 2h:19m:41s (1h:2m:45s left)
+Optimizing NNI: done in 67.9595 secs using 363% CPU
+Optimizing NNI: done in 124.574 secs using 363.2% CPU
+Optimizing NNI: done in 120.566 secs using 363.5% CPU
+Optimizing NNI: done in 70.9536 secs using 364.3% CPU
+Optimizing NNI: done in 112.951 secs using 362.9% CPU
+Optimizing NNI: done in 117.383 secs using 362.4% CPU
+Optimizing NNI: done in 130.258 secs using 362.6% CPU
+Optimizing NNI: done in 124.295 secs using 364.3% CPU
+Optimizing NNI: done in 129.805 secs using 362.9% CPU
+Optimizing NNI: done in 109.497 secs using 364.3% CPU
+Iteration 80 / LogL: -27094.752 / Time: 2h:38m:31s (0h:42m:8s left)
+Optimizing NNI: done in 125.586 secs using 364% CPU
+Optimizing NNI: done in 116.039 secs using 364.5% CPU
+Optimizing NNI: done in 88.8906 secs using 364.1% CPU
+Optimizing NNI: done in 125.6 secs using 364.5% CPU
+Optimizing NNI: done in 129.425 secs using 363.7% CPU
+Optimizing NNI: done in 108.631 secs using 363.8% CPU
+Optimizing NNI: done in 119.613 secs using 364.2% CPU
+Optimizing NNI: done in 111.538 secs using 364.4% CPU
+Optimizing NNI: done in 140.428 secs using 363.9% CPU
+Optimizing NNI: done in 98.8248 secs using 363.7% CPU
+Iteration 90 / LogL: -28262.199 / Time: 2h:58m:18s (0h:22m:2s left)
+Optimizing NNI: done in 167.811 secs using 365.1% CPU
+Optimizing NNI: done in 92.2847 secs using 364.2% CPU
+Optimizing NNI: done in 114.295 secs using 364.4% CPU
+Optimizing NNI: done in 102.739 secs using 363.2% CPU
+Optimizing NNI: done in 200.995 secs using 364.6% CPU
+Optimizing NNI: done in 197.4 secs using 276.4% CPU
+Optimizing NNI: done in 120.958 secs using 263.4% CPU
+Optimizing NNI: done in 152.15 secs using 346.8% CPU
+Optimizing NNI: done in 115.73 secs using 364.4% CPU
+Optimizing NNI: done in 126.297 secs using 364.1% CPU
+Iteration 100 / LogL: -27603.928 / Time: 3h:21m:52s (0h:2m:2s left)
+Optimizing NNI: done in 73.6244 secs using 365% CPU
+Optimizing NNI: done in 87.0188 secs using 364.6% CPU
+TREE SEARCH COMPLETED AFTER 102 ITERATIONS / Time: 3h:24m:37s
+
+--------------------------------------------------------------------
+|                    FINALIZING TREE SEARCH                        |
+--------------------------------------------------------------------
+Performs final model parameters optimization
+Estimate model parameters (epsilon = 0.010)
+1. Initial log-likelihood: -26653.787
+Optimal log-likelihood: -26653.787
+Nonsynonymous/synonymous ratio (omega): 0.166
+Transition/transversion ratio (kappa): 3.559
+Gamma shape alpha: 0.940
+Parameters optimization took 1 rounds (36.860 sec)
+BEST SCORE FOUND : -26653.787
+Total tree length: 2.209
+
+Total number of iterations: 102
+CPU time used for tree search: 44020.801 sec (12h:13m:40s)
+Wall-clock time used for tree search: 12195.533 sec (3h:23m:15s)
+Total CPU time used: 44455.137 sec (12h:20m:55s)
+Total wall-clock time used: 12314.417 sec (3h:25m:14s)
+
+Analysis results written to: 
+  IQ-TREE report:                OTOF_MF.iqtree
+  Maximum-likelihood tree:       OTOF_MF.treefile
+  Likelihood distances:          OTOF_MF.mldist
+  Screen log file:               OTOF_MF.log
+
+Date and Time: Tue Feb  6 17:14:00 2024

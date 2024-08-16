@@ -1,0 +1,475 @@
+## Installing packages
+
+```{r}
+library(ggplot2)
+library(dplyr)
+library(MASS)
+library(mvnormtest)
+library(tidyr)
+```
+
+# Analyses with non-transformed values #########
+# ##############################################
+
+## Observing and exploring dataset
+
+```{r}
+
+# Loading in data
+echo <- read.csv("acoustic_features/acoustic_features - Echo.csv")
+# echo1 <- read.csv("Acoustic parameters - Selection1.csv")
+echo2 <- read.csv("acoustic_features/acoustic_features - echo_selection2.csv")
+# echo3 <- read.csv("Acoustic parameters - Selection3.csv")
+
+summary(echo)
+
+attach(echo)
+
+# Exploratory plot to identify potentially colinear variables
+plot(echo)
+
+# Convert to numeric
+echo$ICI <- as.numeric(echo$ICI)
+
+# Log transformation
+echo_numeric_columns <- data.frame(echo[3:14])
+echo_log_columns <- log(echo_numeric_columns)
+echo_log <- cbind(echo[1:2], echo_log_columns)
+
+```
+
+## Exploratory plots
+
+```{r}
+
+environment <- c("turquoise3", "purple", "seagreen4", "salmon2","orangered2")[as.factor(Environment)]
+
+# Centroid frequency by peak frequency
+plot(Fc~Fp, col = alpha(environment, 0.6),
+     cex = 1.5, pch = 19, xlab = "Peak frequency", ylab = "Centroid Frequency", 
+     main = "Scatterplot of echolocation frequency")
+
+legend("bottomright", 1, pch = 19, legend = c("Riverine", "Coastal","Oceanic", "Polar", "Mixed")[unique(as.numeric(factor(Environment)))], col = c("turquoise3", "purple", "seagreen4", "salmon2","orangered2")[unique(as.numeric(factor(Environment)))])
+
+
+
+# Centroid frequency by SLRMS
+plot(echo$Fc~echo$SLRMS, col = alpha(environment, 0.6),
+     cex = 1.5, pch = 19, xlab = "Peak frequency", ylab = "Centroid Frequency")
+
+
+
+# Centroid frequency by peak to peak source level
+plot(echo$Fc~echo$SLpp,  col = alpha(environment, 0.6),
+     cex = 1.5, pch = 19, xlab = "Centroid frequency", ylab = "Peak to peak source level")
+
+
+
+# Peak to peak source by SLRMS
+plot(echo$SLpp~echo$SLRMS, col = alpha(environment, 0.6),
+     cex = 1.5, pch = 19, xlab = "RMS source level", ylab = "Peak to peak source level")
+
+
+# Box plotting variables by environment
+boxplot(Fc~Environment, col = "lavender", border = "purple", ylab = "Centroid Frequency")
+boxplot(Fp~Environment, col = "lavender", border = "purple", ylab = "Peak Frequency")
+boxplot(SLpp~Environment, col = "lavender", border = "purple", ylab = "Peak to peak source levels")
+boxplot(SLEFD~Environment)
+boxplot(SLRMS~Environment)
+boxplot(Duration~Environment)
+boxplot(ICI~Environment)
+boxplot(BWRMS~Environment)
+
+```
+
+## MANOVA
+
+```{r}
+
+# Source levels
+sl <- echo[, 1:5] %>% drop_na()
+mano_echo <- manova(cbind(SLpp, SLRMS, SLEFD) ~ Environment, data = sl)
+summary(mano_echo, test = "Wilks")
+
+# Frequency
+freq <- dplyr::select(echo, c(Species, Environment, Fc, Fp)) %>% drop_na()
+mano_echo2 <- manova(cbind(Fc, Fp) ~ Environment, data = freq)
+summary(mano_echo2, test = "Wilks")
+
+# Frequency + Source levels peak to peak
+freq_sl <- dplyr::select(echo, c(Species, SLpp, Environment, Fc, Fp)) %>% drop_na()
+mano_echo3 <- manova(cbind(SLpp, Fc, Fp) ~ Environment, data = freq_sl)
+summary(mano_echo3, test = "Wilks") 
+
+# Bandwidth
+band <- dplyr::select(echo, c(Species, Environment, BW3dB, BWRMS, QRMS)) %>% drop_na()
+mano_echo4 <- manova(cbind(BW3dB, BWRMS, QRMS) ~ Environment, data = band)
+summary(mano_echo4, test = "Wilks") 
+
+# Duration/ICI
+dur <- dplyr::select(echo, c(Species, Environment, Duration, ICI)) %>% drop_na()
+mano_echo5 <- manova(cbind(Duration, ICI) ~ Environment, data = dur)
+summary(mano_echo5, test = "Wilks")
+
+# All factors combined:
+echo_all <- dplyr::select(echo, c(Species, Environment, SLpp, Fc, Fp, BWRMS)) %>% drop_na()
+mano_echo6 <- manova(cbind(SLpp, Fc, Fp, BWRMS) ~ Environment, data = echo_all)
+summary(mano_echo6, test = "Wilks")
+
+
+# Checking MANOVA assumptions
+
+# Normality
+mshapiro.test(t(mano_echo$residuals))
+mshapiro.test(t(mano_echo2$residuals)) 
+mshapiro.test(t(mano_echo3$residuals)) 
+mshapiro.test(t(mano_echo4$residuals))
+mshapiro.test(t(mano_echo5$residuals))
+mshapiro.test(t(mano_echo6$residuals))
+
+# Remove NHBF species?? Because they are a different case
+```
+
+## LDA or Canonical Variate Analysis -- model 1
+
+```{r}
+
+attach(freq_sl)
+
+# Setting up color schemes
+environment_lda <- c("turquoise3", "purple", "goldenrod1", "indianred3","lightsalmon")[as.factor(Environment)]
+
+lda_echo <- lda(Environment ~ Fc + Fp + SLpp, data = freq_sl)
+summary(lda_echo)
+
+# Calculating discriminant scores:
+
+lscore_echo <- cbind(Fc, Fp, SLpp)%*%lda_echo$scaling 
+
+#Plotting each measurement score against the Species variable 
+plot(x = lscore_echo[,1],lscore_echo[,2],
+     col = alpha(environment_lda, 0.5),
+     pch = 19, 
+     cex = 1.5,
+     xlab = "1st canonical variate",
+     ylab = "2nd canonical variate",
+     asp = 1,
+     main = "Discriminant analysis")
+
+legend("topright", 1, pch = 19, 
+       legend = c("Riverine", "Coastal","Oceanic", "Polar", "Mixed")
+       [unique(as.factor(Environment))], col = unique(environment_lda))
+
+#Plotting with ggplot - for later
+# ggplot(lscore_echo, aes(x = lscore_echo[,1], y = lscore_echo[,2])) +
+#   geom_point()
+
+```
+
+
+## LDA or Canonical Variate Analysis -- model 2
+
+```{r}
+
+attach(echo_all)
+
+# Setting up color schemes
+environment_lda2 <- c("turquoise3", "purple", "goldenrod1", "indianred3","lightsalmon")[as.factor(Environment)]
+
+lda_echo2 <- lda(Environment ~ SLpp + Fc + Fp + BWRMS, data = echo_all)
+lda_echo2
+
+# Calculating discriminant scores:
+
+lscore_echo2 <- cbind(Fc, Fp, SLpp, BWRMS)%*%lda_echo2$scaling 
+
+#Plotting each measurement score against the Species variable 
+plot(x = lscore_echo2[,1],lscore_echo2[,2],
+     col = alpha(environment_lda2, 0.5),
+     pch = 19, 
+     cex = 1.5,
+     xlab = "1st canonical variate",
+     ylab = "2nd canonical variate",
+     asp = 1,
+     main = "Discriminant analysis")
+
+legend("topleft", 1, pch = 19, legend = c("Riverine", "Coastal","Oceanic", "Polar", "Mixed")
+       [unique(as.factor(Environment))], col = unique(environment_lda2))
+
+```
+
+
+## PCA analysis  
+
+```{r}
+
+attach(echo2)
+
+environment_pca <- c("turquoise3", "purple", "goldenrod1", "indianred3","lightsalmon")[as.factor(Environment)]
+
+echo_PCA <- princomp(echo2[, 3:11], cor = TRUE, scores = TRUE)
+summary(echo_PCA)
+
+biplot(echo_PCA)
+
+plot(echo_PCA$scores[,1], echo_PCA$scores[,2],
+     col = alpha(environment_pca, 0.6),
+     cex = 1.5, pch = 19)
+
+plot(echo_PCA$scores[,2], echo_PCA$scores[,3],
+     col = alpha(environment_pca, 0.6),
+     cex = 1.5, pch = 19)
+
+#Varimax rotation for PCs 1 and 2
+echo.var <- varimax(echo_PCA$loadings[,1:2])
+echo.vscores <- echo_PCA$scores[,1:2]%*%echo.var$rotmat  
+echo.vscores.df <- data.frame(echo.vscores[,1:2])
+
+#Plotting varimax scores 
+plot(echo.vscores[,1], echo.vscores[,2],
+     pch = 19,
+     asp = 1,
+     cex = 1.5,
+     xlab = "1st varimax component",
+     ylab = "2nd varimax component", 
+     main = "Varimax scores plot",
+     col = alpha(environment_pca, 0.6))
+
+legend("topleft", 1, pch = 19, legend = c("Riverine", "Coastal","Oceanic", "Polar", "Mixed")
+       [unique(as.factor(Environment))], col = unique(environment_pca))
+
+#Adding loadings and names of the variables to each arrow that shows the loading
+arrows(4,0,echo.var$loadings[,1],echo.var$loadings[,2],col="grey", length = 0.1)
+text(echo.var$loadings[,1], echo.var$loadings[,2], names(echo2[, 3:11]), cex = 0.6, col = "grey")
+
+
+
+#Varimax rotation for PCs 2 and 3
+echo.var2 <- varimax(echo_PCA$loadings[,2:3])
+echo.vscores2 <- echo_PCA$scores[,2:3]%*%echo.var$rotmat  
+echo.vscores.df2 <- data.frame(echo.vscores[,1:2]) #this is for ggplot
+
+#Plotting varimax scores 
+plot(echo.vscores2[,1], echo.vscores2[,2],
+     pch = 19,
+     asp = 1,
+     cex = 1.5,
+     xlab = "1st varimax component",
+     ylab = "2nd varimax component", 
+     main = "Varimax scores plot",
+     col = alpha(environment_pca, 0.6))
+
+legend("topright", 1, pch = 19, legend = c("Riverine", "Coastal","Oceanic", "Polar", "Mixed")
+       [unique(as.factor(environment_pca))], col = unique(environment_pca))
+
+#Adding loadings and names of the variables to each arrow that shows the loading
+arrows(2,1,echo.var2$loadings[,1],echo.var2$loadings[,2],col="black", length = 0.1)
+
+
+
+# Visualizing results with ggplot:
+
+ggplot(echo.vscores.df, aes(X1, X2)) +
+  geom_point(aes(color = environment_pca)) +
+  xlab("1st varimax component") + ylab("2nd varimax component")
+
+```
+
+# Analyses with log-transformed values #########
+# ##############################################
+
+```{r}
+attach(echo_log)
+```
+
+## Exploratory plots
+
+```{r}
+
+environment <- c("turquoise3", "purple", "seagreen4", "salmon2","orangered2")[as.factor(Environment)]
+
+# Centroid frequency by peak frequency
+plot(Fc~Fp, col = alpha(environment, 0.6),
+     cex = 1.5, pch = 19, xlab = "Peak frequency", ylab = "Centroid Frequency", 
+     main = "Scatterplot of echolocation frequency")
+
+legend("bottomright", 1, pch = 19, legend = c("Riverine", "Coastal","Oceanic", "Polar", "Mixed")[unique(as.numeric(factor(Environment)))], col = c("turquoise3", "purple", "seagreen4", "salmon2","orangered2")[unique(as.numeric(factor(Environment)))])
+
+
+
+# Centroid frequency by SLRMS
+plot(echo$Fc~echo$SLRMS, col = alpha(environment, 0.6),
+     cex = 1.5, pch = 19, xlab = "Peak frequency", ylab = "Centroid Frequency")
+
+
+
+# Centroid frequency by peak to peak source level
+plot(echo$Fc~echo$SLpp,  col = alpha(environment, 0.6),
+     cex = 1.5, pch = 19, xlab = "Centroid frequency", ylab = "Peak to peak source level")
+
+
+
+# Peak to peak source by SLRMS
+plot(echo$SLpp~echo$SLRMS, col = alpha(environment, 0.6),
+     cex = 1.5, pch = 19, xlab = "RMS source level", ylab = "Peak to peak source level")
+
+
+# Box plotting variables by environment
+boxplot(Fc~Environment, col = "lavender", border = "purple", ylab = "Centroid Frequency")
+boxplot(Fp~Environment, col = "lavender", border = "purple", ylab = "Peak Frequency")
+boxplot(SLpp~Environment, col = "lavender", border = "purple", ylab = "Peak to peak source levels")
+boxplot(SLEFD~Environment)
+boxplot(SLRMS~Environment)
+boxplot(Duration~Environment)
+boxplot(ICI~Environment)
+boxplot(BWRMS~Environment)
+
+```
+
+## MANOVA
+
+```{r}
+
+# Source levels
+sl_log <- echo_log[, 1:5] %>% drop_na()
+mano_echolog_sl <- manova(cbind(SLpp, SLRMS, SLEFD) ~ Environment, data = sl_log)
+summary(mano_echolog_sl, test = "Wilks")
+
+# Frequency
+freq_log <- dplyr::select(echo_log, c(Species, Environment, Fc, Fp)) %>% drop_na()
+mano_echolog_freq <- manova(cbind(Fc, Fp) ~ Environment, data = freq_log)
+summary(mano_echolog_sl, test = "Wilks")
+
+# Frequency + Source levels peak to peak
+freq_sl_log <- dplyr::select(echo_log, c(Species, Environment, SLpp, SLRMS, SLEFD, Fc, Fp)) %>% drop_na()
+mano_echolog_freq_sl <- manova(cbind(SLpp, Fc, Fp) ~ Environment, data = freq_sl_log)
+summary(mano_echolog_freq_sl, test = "Wilks") 
+
+# Bandwidth
+band_log <- dplyr::select(echo_log, c(Species, Environment, BW3dB, BWRMS, QRMS)) %>% drop_na()
+mano_echolog_band <- manova(cbind(BW3dB, BWRMS, QRMS) ~ Environment, data = band_log)
+summary(mano_echolog_band, test = "Wilks") 
+
+# Duration/ICI
+dur_log <- dplyr::select(echo_log, c(Species, Environment, Duration, ICI)) %>% drop_na()
+mano_echolog_dur <- manova(cbind(Duration, ICI) ~ Environment, data = dur_log)
+summary(mano_echolog_dur, test = "Wilks")
+
+# All factors combined with most species:
+echo_log_all1 <- dplyr::select(echo_log, c(Species, Environment, SLpp, SLRMS, Fc, Fp, BW3dB, Duration)) %>% drop_na()
+mano_echolog_all1 <- manova(cbind(SLpp, SLRMS, Fc, Fp, BW3dB, Duration) ~ Environment, data = echo_log_all1)
+summary(mano_echolog_all1, test = "Wilks")
+
+# All factors combined:
+echo_log_all <- dplyr::select(echo_log, c(Species, Environment, SLpp, SLRMS, Fc, Fp, BWRMS, BW3dB, QRMS, Duration, ICI)) %>% drop_na()
+mano_echolog_all <- manova(cbind(SLpp, SLRMS, Fc, Fp, BWRMS, BW3dB, QRMS, Duration, ICI) ~ Environment, data = echo_log_all)
+summary(mano_echolog_all, test = "Wilks")
+
+
+# Checking MANOVA assumptions
+
+# Normality
+mshapiro.test(t(mano_echolog_sl$residuals))
+mshapiro.test(t(mano_echolog_freq$residuals)) 
+mshapiro.test(t(mano_echolog_freq_sl$residuals)) 
+mshapiro.test(t(mano_echolog_band$residuals))
+mshapiro.test(t(mano_echolog_dur$residuals))
+mshapiro.test(t(mano_echolog_all1$residuals))
+```
+
+## LDA or Canonical Variate Analysis -- model 1 (frequency and peak to peak source values)
+
+```{r}
+
+attach(freq_sl_log)
+
+# Setting up color schemes
+environment_lda_log <- c("turquoise3", "purple", "seagreen4", "salmon2","orangered2")[as.factor(Environment)]
+
+lda_echo_log <- lda(Environment ~ Fc + Fp + SLpp, data = freq_sl_log)
+summary(lda_echo_log)
+
+# Calculating discriminant scores:
+
+lscore_echo_log <- cbind(Fc, Fp, SLpp)%*%lda_echo_log$scaling 
+
+#Plotting each measurement score against the Species variable 
+plot(x = lscore_echo_log[,1],lscore_echo_log[,2],
+     col = alpha(environment_lda_log, 0.5),
+     pch = 19, 
+     cex = 1.5,
+     xlab = "1st canonical variate",
+     ylab = "2nd canonical variate",
+     asp = 1,
+     main = "Discriminant analysis")
+
+legend("topright", 1, pch = 19, 
+       legend = c("Riverine", "Coastal","Oceanic", "Polar", "Mixed")
+       [unique(as.factor(Environment))], col = unique(environment_lda_log))
+
+```
+
+## LDA or Canonical Variate Analysis -- model 2 (frequency)
+
+```{r}
+
+attach(freq_log)
+
+# Setting up color schemes
+environment_lda_log2 <- c("turquoise3", "purple", "seagreen4", "salmon2","orangered2")[as.factor(Environment)]
+
+lda_echo_log2 <- lda(Environment ~ Fc + Fp, data = freq_log)
+summary(lda_echo_log2)
+
+# Calculating discriminant scores:
+
+lscore_echo_log2 <- cbind(Fc, Fp)%*%lda_echo_log2$scaling 
+
+#Plotting each measurement score against the Species variable 
+plot(x = lscore_echo_log2[,1],lscore_echo_log2[,2],
+     col = alpha(environment_lda_log2, 0.5),
+     pch = 19, 
+     cex = 1.5,
+     xlab = "1st canonical variate",
+     ylab = "2nd canonical variate",
+     asp = 1,
+     main = "Discriminant analysis")
+
+legend("topright", 1, pch = 19, 
+       legend = c("Riverine", "Coastal","Oceanic", "Polar", "Mixed")
+       [unique(as.factor(Environment))], col = unique(environment_lda_log2))
+
+```
+
+## LDA or Canonical Variate Analysis -- model 3 (frequency, peak to peak source level and bandwidth)
+
+```{r}
+
+attach(echo_log_all1)
+
+# Setting up color schemes
+environment_lda_log3 <- c("turquoise3", "purple", "seagreen4", "salmon2","orangered2")[as.factor(Environment)]
+
+lda_echo_log3 <- lda(Environment ~ SLpp + SLRMS + Fc + Fp + Duration + QRMS, data = echo_log_all)
+lda_echo_log3
+
+# Calculating discriminant scores:
+
+lscore_echo_log3 <- cbind(SLpp, SLRMS, Fc, Fp, Duration, QRMS)%*%lda_echo_log3$scaling 
+
+#Plotting each measurement score against the Species variable 
+plot(x = lscore_echo_log3[,1],lscore_echo_log3[,2],
+     col = alpha(environment_lda_log3, 0.5),
+     pch = 19, 
+     cex = 1.5,
+     xlab = "1st canonical variate",
+     ylab = "2nd canonical variate",
+     asp = 1,
+     main = "Discriminant analysis")
+
+legend("topleft", 1, pch = 19, legend = c("Riverine", "Coastal","Oceanic", "Polar", "Mixed")
+       [unique(as.factor(Environment))], col = unique(environment_lda_log3))
+
+```
+
+```

@@ -1,0 +1,8 @@
+TAC(Y) ATC(I) TCT(S) AGC(S) ATT(I) AGC(S) GAT(D) GTA(V) AAC(N) TCA(S) ATC(I) ACC(T) ACC(T) ATA(M)  harpsichord(1)
+TAC(Y) ATC(I) TCC(S) AGC(S) ATT(I) AGC(S) GAT(D) GTA(V) AAC(N) TCA(S) ATT(I) ACC(T) GCC(A) ATA(M)  piano forte(1)
+CGC(R) TTC(F) GCT(A) GGC(G) GTC(V) CTC(L) ATC(I) CTC(L) GTT(V) CCA(P) GTC(V) AAA(K) ATC(I) ACC(T)  acoustic guitar(2)
+TAT(Y) ATC(I) TCT(S) AGT(S) ATC(I) AGC(S) AAC(N) ATC(I) AAT(N) TCA(S) ATC(I) ACA(T) ACA(T) ATA(M)  electric guitar(1)
+ATT(I) CCC(P) ATC(I) GAG(E) CTT(L) ACC(T) ATC(I) CTC(L) ACC(T) CCT(P) GCA(A) GTT(V) ACA(T) ATA(M)  trumpet(3)
+ATT(I) TCT(S) ACC(T) GAA(E) CCT(P) ACC(T) ATC(I) TGC(C) ACC(T) TTT(F) GCA(A) GAA(E) CCA(P) GTA(V)  trombone(3)
+TAC(Y) ATC(I) TCC(S) AGC(S) ATT(I) AGC(S) GAT(D) GTC(V) AAC(N) TCC(S) ATC(I) CCA(P) GCC(A) ATA(M)  cornet(1)
+TAC(Y) ATT(I) TCC(S) AGT(S) ATT(I) AGT(S) GAT(D) GTT(V) AAC(N) TCC(S) ATC(I) ACA(T) GCC(A) ATA(M)  tuba(1)

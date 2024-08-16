@@ -1,0 +1,397 @@
+IQ-TREE multicore version 2.2.0-beta COVID-edition for Linux 64-bit built Dec 21 2021 built Dec 21 2021
+Developed by Bui Quang Minh, James Barbetti, Nguyen Lam Tung,
+Olga Chernomor, Heiko Schmidt, Dominik Schrempf, Michael Woodhams, Ly Trong Nhan.
+
+Host:    awarnach (SSE3, 15 GB RAM)
+Command: iqtree -s codon_alignments_v4_Jan24/FOXP2_codon_aligned.phy -st CODON -m TEST -pre FOXP2_MF -nt 4
+Seed:    91491 (Using SPRNG - Scalable Parallel Random Number Generator)
+Time:    Fri Jan 26 02:26:45 2024
+Kernel:  SSE2 - 4 threads (4 CPU cores detected)
+
+Reading alignment file codon_alignments_v4_Jan24/FOXP2_codon_aligned.phy ... Phylip format detected
+Alignment most likely contains DNA/RNA sequences
+Converting to codon sequences with genetic code  ...
+Constructing alignment: done in 0.00400377 secs using 133.5% CPU
+Alignment has 87 sequences with 510 columns, 365 distinct patterns
+30 parsimony-informative, 34 singleton sites, 446 constant sites
+                    Gap/Ambiguity  Composition  p-value
+Analyzing sequences: done in 0.00169601 secs using 240.7% CPU
+   1  Bacu_FOXP2            0.00%    passed    100.00%
+   2  Barn_FOXP2           25.49%    passed    100.00%
+   3  Bbai76728_FOXP2      16.86%    passed    100.00%
+   4  BbonAUS_FOXP2         9.80%    passed    100.00%
+   5  Bbor_FOXP2            5.10%    passed    100.00%
+   6  Bede66737_FOXP2       5.10%    passed    100.00%
+   7  BedeAUS_FOXP2         5.10%    passed    100.00%
+   8  Bmus_FOXP2            0.00%    passed    100.00%
+   9  Bmys_FOXP2           14.51%    passed    100.00%
+  10  Bphy_FOXP2           15.69%    passed    100.00%
+  11  Bphy_baits_FOXP2      9.80%    passed    100.00%
+  12  Ccom40_FOXP2         22.55%    passed    100.00%
+  13  Chea7320_FOXP2        9.80%    passed    100.00%
+  14  Cmar59905_FOXP2       9.80%    passed    100.00%
+  15  Dcap108471_FOXP2      5.10%    passed    100.00%
+  16  Dcap79929_FOXP2      10.78%    passed    100.00%
+  17  DdelSJR_FOXP2         5.10%    passed    100.00%
+  18  Ddeltrop4525_FOXP2    5.10%    passed    100.00%
+  19  Dleu_FOXP2            0.00%    passed    100.00%
+  20  EausAUS_FOXP2         5.10%    passed    100.00%
+  21  Egla13086_FOXP2       5.10%    passed    100.00%
+  22  Ejap43864_FOXP2       5.10%    passed    100.00%
+  23  Erob133443_FOXP2     10.20%    passed    100.00%
+  24  Fatt_FOXP2            5.10%    passed    100.00%
+  25  Ggri_FOXP2            5.10%    passed    100.00%
+  26  Gmac39091_FOXP2       5.10%    passed    100.00%
+  27  Gmel_FOXP2            0.00%    passed    100.00%
+  28  Hamp_FOXP2            5.10%    passed    100.00%
+  29  Igeo_FOXP2           38.63%    passed    100.00%
+  30  Kbre_FOXP2            5.10%    passed    100.00%
+  31  Ksim_FOXP2           20.39%    passed    100.00%
+  32  Lacu_FOXP2            5.10%    passed    100.00%
+  33  Lalb_FOXP2            5.10%    passed    100.00%
+  34  Laus_FOXP2            5.10%    passed    100.00%
+  35  Lbor_FOXP2           11.96%    passed    100.00%
+  36  Lhos30470_FOXP2      16.47%    passed    100.00%
+  37  Lhos452_FOXP2         9.80%    passed    100.00%
+  38  Lobl_FOXP2            0.00%    passed    100.00%
+  39  Lobs_FOXP2           10.98%    passed    100.00%
+  40  LperAUS_FOXP2         5.10%    passed    100.00%
+  41  Lvex_FOXP2           25.10%    passed    100.00%
+  42  Mbid_FOXP2           29.80%    passed    100.00%
+  43  Mbow_FOXP2            5.10%    passed    100.00%
+  44  Mcar_FOXP2            5.10%    passed    100.00%
+  45  Mden_FOXP2           36.27%    passed    100.00%
+  46  Meur_FOXP2           10.98%    passed    100.00%
+  47  Mgin_FOXP2            5.10%    passed    100.00%
+  48  MgraAUS_FOXP2        46.08%    passed     99.51%
+  49  Mhec_FOXP2            9.80%    passed    100.00%
+  50  MlayAUS_FOXP2         5.10%    passed    100.00%
+  51  Mmir_FOXP2           23.92%    passed    100.00%
+  52  Mmon_FOXP2            0.00%    passed    100.00%
+  53  Mper_FOXP2            5.10%    passed    100.00%
+  54  Mpni_FOXP2            6.27%    passed    100.00%
+  55  Mste_FOXP2            9.80%    passed    100.00%
+  56  Naasi_FOXP2           0.00%    passed    100.00%
+  57  Npho_FOXP2            5.10%    passed    100.00%
+  58  Obre_FOXP2            5.10%    passed    100.00%
+  59  Ohei_FOXP2            5.10%    passed    100.00%
+  60  Oorc_FOXP2            0.00%    passed    100.00%
+  61  Pbla7349_FOXP2       11.37%    passed    100.00%
+  62  Pcat_FOXP2            0.00%    passed    100.00%
+  63  Pcra123188_FOXP2      9.80%    passed    100.00%
+  64  Pdal_FOXP2           52.55%    passed     99.19%
+  65  Pdio_FOXP2            5.10%    passed    100.00%
+  66  Pele_FOXP2            5.10%    passed    100.00%
+  67  Pmac_FOXP2            5.29%    passed    100.00%
+  68  Ppho_FOXP2            5.10%    passed    100.00%
+  69  Psin_FOXP2            0.00%    passed    100.00%
+  70  Pspi_FOXP2           45.49%    passed     99.98%
+  71  Satt18473_FOXP2       9.80%    passed    100.00%
+  72  Satt38219_FOXP2      15.88%    passed    100.00%
+  73  Sbre116871_FOXP2      5.10%    passed    100.00%
+  74  Sbre18437_FOXP2       5.10%    passed    100.00%
+  75  Schi_FOXP2            9.80%    passed    100.00%
+  76  Scly1724_FOXP2       57.84%    passed     58.14%
+  77  Scly1726_FOXP2        5.10%    passed    100.00%
+  78  Scoe_FOXP2            5.10%    passed    100.00%
+  79  Sflu9837_FOXP2        5.10%    passed    100.00%
+  80  Sfro7782_FOXP2       15.69%    passed    100.00%
+  81  Sfro7784_FOXP2        5.10%    passed    100.00%
+  82  Slon16012_FOXP2       5.10%    passed    100.00%
+  83  Slon24923_FOXP2       5.10%    passed    100.00%
+  84  Tadu79924_FOXP2       5.10%    passed    100.00%
+  85  Tshe_FOXP2            5.10%    passed    100.00%
+  86  Ttru_FOXP2            0.00%    passed    100.00%
+  87  Zcav_FOXP2            9.80%    passed    100.00%
+WARNING: 2 sequences contain more than 50% gaps/ambiguity
+****  TOTAL                10.39%  0 sequences failed composition chi2 test (p-value<5%; df=60)
+NOTE: BedeAUS_FOXP2 is identical to Bede66737_FOXP2 but kept for subsequent analysis
+NOTE: Schi_FOXP2 is identical to Chea7320_FOXP2 but kept for subsequent analysis
+NOTE: DdelSJR_FOXP2 is identical to Dcap108471_FOXP2 but kept for subsequent analysis
+NOTE: Egla13086_FOXP2 is identical to EausAUS_FOXP2 but kept for subsequent analysis
+NOTE: Gmac39091_FOXP2 is identical to Fatt_FOXP2 but kept for subsequent analysis
+NOTE: Lobl_FOXP2 is identical to Gmel_FOXP2 but kept for subsequent analysis
+NOTE: MlayAUS_FOXP2 is identical to Mbow_FOXP2 but kept for subsequent analysis
+NOTE: Mste_FOXP2 is identical to Mhec_FOXP2 but kept for subsequent analysis
+NOTE: Psin_FOXP2 is identical to Naasi_FOXP2 but kept for subsequent analysis
+NOTE: Pdio_FOXP2 is identical to Npho_FOXP2 but kept for subsequent analysis
+NOTE: Sbre18437_FOXP2 is identical to Sbre116871_FOXP2 but kept for subsequent analysis
+NOTE: Slon16012_FOXP2 is identical to Scly1726_FOXP2 but kept for subsequent analysis
+Checking for duplicate sequences: done in 0.000946263 secs using 207.4% CPU
+Identifying sites to remove: done in 0.00153741 secs using 204.4% CPU
+NOTE: 10 identical sequences (see below) will be ignored for subsequent analysis
+NOTE: Ddeltrop4525_FOXP2 (identical to Dcap108471_FOXP2) is ignored but added at the end
+NOTE: Ejap43864_FOXP2 (identical to EausAUS_FOXP2) is ignored but added at the end
+NOTE: Lacu_FOXP2 (identical to Fatt_FOXP2) is ignored but added at the end
+NOTE: Lalb_FOXP2 (identical to Fatt_FOXP2) is ignored but added at the end
+NOTE: LperAUS_FOXP2 (identical to Fatt_FOXP2) is ignored but added at the end
+NOTE: Ohei_FOXP2 (identical to Fatt_FOXP2) is ignored but added at the end
+NOTE: Pele_FOXP2 (identical to Fatt_FOXP2) is ignored but added at the end
+NOTE: Scoe_FOXP2 (identical to Fatt_FOXP2) is ignored but added at the end
+NOTE: Slon24923_FOXP2 (identical to Scly1726_FOXP2) is ignored but added at the end
+NOTE: Tadu79924_FOXP2 (identical to Scly1726_FOXP2) is ignored but added at the end
+Alignment was printed to FOXP2_MF.uniqueseq.phy
+
+For your convenience alignment with unique sequences printed to FOXP2_MF.uniqueseq.phy
+
+Creating fast initial parsimony tree by random order stepwise addition...
+0.025 seconds, parsimony score: 76 (based on 64 sites)
+Perform fast likelihood tree search using GY+F3X4+I+G model...
+Estimate model parameters (epsilon = 5.000)
+Perform nearest neighbor interchange...
+Optimizing NNI: done in 12.3148 secs using 336.6% CPU
+Estimate model parameters (epsilon = 1.000)
+1. Initial log-likelihood: -2654.081
+Optimal log-likelihood: -2654.057
+Nonsynonymous/synonymous ratio (omega): 0.075
+Transition/transversion ratio (kappa): 4.440
+Proportion of invariable sites: 0.421
+Gamma shape alpha: 2.420
+Parameters optimization took 1 rounds (11.677 sec)
+Time for fast ML tree search: 96.295 seconds
+
+NOTE: ModelFinder requires 61 MB RAM!
+ModelFinder will test up to 60 codon models (sample size: 510) ...
+ No. Model         -LnL         df  AIC          AICc         BIC
+  1  GY+F3X4       2656.318     162 5636.635     5788.831     6322.610
+  2  GY+F3X4+I     2653.071     163 5632.143     5786.663     6322.352
+  3  GY+F3X4+G4    2652.740     163 5631.479     5786.000     6321.688
+  4  GY+F3X4+I+G4  2652.821     164 5633.642     5790.512     6328.086
+  5  GY+F1X4       2666.326     156 5644.653     5783.418     6305.221
+  6  GY+F1X4+I     2663.125     157 5640.250     5781.193     6305.052
+  7  GY+F1X4+G4    2662.796     157 5639.591     5780.534     6304.394
+  8  GY+F1X4+I+G4  2662.882     158 5641.765     5784.910     6310.802
+  9  GY+F          2590.633     213 5607.266     5915.252     6509.195
+ 10  GY+F+I        2586.642     214 5601.284     5913.217     6507.448
+ 11  GY+F+G4       2586.210     214 5600.420     5912.352     6506.584
+ 12  GY+F+I+G4     2586.248     215 5602.496     5918.415     6512.895
+ 13  MGK+F3X4      2653.124     162 5630.247     5782.443     6316.222
+ 14  MGK+F3X4+I    2650.077     163 5626.154     5780.674     6316.363
+ 15  MGK+F3X4+G4   2649.750     163 5625.499     5780.020     6315.708
+ 16  MGK+F3X4+I+G4 2649.843     164 5627.687     5784.557     6322.130
+ 17  MGK+F1X4      2663.171     156 5638.343     5777.108     6298.911
+ 18  MGK+F1X4+I    2660.183     157 5634.365     5775.309     6299.168
+ 19  MGK+F1X4+G4   2659.854     157 5633.709     5774.652     6298.511
+ 20  MGK+F1X4+I+G4 2659.960     158 5635.920     5779.065     6304.957
+ 21  MG+F3X4       2653.125     161 5628.250     5778.146     6309.990
+ 22  MG+F3X4+I     2650.076     162 5624.152     5776.348     6310.127
+ 23  MG+F3X4+G4    2649.752     162 5623.503     5775.699     6309.478
+ 24  MG+F3X4+I+G4  2649.847     163 5625.694     5780.214     6315.903
+ 25  MG+F1X4       2663.173     155 5636.345     5772.955     6292.679
+ 26  MG+F1X4+I     2660.183     156 5632.366     5771.130     6292.934
+ 27  MG+F1X4+G4    2659.854     156 5631.709     5770.474     6292.277
+ 28  MG+F1X4+I+G4  2659.960     157 5633.920     5774.863     6298.722
+ 29  KOSI07+F3X4   2680.260     160 5680.520     5828.142     6358.026
+ 30  KOSI07+F3X4+I 2675.085     161 5672.170     5822.067     6353.910
+ 31  KOSI07+F3X4+G4 2674.931     161 5671.862     5821.759     6353.602
+ 32  KOSI07+F3X4+I+G4 2674.902     162 5673.805     5826.001     6359.780
+ 33  KOSI07+F1X4   2693.522     154 5695.045     5829.524     6347.144
+ 34  KOSI07+F1X4+I 2687.872     155 5685.744     5822.354     6342.078
+ 35  KOSI07+F1X4+G4 2687.987     155 5685.973     5822.584     6342.307
+ 36  KOSI07+F1X4+I+G4 2687.858     156 5687.717     5826.482     6348.285
+ 37  KOSI07+F      2615.307     211 5652.615     5952.829     6546.075
+ 38  KOSI07+F+I    2609.129     212 5642.257     5946.338     6539.952
+ 39  KOSI07+F+G4   2608.884     212 5641.768     5945.849     6539.463
+ 40  KOSI07+F+I+G4 2608.744     213 5643.488     5951.474     6545.417
+ 41  KOSI07+FU     2690.850     151 5683.699     5811.923     6323.095
+ 42  KOSI07+FU+I   2687.071     152 5678.141     5808.427     6321.771
+ 43  KOSI07+FU+G4  2686.687     152 5677.375     5807.660     6321.005
+ 44  KOSI07+FU+I+G4 2686.725     153 5679.450     5811.821     6327.315
+ 45  SCHN05+F3X4   2670.283     160 5660.566     5808.188     6338.071
+ 46  SCHN05+F3X4+I 2666.904     161 5655.808     5805.705     6337.548
+ 47  SCHN05+F3X4+G4 2666.741     161 5655.481     5805.378     6337.221
+ 48  SCHN05+F3X4+I+G4 2666.787     162 5657.575     5809.771     6343.549
+ 49  SCHN05+F1X4   2682.194     154 5672.387     5806.866     6324.486
+ 50  SCHN05+F1X4+I 2678.633     155 5667.265     5803.875     6323.599
+ 51  SCHN05+F1X4+G4 2678.691     155 5667.381     5803.992     6323.715
+ 52  SCHN05+F1X4+I+G4 2678.684     156 5669.368     5808.133     6329.936
+ 53  SCHN05+F      2600.921     211 5623.841     5924.056     6517.302
+ 54  SCHN05+F+I    2597.211     212 5618.423     5922.504     6516.118
+ 55  SCHN05+F+G4   2596.681     212 5617.362     5921.443     6515.057
+ 56  SCHN05+F+I+G4 2596.770     213 5619.540     5927.527     6521.470
+ 57  SCHN05+FU     2655.631     151 5613.263     5741.486     6252.659
+ 58  SCHN05+FU+I   2652.365     152 5608.730     5739.015     6252.360
+ 59  SCHN05+FU+G4  2651.930     152 5607.860     5738.146     6251.491
+ 60  SCHN05+FU+I+G4 2652.033     153 5610.065     5742.436     6257.930
+Akaike Information Criterion:           GY+F+G4
+Corrected Akaike Information Criterion: SCHN05+FU+G4
+Bayesian Information Criterion:         SCHN05+FU+G4
+Best-fit model: SCHN05+FU+G4 chosen according to BIC
+
+All model information printed to FOXP2_MF.model.gz
+CPU time for ModelFinder: 2327.402 seconds (0h:38m:47s)
+Wall-clock time for ModelFinder: 672.334 seconds (0h:11m:12s)
+
+NOTE: 61 MB RAM (0 GB) is required!
+Estimate model parameters (epsilon = 0.100)
+1. Initial log-likelihood: -2651.930
+Optimal log-likelihood: -2651.930
+Nonsynonymous/synonymous ratio (omega): 0.073
+Transition/transversion ratio (kappa): 4.587
+Gamma shape alpha: 0.534
+Parameters optimization took 1 rounds (7.212 sec)
+Wrote distance file to... 
+Computing ML distances based on estimated model parameters...
+Calculating distance matrix: done in 36.0754 secs using 382.3% CPU
+Computing ML distances took 36.076114 sec (of wall-clock time) 137.919244 sec (of CPU time)
+Setting up auxiliary I and S matrices: done in 0.00326492 secs using 235.1% CPU
+Constructing RapidNJ tree: done in 0.170504 secs using 71.53% CPU
+Computing RapidNJ tree took 0.174017 sec (of wall-clock time) 0.129824 sec (of CPU time)
+Log-likelihood of RapidNJ tree: -2696.323
+--------------------------------------------------------------------
+|             INITIALIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+Generating 98 parsimony trees... 0.990 second
+Computing log-likelihood of 98 initial trees ... 240.316 seconds
+Current best score: -2651.930
+
+Do NNI search on 20 best initial trees
+Optimizing NNI: done in 12.414 secs using 339.7% CPU
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 1: -2651.930
+Optimizing NNI: done in 11.7559 secs using 334.8% CPU
+Optimizing NNI: done in 12.1556 secs using 334.4% CPU
+Optimizing NNI: done in 12.3478 secs using 336.1% CPU
+Optimizing NNI: done in 11.3395 secs using 334.2% CPU
+Optimizing NNI: done in 11.6918 secs using 337% CPU
+Optimizing NNI: done in 12.0423 secs using 335% CPU
+Optimizing NNI: done in 12.442 secs using 339.4% CPU
+Optimizing NNI: done in 12.5739 secs using 338.4% CPU
+Optimizing NNI: done in 11.9285 secs using 335.9% CPU
+Iteration 10 / LogL: -2654.247 / Time: 0h:6m:59s
+Optimizing NNI: done in 12.625 secs using 335.3% CPU
+Optimizing NNI: done in 12.3305 secs using 337.2% CPU
+Optimizing NNI: done in 11.9102 secs using 336.5% CPU
+Optimizing NNI: done in 11.892 secs using 336.4% CPU
+Optimizing NNI: done in 12.6483 secs using 338.5% CPU
+Optimizing NNI: done in 11.9355 secs using 337% CPU
+Optimizing NNI: done in 12.3074 secs using 337.7% CPU
+Optimizing NNI: done in 12.2985 secs using 334.8% CPU
+Optimizing NNI: done in 11.7336 secs using 336.2% CPU
+Optimizing NNI: done in 17.2634 secs using 336.9% CPU
+Iteration 20 / LogL: -2654.763 / Time: 0h:9m:10s
+Finish initializing candidate tree set (20)
+Current best tree score: -2651.930 / CPU time: 504.324
+Number of iterations: 20
+--------------------------------------------------------------------
+|               OPTIMIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+Optimizing NNI: done in 30.0184 secs using 340.8% CPU
+Optimizing NNI: done in 28.8009 secs using 341.4% CPU
+Optimizing NNI: done in 28.694 secs using 341.5% CPU
+Optimizing NNI: done in 49.2124 secs using 340.7% CPU
+Optimizing NNI: done in 24.4448 secs using 336.8% CPU
+Optimizing NNI: done in 29.3565 secs using 339.3% CPU
+Optimizing NNI: done in 33.071 secs using 339.4% CPU
+Optimizing NNI: done in 32.8252 secs using 339.4% CPU
+Optimizing NNI: done in 26.5384 secs using 340.3% CPU
+Optimizing NNI: done in 35.4361 secs using 339.6% CPU
+Iteration 30 / LogL: -2692.929 / Time: 0h:14m:33s (0h:35m:38s left)
+Optimizing NNI: done in 20.7333 secs using 339.3% CPU
+Optimizing NNI: done in 31.4191 secs using 338.1% CPU
+Optimizing NNI: done in 27.9714 secs using 338.2% CPU
+Optimizing NNI: done in 36.7375 secs using 339.8% CPU
+Optimizing NNI: done in 24.937 secs using 340% CPU
+Optimizing NNI: done in 39.9336 secs using 340.3% CPU
+Optimizing NNI: done in 31.5557 secs using 340.3% CPU
+Optimizing NNI: done in 33.2618 secs using 341.3% CPU
+Optimizing NNI: done in 31.576 secs using 338.9% CPU
+Optimizing NNI: done in 28.6883 secs using 339.1% CPU
+Iteration 40 / LogL: -2706.713 / Time: 0h:19m:44s (0h:30m:52s left)
+Optimizing NNI: done in 31.7295 secs using 339% CPU
+Optimizing NNI: done in 32.836 secs using 339.8% CPU
+Optimizing NNI: done in 23.2316 secs using 339.2% CPU
+Optimizing NNI: done in 25.1435 secs using 338.2% CPU
+Optimizing NNI: done in 37.3368 secs using 335.9% CPU
+Optimizing NNI: done in 27.9532 secs using 341.7% CPU
+Optimizing NNI: done in 35.5738 secs using 339.9% CPU
+Optimizing NNI: done in 47.0821 secs using 338.3% CPU
+Optimizing NNI: done in 31.2895 secs using 339.1% CPU
+Optimizing NNI: done in 31.7496 secs using 338.5% CPU
+Iteration 50 / LogL: -2709.658 / Time: 0h:25m:13s (0h:26m:14s left)
+Optimizing NNI: done in 27.0262 secs using 340.7% CPU
+Optimizing NNI: done in 28.7564 secs using 338% CPU
+Optimizing NNI: done in 41.5391 secs using 336.2% CPU
+Optimizing NNI: done in 25.3192 secs using 339.5% CPU
+Optimizing NNI: done in 28.5567 secs using 337% CPU
+Optimizing NNI: done in 31.3394 secs using 338.4% CPU
+Optimizing NNI: done in 32.59 secs using 340.5% CPU
+Optimizing NNI: done in 34.904 secs using 339.2% CPU
+Optimizing NNI: done in 26.9559 secs using 340.9% CPU
+Optimizing NNI: done in 25.1469 secs using 338.5% CPU
+Iteration 60 / LogL: -2708.664 / Time: 0h:30m:19s (0h:21m:4s left)
+Optimizing NNI: done in 33.219 secs using 340.1% CPU
+Optimizing NNI: done in 29.0541 secs using 337.6% CPU
+Optimizing NNI: done in 33.1617 secs using 337.7% CPU
+Optimizing NNI: done in 27.2269 secs using 338.7% CPU
+Optimizing NNI: done in 41.3285 secs using 338.3% CPU
+Optimizing NNI: done in 35.0812 secs using 339% CPU
+Optimizing NNI: done in 36.6424 secs using 339.5% CPU
+Optimizing NNI: done in 31.7312 secs using 338.8% CPU
+Optimizing NNI: done in 27.5769 secs using 341.9% CPU
+Optimizing NNI: done in 27.4257 secs using 336.8% CPU
+Iteration 70 / LogL: -2762.729 / Time: 0h:35m:46s (0h:16m:4s left)
+Optimizing NNI: done in 22.4827 secs using 339.7% CPU
+Optimizing NNI: done in 28.201 secs using 341.9% CPU
+Optimizing NNI: done in 43.6554 secs using 339.4% CPU
+Optimizing NNI: done in 31.5164 secs using 339.1% CPU
+Optimizing NNI: done in 37.6228 secs using 341.9% CPU
+Optimizing NNI: done in 28.9187 secs using 341% CPU
+Optimizing NNI: done in 29.8791 secs using 341.5% CPU
+Optimizing NNI: done in 38.0819 secs using 340.6% CPU
+Optimizing NNI: done in 31.1239 secs using 339.3% CPU
+Optimizing NNI: done in 20.5818 secs using 342.4% CPU
+Iteration 80 / LogL: -2698.116 / Time: 0h:41m:2s (0h:10m:54s left)
+Optimizing NNI: done in 23.2636 secs using 338.4% CPU
+Optimizing NNI: done in 27.7807 secs using 338% CPU
+Optimizing NNI: done in 22.4241 secs using 341.9% CPU
+Optimizing NNI: done in 28.216 secs using 340% CPU
+Optimizing NNI: done in 32.9435 secs using 338.5% CPU
+Optimizing NNI: done in 19.5764 secs using 338.4% CPU
+Optimizing NNI: done in 26.9009 secs using 341.3% CPU
+Optimizing NNI: done in 19.0389 secs using 337.9% CPU
+Optimizing NNI: done in 17.4889 secs using 337.7% CPU
+Optimizing NNI: done in 36.5192 secs using 342% CPU
+Iteration 90 / LogL: -2712.480 / Time: 0h:45m:21s (0h:5m:36s left)
+Optimizing NNI: done in 32.9617 secs using 339.3% CPU
+Optimizing NNI: done in 32.9029 secs using 339.8% CPU
+Optimizing NNI: done in 28.7858 secs using 338.1% CPU
+Optimizing NNI: done in 31.9639 secs using 339.6% CPU
+Optimizing NNI: done in 29.5026 secs using 338% CPU
+Optimizing NNI: done in 26.7317 secs using 339.6% CPU
+Optimizing NNI: done in 28.4367 secs using 339.8% CPU
+Optimizing NNI: done in 37.4805 secs using 339.6% CPU
+Optimizing NNI: done in 39.808 secs using 339.4% CPU
+Optimizing NNI: done in 25.1656 secs using 341.3% CPU
+Iteration 100 / LogL: -2695.252 / Time: 0h:50m:39s (0h:0m:30s left)
+Optimizing NNI: done in 44.2309 secs using 339.2% CPU
+Optimizing NNI: done in 29.2857 secs using 337.7% CPU
+TREE SEARCH COMPLETED AFTER 102 ITERATIONS / Time: 0h:51m:54s
+
+--------------------------------------------------------------------
+|                    FINALIZING TREE SEARCH                        |
+--------------------------------------------------------------------
+Performs final model parameters optimization
+Estimate model parameters (epsilon = 0.010)
+1. Initial log-likelihood: -2651.930
+Optimal log-likelihood: -2651.930
+Nonsynonymous/synonymous ratio (omega): 0.073
+Transition/transversion ratio (kappa): 4.587
+Gamma shape alpha: 0.534
+Parameters optimization took 1 rounds (7.360 sec)
+BEST SCORE FOUND : -2651.930
+Total tree length: 0.165
+
+Total number of iterations: 102
+CPU time used for tree search: 10405.228 sec (2h:53m:25s)
+Wall-clock time used for tree search: 3067.823 sec (0h:51m:7s)
+Total CPU time used: 10602.071 sec (2h:56m:42s)
+Total wall-clock time used: 3121.493 sec (0h:52m:1s)
+
+Analysis results written to: 
+  IQ-TREE report:                FOXP2_MF.iqtree
+  Maximum-likelihood tree:       FOXP2_MF.treefile
+  Likelihood distances:          FOXP2_MF.mldist
+  Screen log file:               FOXP2_MF.log
+
+Date and Time: Fri Jan 26 03:29:58 2024

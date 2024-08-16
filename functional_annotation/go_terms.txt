@@ -1,0 +1,77 @@
+GO:0007605	sensory perception of sound	The series of events required for an organism to receive an auditory stimulus, convert it to a molecular signal, and recognize and characterize the signal. 
+Sonic stimuli are detected in the form of vibrations and are processed to form a sound.	hearing|perception of sound	
+GO:0055127	vibrational conductance of sound to the inner ear	The transmission of vibrations via ossicles to the inner ear.		
+GO:0050910	detection of mechanical stimulus involved in sensory perception of sound	The series of events involved in the perception of sound vibration in which the vibration is received and 
+converted into a molecular signal.	detection of sound|hearing, sensory transduction of sound|perception of sound, detection of mechanical stimulus|perception of sound, sensory detection of mechanical 
+stimulus|perception of sound, sensory transduction of mechanical stimulus|sensory detection of mechanical stimulus during perception of sound|sensory transduction of mechanical stimulus during perception of 
+sound|sensory transduction of sound	GO:0055128|GO:0009592
+GO:0031223	auditory behavior	The behavior of an organism in response to a sound.	auditory behaviour|behavioral response to sound|behavioural response to sound	
+GO:0042471	ear morphogenesis	The process in which the anatomical structures of the ear are generated and organized. The ear is the sense organ in vertebrates that is specialized for the detection 
+of sound, and the maintenance of balance. Includes the outer ear and middle ear, which collect and transmit sound waves; and the inner ear, which contains the organs of balance and (except in fish) hearing. 
+Also includes the pinna, the visible part of the outer ear, present in some mammals.	hearing organ morphogenesis	
+GO:0042473	outer ear morphogenesis	The process in which the anatomical structures of the outer ear are generated and organized. The outer ear is the part of the ear external to the tympanum (eardrum). It 
+consists of a tube (the external auditory meatus) that directs sound waves on to the tympanum, and may also include the external pinna, which extends beyond the skull.		
+GO:0042297	vocal learning	A behavioral process whose outcome is a relatively long-lasting behavioral change whereby an organism modifies innate vocalizations to imitate sounds produced by others.		
+GO:0120223	larynx morphogenesis	The process in which the larynx is generated and organized. The larynx is a continuation of the pharynx that is involved in breathing, sound production, and protecting 
+the trachea against food aspiration.	laryngeal morphogenesis	
+GO:0120224	larynx development	The biological process whose specific outcome is the progression of a larynx from an initial condition to its mature state. This process begins with the formation of 
+the larynx and ends with the mature structure. A larynx is a continuation of the pharynx that is involved in breathing, sound production, and protecting the trachea against food aspiration.		
+GO:0043583	ear development	The process whose specific outcome is the progression of the ear over time, from its formation to the mature structure. The ear is the sense organ in vertebrates that is 
+specialized for the detection of sound, and the maintenance of balance. Includes the outer ear and middle ear, which collect and transmit sound waves; and the inner ear, which contains the organs of balance 
+and (except in fish) hearing. Also includes the pinna, the visible part of the outer ear, present in some mammals.	hearing organ development	
+GO:0090102	cochlea development	The progression of the cochlea over time from its formation to the mature structure. The cochlea is the snail-shaped portion of the inner ear that is responsible for 
+the detection of sound.		
+GO:0021722	superior olivary nucleus maturation	A developmental process, independent of morphogenetic (shape) change, that is required for the superior olivary nucleus to attain its fully functional 
+state. The superior olivary nucleus is a small cylindrical mass on the dorsal surface of the lateral part of the trapezoid body of the pons, and it is situated immediately above the inferior olivary nucleus. 
+It receives projections from the cochlear nucleus and thus is involved in the perception of sound.	superior olive maturation	
+GO:0021720	superior olivary nucleus formation	The process that gives rise to the superior olivary nucleus. This process pertains to the initial formation of a structure from unspecified parts. In 
+mice, the superior olivary nucleus is a small cylindrical mass on the dorsal surface of the lateral part of the trapezoid body of the pons, and it is situated immediately above the inferior olivary nucleus. 
+It receives projections from the cochlear nucleus and thus is involved in the perception of sound.		
+GO:0021721	superior olivary nucleus structural organization	The process that contributes to the act of creating the structural organization of the superior olivary nucleus structure. In mice, the 
+superior olivary nucleus is a small cylindrical mass on the dorsal surface of the lateral part of the trapezoid body of the pons, and it is situated immediately above the inferior olivary nucleus. It receives 
+projections from the cochlear nucleus and thus is involved in the perception of sound.	superior olivary nucleus structural organisation	
+GO:0021719	superior olivary nucleus morphogenesis	The process in which the anatomical structure of the superior olivary nucleus is generated and organized. In mice, the superior olivary nucleus is a 
+small cylindrical mass on the dorsal surface of the lateral part of the trapezoid body of the pons, and it is situated immediately above the inferior olivary nucleus. It receives projections from the cochlear 
+nucleus and thus is involved in the perception of sound.	superior olive morphogenesis	
+GO:0021718	superior olivary nucleus development	The process whose specific outcome is the progression of the superior olivary nucleus over time, from its formation to the mature structure. In mice, 
+the superior olivary nucleus is a small cylindrical mass on the dorsal surface of the lateral part of the trapezoid body of the pons, and it is situated immediately above the inferior olivary nucleus. It 
+receives projections from the cochlear nucleus and thus is involved in the perception of sound.	superior olive development	
+GO:0021647	vestibulocochlear nerve maturation	A developmental process, independent of morphogenetic (shape) change, that is required for the vestibulocochlear nerve to attain its fully functional 
+state. This sensory nerve innervates the membranous labyrinth of the inner ear. The vestibular branch innervates the vestibular apparatus that senses head position changes relative to gravity. The auditory 
+branch innervates the cochlear duct, which is connected to the three bony ossicles which transduce sound waves into fluid movement in the cochlea.	CN VIII maturation|auditory nerve maturation	
+GO:0021648	vestibulocochlear nerve morphogenesis	The process in which the anatomical structure of the vestibulocochlear nerve is generated and organized. This sensory nerve innervates the membranous 
+labyrinth of the inner ear. The vestibular branch innervates the vestibular apparatus that senses head position changes relative to gravity. The auditory branch innervates the cochlear duct, which is 
+connected to the three bony ossicles which transduce sound waves into fluid movement in the cochlea.	CN VIII morphogenesis	
+GO:0021650	vestibulocochlear nerve formation	The process that gives rise to the vestibulocochlear nerve. This process pertains to the initial formation of a structure from unspecified parts. This 
+sensory nerve innervates the membranous labyrinth of the inner ear. The vestibular branch innervates the vestibular apparatus that senses head position changes relative to gravity. The auditory branch 
+innervates the cochlear duct, which is connected to the three bony ossicles which transduce sound waves into fluid movement in the cochlea.	CN VII formation	
+GO:0021649	vestibulocochlear nerve structural organization	The process that contributes to the act of creating the structural organization of the vestibulocochlear nerve. This process pertains to the 
+physical shaping of a rudimentary structure. This sensory nerve innervates the membranous labyrinth of the inner ear. The vestibular branch innervates the vestibular apparatus that senses head position 
+changes relative to gravity. The auditory branch innervates the cochlear duct, which is connected to the three bony ossicles which transduce sound waves into fluid movement in the cochlea.	
+vestibulocochlear nerve structural organisation|CN VII structural organization	
+GO:0048795	swim bladder morphogenesis	The process in which the anatomical structure of the swim bladder is generated and organized. The swim bladder is used by some fishes to maintain buoyancy and 
+may function in addition as a sound producing organ, a sound receptor, and a respiratory organ.	gas bladder morphogenesis	
+GO:0048794	swim bladder development	The process whose specific outcome is the progression of the swim bladder over time, from its formation to the mature structure. The swim bladder is used by 
+some fishes to maintain buoyancy and may function in addition as a sound producing organ, a sound receptor, and a respiratory organ.	gas bladder development	
+GO:0048798	swim bladder inflation	The expansion of the swim bladder by trapped gases. The swim bladder is used by some fishes to maintain buoyancy and may function in addition as a sound producing 
+organ, a sound receptor, and a respiratory organ.	gas bladder inflation	
+GO:0048797	swim bladder formation	The process that gives rise to the swim bladder. This process pertains to the initial formation of a structure from unspecified parts. The swim bladder is used by some 
+fishes to maintain buoyancy and may function in addition as a sound producing organ, a sound receptor, and a respiratory organ.	gas bladder biosynthesis|gas bladder formation	
+GO:0048796	swim bladder maturation	A developmental process, independent of morphogenetic (shape) change, that is required for a swim bladder to attain its fully functional state. The swim bladder is used 
+by some fishes to maintain buoyancy and may function in addition as a sound producing organ, a sound receptor, and a respiratory organ.	gas bladder maturation	
+GO:0071625	vocalization behavior	The behavior in which an organism produces sounds by a mechanism involving its respiratory system.	vocalisation behaviour	
+GO:0060113	inner ear receptor cell differentiation	The process in which relatively unspecialized cells, acquire specialized structural and/or functional features of inner ear receptor cells. Inner ear 
+receptor cells are mechanorecptors found in the inner ear responsible for transducing signals involved in balance and sensory perception of sound.	inner ear hair cell differentiation	
+GO:0021562	vestibulocochlear nerve development	The process whose specific outcome is the progression of the vestibulocochlear nerve over time, from its formation to the mature structure. This sensory 
+nerve innervates the membranous labyrinth of the inner ear. The vestibular branch innervates the vestibular apparatus that senses head position changes relative to gravity. The auditory branch innervates the 
+cochlear duct, which is connected to the three bony ossicles which transduce sound waves into fluid movement in the cochlea.	CN VIII development|acoustic nerve development|cranial nerve 8 
+development|cranial nerve VIII development	
+GO:0050972	detection of mechanical stimulus involved in echolocation	The series of events involved in echolocation in which a mechanical stimulus is received and converted into a molecular signal. 
+The stimulus is in the form of a reflected sound wave (an echo), which the organism uses to determine the distance to the object that reflected the sound wave.	echolocation, detection of mechanical 
+stimulus|echolocation, sensory detection of mechanical stimulus|echolocation, sensory transduction of mechanical stimulus|sensory detection of mechanical stimulus during echolocation|sensory transduction of 
+mechanical stimulus during echolocation	
+GO:0050959	echolocation	Echolocation is the method used by some animals (e.g. bats, dolphins and some whales) to determine the location of something by measuring the time it takes for an echo to 
+return from it. These animals emit sound waves and listen for the echo, calculating the distance to the object from the time lapse between sound emission and the echo returning.	biological 
+sonar|perception of environment using reflected sound waves	
+GO:0010996	response to auditory stimulus	Any process that results in a change in state or activity of a cell or an organism (in terms of movement, secretion, enzyme production, gene expression, etc.) 
+as a result of an auditory stimulus.	response to sound|response to sound stimulus	

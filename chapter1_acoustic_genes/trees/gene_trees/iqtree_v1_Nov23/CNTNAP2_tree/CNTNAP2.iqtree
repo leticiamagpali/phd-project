@@ -1,0 +1,345 @@
+IQ-TREE 2.2.0-beta COVID-edition built Dec 21 2021
+
+Input file name: codon_alignments_edited/CNTNAP2_codon_aligned.phy
+Type of analysis: ModelFinder + tree reconstruction
+Random seed number: 251006
+
+REFERENCES
+----------
+
+To cite IQ-TREE please use:
+
+Bui Quang Minh, Heiko A. Schmidt, Olga Chernomor, Dominik Schrempf,
+Michael D. Woodhams, Arndt von Haeseler, and Robert Lanfear (2020)
+IQ-TREE 2: New models and efficient methods for phylogenetic inference
+in the genomic era. Mol. Biol. Evol., in press.
+https://doi.org/10.1093/molbev/msaa015
+
+To cite ModelFinder please use: 
+
+Subha Kalyaanamoorthy, Bui Quang Minh, Thomas KF Wong, Arndt von Haeseler,
+and Lars S Jermiin (2017) ModelFinder: Fast model selection for
+accurate phylogenetic estimates. Nature Methods, 14:587–589.
+https://doi.org/10.1038/nmeth.4285
+
+SEQUENCE ALIGNMENT
+------------------
+
+Input data: 100 sequences with 1331 codon sites
+Number of constant sites: 346 (= 25.9955% of all sites)
+Number of invariant (constant or ambiguous constant) sites: 346 (= 25.9955% of all sites)
+Number of parsimony informative sites: 684
+Number of distinct site patterns: 1278
+
+ModelFinder
+-----------
+
+Best-fit model according to BIC: MG+F3X4+G4
+
+List of models sorted by BIC scores: 
+
+Model                  LogL         AIC      w-AIC        AICc     w-AICc         BIC      w-BIC
+MG+F3X4+G4       -20539.752   41495.505 +    0.464   41572.995 +    0.581   42575.791 +    0.933
+MG+F3X4+I+G4     -20539.307   41496.613 +    0.267   41574.918 +    0.222   42582.094 -   0.0399
+MGK+F3X4+G4      -20539.752   41497.505 +    0.171   41575.810 +    0.142   42582.985 -   0.0256
+MGK+F3X4+I+G4    -20539.303   41498.606 +   0.0984   41577.731 +   0.0544   42589.280 -   0.0011
+GY+F3X4+G4       -20590.869   41599.738 - 1.08e-23   41678.043 - 8.98e-24   42685.219 - 1.62e-24
+GY+F3X4+I+G4     -20590.238   41600.476 - 7.45e-24   41679.601 - 4.12e-24   42691.150 - 8.32e-26
+GY+F1X4+G4       -20630.386   41666.771 -    3e-38   41740.262 - 2.77e-37   42721.090 - 2.62e-32
+GY+F1X4+I+G4     -20629.678   41667.356 - 2.24e-38   41741.636 - 1.39e-37   42726.868 - 1.46e-33
+MG+F1X4+G4       -20637.824   41679.648 - 4.79e-41   41752.354 - 6.56e-40   42728.773 - 5.63e-34
+MG+F1X4+I+G4     -20637.185   41680.370 - 3.34e-41   41753.861 - 3.09e-40   42734.688 - 2.92e-35
+MGK+F1X4+G4      -20637.786   41681.572 - 1.83e-41   41755.063 - 1.69e-40   42735.890 -  1.6e-35
+MGK+F1X4+I+G4    -20637.146   41682.292 - 1.28e-41   41756.573 - 7.96e-41   42741.804 - 8.33e-37
+GY+F+G4          -20539.759   41599.519 -  1.2e-23   41726.360 - 2.89e-34   42949.877 - 5.47e-82
+GY+F+I+G4        -20539.055   41600.110 - 8.95e-24   41728.047 - 1.25e-34   42955.662 - 3.03e-83
+GY+F3X4+I        -20812.130   42042.259 - 8.72e-120   42120.564 - 7.26e-120   43127.739 - 1.31e-120
+GY+F3X4          -21021.972   42459.945 - 1.74e-210   42537.435 - 2.18e-210   43540.232 - 3.5e-210
+SCHN05+FU+G4     -21064.388   42524.776 - 1.46e-224   42594.390 - 9.36e-223   43553.125 - 5.55e-213
+SCHN05+FU+I+G4   -21062.752   42523.504 - 2.75e-224   42593.884 - 1.21e-222   43557.047 - 7.82e-214
+KOSI07+FU+G4     -21080.568   42557.137 - 1.37e-231   42626.751 - 8.79e-230   43585.486 - 5.22e-220
+KOSI07+FU+I+G4   -21079.177   42556.354 - 2.02e-231   42626.734 - 8.87e-230   43589.898 - 5.75e-221
+KOSI07+F3X4+G4   -21050.916   42515.832 - 1.27e-222   42592.512 - 2.39e-222   43590.925 - 3.44e-221
+KOSI07+F3X4+I+G4  -21048.888   42513.777 - 3.56e-222   42591.267 - 4.46e-222   43594.063 - 7.16e-222
+SCHN05+F3X4+G4   -21063.874   42541.748 -   3e-228   42618.428 - 5.64e-228   43616.841 - 8.11e-227
+SCHN05+F3X4+I+G4  -21061.373   42538.747 - 1.35e-227   42616.237 - 1.69e-227   43619.033 - 2.71e-227
+SCHN05+F+G4      -20933.357   42382.713 - 1.03e-193   42507.381 - 7.33e-204   43722.684 - 8.42e-250
+SCHN05+F+I+G4    -20931.316   42380.633 - 2.91e-193   42506.385 - 1.21e-203   43725.798 - 1.78e-250
+KOSI07+F+G4      -20997.555   42511.110 - 1.35e-221   42635.778 - 9.63e-232   43851.081 - 1.11e-277
+KOSI07+F+I+G4    -20995.236   42508.472 - 5.05e-221   42634.223 - 2.1e-231   43853.636 - 3.09e-278
+KOSI07+F1X4+I+G4  -21208.357   42820.715 - 7.96e-289   42893.421 - 1.09e-287   43869.839 - 9.36e-282
+KOSI07+F1X4+G4   -21212.372   42826.744 - 3.91e-290   42898.670 - 7.9e-289   43870.675 - 6.16e-282
+SCHN05+F1X4+I+G4  -21256.822   42917.645 - 7.13e-310   42990.350 - 9.76e-309   43966.769 - 8.38e-303
+SCHN05+F1X4+G4   -21261.342   42924.683 - 2.11e-311   42996.609 - 4.27e-310   43968.614 - 3.33e-303
+
+AIC, w-AIC   : Akaike information criterion scores and weights.
+AICc, w-AICc : Corrected AIC scores and weights.
+BIC, w-BIC   : Bayesian information criterion scores and weights.
+
+Plus signs denote the 95% confidence sets.
+Minus signs denote significant exclusion.
+
+SUBSTITUTION PROCESS
+--------------------
+
+Model of substitution: MG+F3X4+G4
+
+State frequencies: 
+  pi(AAA) = 0.0160  pi(AAC) = 0.0364  pi(AAG) = 0.0242  pi(AAT) = 0.0197
+  pi(ACA) = 0.0106  pi(ACC) = 0.0241  pi(ACG) = 0.0160  pi(ACT) = 0.0130
+  pi(AGA) = 0.0108  pi(AGC) = 0.0246  pi(AGG) = 0.0164  pi(AGT) = 0.0133
+  pi(ATA) = 0.0122  pi(ATC) = 0.0278  pi(ATG) = 0.0185  pi(ATT) = 0.0150
+  pi(CAA) = 0.0112  pi(CAC) = 0.0256  pi(CAG) = 0.0170  pi(CAT) = 0.0138
+  pi(CCA) = 0.0074  pi(CCC) = 0.0169  pi(CCG) = 0.0113  pi(CCT) = 0.0091
+  pi(CGA) = 0.0076  pi(CGC) = 0.0173  pi(CGG) = 0.0115  pi(CGT) = 0.0093
+  pi(CTA) = 0.0086  pi(CTC) = 0.0195  pi(CTG) = 0.0130  pi(CTT) = 0.0105
+  pi(GAA) = 0.0169  pi(GAC) = 0.0386  pi(GAG) = 0.0257  pi(GAT) = 0.0208
+  pi(GCA) = 0.0112  pi(GCC) = 0.0255  pi(GCG) = 0.0170  pi(GCT) = 0.0138
+  pi(GGA) = 0.0114  pi(GGC) = 0.0261  pi(GGG) = 0.0174  pi(GGT) = 0.0141
+  pi(GTA) = 0.0129  pi(GTC) = 0.0295  pi(GTG) = 0.0196  pi(GTT) = 0.0159
+  pi(TAC) = 0.0258  pi(TAT) = 0.0139  pi(TCA) = 0.0075  pi(TCC) = 0.0171
+  pi(TCG) = 0.0113  pi(TCT) = 0.0092  pi(TGC) = 0.0174  pi(TGG) = 0.0116
+  pi(TGT) = 0.0094  pi(TTA) = 0.0086  pi(TTC) = 0.0197  pi(TTG) = 0.0131
+  pi(TTT) = 0.0106
+Model of rate heterogeneity: Gamma with 4 categories
+Gamma shape alpha: 1.0361
+
+ Category  Relative_rate  Proportion
+  1         0.1441         0.2500
+  2         0.4873         0.2500
+  3         1.0057         0.2500
+  4         2.3628         0.2500
+Relative rates are computed as MEAN of the portion of the Gamma distribution falling in the category.
+
+MAXIMUM LIKELIHOOD TREE
+-----------------------
+
+Log-likelihood of the tree: -20539.7523 (s.e. 411.8189)
+Unconstrained log-likelihood (without tree): -9490.9986
+Number of free parameters (#branches + #model parameters): 208
+Akaike information criterion (AIC) score: 41495.5046
+Corrected Akaike information criterion (AICc) score: 41572.9948
+Bayesian information criterion (BIC) score: 42575.7912
+
+Total tree length (sum of branch lengths): 6.6095
+Sum of internal branch lengths: 0.7672 (11.6072% of tree length)
+
+WARNING: 24 near-zero internal branches (<0.0008) should be treated with caution
+         Such branches are denoted by '**' in the figure below
+
+NOTE: Tree is UNROOTED although outgroup taxon 'Mmus_CNTNAP2' is drawn at root
+
+NOTE: Branch lengths are interpreted as number of nucleotide substitutions per codon site!
+      Rescale them by 1/3 if you want to have #nt substitutions per nt site
+
+                                 +--Bacu_CNTNAP2
+                              +--|
+                              |  +--BbonAUS_CNTNAP2
+                           +--|
+                           |  +--Erob133443_CNTNAP2
+                        +--|
+                        |  |        +--Bbor_CNTNAP2
+                        |  |     +--|
+                        |  |     |  |  +--Bede66737_CNTNAP2
+                        |  |     |  +--|
+                        |  |     |     +--BedeAUS_CNTNAP2
+                        |  |  +--|
+                        |  |  |  +--Bmus_CNTNAP2
+                        |  +--|
+                        |     |  +--Bphy_baits_CNTNAP2
+                        |     +--|
+                        |        +**Mnov_CNTNAP2
+                     +--|
+                     |  +--Cmar59905_CNTNAP2
+                  +**|
+                  |  |  +--EausAUS_CNTNAP2
+                  |  +--|
+                  |     |  +**Egla13086_CNTNAP2
+                  |     +--|
+                  |        +--Ejap43864_CNTNAP2
+               +--|
+               |  +**Bphy_CNTNAP2
+            +--|
+            |  |              +--Barn_CNTNAP2
+            |  |           +--|
+            |  |           |  +**Bbai76728_CNTNAP2
+            |  |        +--|
+            |  |        |  |        +--Hamp_CNTNAP2
+            |  |        |  |     +--|
+            |  |        |  |     |  +--Zcav_CNTNAP2
+            |  |        |  |  +--|
+            |  |        |  |  |  |                 +--Hpla9120_CNTNAP2
+            |  |        |  |  |  |              +--|
+            |  |        |  |  |  |              |  +--Mbid_CNTNAP2
+            |  |        |  |  |  |           +--|
+            |  |        |  |  |  |           |  |     +--Mbow_CNTNAP2
+            |  |        |  |  |  |           |  |  +--|
+            |  |        |  |  |  |           |  |  |  +--Mcar_CNTNAP2
+            |  |        |  |  |  |           |  +**|
+            |  |        |  |  |  |           |     |  +--Mgin_CNTNAP2
+            |  |        |  |  |  |           |     +--|
+            |  |        |  |  |  |           |        +--Mmir_CNTNAP2
+            |  |        |  |  |  |        +**|
+            |  |        |  |  |  |        |  |        +--Mden_CNTNAP2
+            |  |        |  |  |  |        |  |     +**|
+            |  |        |  |  |  |        |  |     |  +--Mpni_CNTNAP2
+            |  |        |  |  |  |        |  |  +--|
+            |  |        |  |  |  |        |  |  |  |  +--Mper_CNTNAP2
+            |  |        |  |  |  |        |  |  |  +**|
+            |  |        |  |  |  |        |  |  |     +--Mste_CNTNAP2
+            |  |        |  |  |  |        |  +**|
+            |  |        |  |  |  |        |     +--MlayAUS_CNTNAP2
+            |  |        |  |  |  |     +--|
+            |  |        |  |  |  |     |  +--MgraAUS_CNTNAP2
+            |  |        |  |  |  |  +--|
+            |  |        |  |  |  |  |  +--Meur_CNTNAP2
+            |  |        |  |  |  +--|
+            |  |        |  |  |     +--Mhec_CNTNAP2
+            |  |        |  +--|
+            |  |        |     +--Tshe_CNTNAP2
+            |  |     +--|
+            |  |     |  |                          +--Ccom40_CNTNAP2
+            |  |     |  |                       +**|
+            |  |     |  |                       |  +**LperAUS_CNTNAP2
+            |  |     |  |                    +**|
+            |  |     |  |                    |  |  +--Chea7320_CNTNAP2
+            |  |     |  |                    |  +--|
+            |  |     |  |                    |     |     +--Laus_CNTNAP2
+            |  |     |  |                    |     |  +**|
+            |  |     |  |                    |     |  |  +--Lobs_CNTNAP2
+            |  |     |  |                    |     +**|
+            |  |     |  |                    |        +**Lobl_CNTNAP2
+            |  |     |  |                 +--|
+            |  |     |  |                 |  +--Lbor_CNTNAP2
+            |  |     |  |              +**|
+            |  |     |  |              |  |           +--Ddeltrop4525_CNTNAP2
+            |  |     |  |              |  |        +--|
+            |  |     |  |              |  |        |  |  +--Scly1724_CNTNAP2
+            |  |     |  |              |  |        |  +**|
+            |  |     |  |              |  |        |     +--Slon16012_CNTNAP2
+            |  |     |  |              |  |     +**|
+            |  |     |  |              |  |     |  +--Scoe_CNTNAP2
+            |  |     |  |              |  |  +--|
+            |  |     |  |              |  |  |  +--Slon24923_CNTNAP2
+            |  |     |  |              |  +--|
+            |  |     |  |              |     +--Satt18473_CNTNAP2
+            |  |     |  |           +**|
+            |  |     |  |           |  |        +--Dcap108471_CNTNAP2
+            |  |     |  |           |  |     +--|
+            |  |     |  |           |  |     |  +--Lhos30470_CNTNAP2
+            |  |     |  |           |  |  +--|
+            |  |     |  |           |  |  |  |  +--Dcap79929_CNTNAP2
+            |  |     |  |           |  |  |  +--|
+            |  |     |  |           |  |  |     +--DdelSJR_CNTNAP2
+            |  |     |  |           |  +--|
+            |  |     |  |           |     |                                +--Fatt_CNTNAP2
+            |  |     |  |           |     |                             +**|
+            |  |     |  |           |     |                             |  |     +--Gmac39091_CNTNAP2
+            |  |     |  |           |     |                             |  |  +--|
+            |  |     |  |           |     |                             |  |  |  +**Gmel_CNTNAP2
+            |  |     |  |           |     |                             |  +**|
+            |  |     |  |           |     |                             |     |  +--Pcra123188_CNTNAP2
+            |  |     |  |           |     |                             |     +**|
+            |  |     |  |           |     |                             |        |  +**Sbre116871_CNTNAP2
+            |  |     |  |           |     |                             |        +--|
+            |  |     |  |           |     |                             |           +--Sbre18437_CNTNAP2
+            |  |     |  |           |     |                          +--|
+            |  |     |  |           |     |                          |  +--Pele_CNTNAP2
+            |  |     |  |           |     |                       +--|
+            |  |     |  |           |     |                       |  +--Ggri_CNTNAP2
+            |  |     |  |           |     |                    +--|
+            |  |     |  |           |     |                    |  |  +--Obre_CNTNAP2
+            |  |     |  |           |     |                    |  +--|
+            |  |     |  |           |     |                    |     +--Ohei_CNTNAP2
+            |  |     |  |           |     |                 +--|
+            |  |     |  |           |     |                 |  +--Lalb_CNTNAP2
+            |  |     |  |           |     |              +--|
+            |  |     |  |           |     |              |  +--Oorc_CNTNAP2
+            |  |     |  |           |     |           +**|
+            |  |     |  |           |     |           |  +--Ttru_CNTNAP2
+            |  |     |  |           |     |        +**|
+            |  |     |  |           |     |        |  |  +--Schi_CNTNAP2
+            |  |     |  |           |     |        |  +--|
+            |  |     |  |           |     |        |     +**Sflu9837_CNTNAP2
+            |  |     |  |           |     |     +--|
+            |  |     |  |           |     |     |  +--Lhos452_CNTNAP2
+            |  |     |  |           |     |  +**|
+            |  |     |  |           |     |  |  +--Tadu79924_CNTNAP2
+            |  |     |  |           |     +--|
+            |  |     |  |           |        +--Scly1726_CNTNAP2
+            |  |     |  |        +--|
+            |  |     |  |        |  |     +**Satt38219_CNTNAP2
+            |  |     |  |        |  |  +**|
+            |  |     |  |        |  |  |  +--Sfro7782_CNTNAP2
+            |  |     |  |        |  +--|
+            |  |     |  |        |     +--Sfro7784_CNTNAP2
+            |  |     |  |     +--|
+            |  |     |  |     |  +--Lacu_CNTNAP2
+            |  |     |  |  +--|
+            |  |     |  |  |  |     +--Dleu_CNTNAP2
+            |  |     |  |  |  |  +--|
+            |  |     |  |  |  |  |  +--Mmon_CNTNAP2
+            |  |     |  |  |  +--|
+            |  |     |  |  |     |           +--Naasi_CNTNAP2
+            |  |     |  |  |     |        +--|
+            |  |     |  |  |     |        |  +--Npho_CNTNAP2
+            |  |     |  |  |     |     +--|
+            |  |     |  |  |     |     |  |     +--Pdio_CNTNAP2
+            |  |     |  |  |     |     |  |  +--|
+            |  |     |  |  |     |     |  |  |  +--Pspi_CNTNAP2
+            |  |     |  |  |     |     |  +--|
+            |  |     |  |  |     |     |     +--Psin_CASQ1
+            |  |     |  |  |     |  +**|
+            |  |     |  |  |     |  |  +--Pdal_CNTNAP2
+            |  |     |  |  |     +--|
+            |  |     |  |  |        +--Ppho_CNTNAP2
+            |  |     |  +--|
+            |  |     |     |     +--Igeo_CNTNAP2
+            |  |     |     |  +**|
+            |  |     |     |  |  +--Pbla7349_CNTNAP2
+            |  |     |     +--|
+            |  |     |        +-------------------------------------------------------Lvex_CNTNAP2
+            |  |  +--|
+            |  |  |  |     +--Kbre_CNTNAP2
+            |  |  |  |  +--|
+            |  |  |  |  |  +--Ksim_CNTNAP2
+            |  |  |  +--|
+            |  |  |     |  +**Pcat_CNTNAP2
+            |  |  |     +--|
+            |  |  |        +--Pmac_CNTNAP2
+            |  +**|
+            |     +**Bmys_CNTNAP2
+         +--|
+         |  +--Hippo_CNTNAP2
+      +--|
+      |  |     +--Btau_CNTNAP2
+      |  |  +--|
+      |  |  |  |  +--Chir_CNTNAP2
+      |  |  |  +--|
+      |  |  |     +--Oari_CNTNAP2
+      |  +--|
+      |     +--Cela_CNTNAP2
+   +--|
+   |  +--Sscr_CNTNAP2
++--|
+|  |     +--Clfam_CNTNAP2
+|  |  +--|
+|  |  |  +--Ptig_CNTNAP2
+|  +--|
+|     +--Easi_CNTNAP2
+|
++--Hsap_CNTNAP2
+|
++---Mmus_CNTNAP2
+
+Tree in newick format:
+
+((((((((((((Bacu_CNTNAP2:0.0063058052,BbonAUS_CNTNAP2:0.0051126500):0.0080122037,Erob133443_CNTNAP2:0.0147535085):0.0015478173,(((Bbor_CNTNAP2:0.0049028020,(Bede66737_CNTNAP2:0.0007539551,BedeAUS_CNTNAP2:0.0016106363):0.0018893654):0.0044515859,Bmus_CNTNAP2:0.0096159411):0.0018055264,(Bphy_baits_CNTNAP2:0.0033570949,Mnov_CNTNAP2:0.0000011355):0.0066985525):0.0014101241):0.0044955796,Cmar59905_CNTNAP2:0.0125204686):0.0014421280,(EausAUS_CNTNAP2:0.0022493780,(Egla13086_CNTNAP2:0.0000011355,Ejap43864_CNTNAP2:0.0015034115):0.0015166682):0.0111848766):0.0000011355,Bphy_CNTNAP2:0.0000011355):0.0129827084,(((((Barn_CNTNAP2:0.0029848772,Bbai76728_CNTNAP2:0.0000011355):0.0207087121,(((Hamp_CNTNAP2:0.0215514329,Zcav_CNTNAP2:0.0179395061):0.0037650872,((((((Hpla9120_CNTNAP2:0.0121386366,Mbid_CNTNAP2:0.0012224963):0.0024293485,((Mbow_CNTNAP2:0.0088225544,Mcar_CNTNAP2:0.0084464568):0.0016566914,(Mgin_CNTNAP2:0.0042517514,Mmir_CNTNAP2:0.0079368363):0.0025663364):0.0000026656):0.0015173027,(((Mden_CNTNAP2:0.0030627366,Mpni_CNTNAP2:0.0060694483):0.0000026678,(Mper_CNTNAP2:0.0031331726,Mste_CNTNAP2:0.0045319202):0.0007382147):0.0022871068,MlayAUS_CNTNAP2:0.0069583910):0.0007435385):0.0000026678,MgraAUS_CNTNAP2:0.0056708181):0.0009630460,Meur_CNTNAP2:0.0087453738):0.0015186383,Mhec_CNTNAP2:0.0109391261):0.0043399914):0.0047799321,Tshe_CNTNAP2:0.0149408851):0.0034504959):0.0208401764,(((((((((Ccom40_CNTNAP2:0.0063023211,LperAUS_CNTNAP2:0.0000011355):0.0000011355,(Chea7320_CNTNAP2:0.0060331619,((Laus_CNTNAP2:0.0022564921,Lobs_CNTNAP2:0.0023247360):0.0000026656,Lobl_CNTNAP2:0.0007512310):0.0000011355):0.0007514004):0.0000011355,Lbor_CNTNAP2:0.0032317604):0.0052906163,((((Ddeltrop4525_CNTNAP2:0.0031352135,(Scly1724_CNTNAP2:0.0102582580,Slon16012_CNTNAP2:0.0022713051):0.0000011355):0.0007589807,Scoe_CNTNAP2:0.0045409465):0.0007487919,Slon24923_CNTNAP2:0.0015544405):0.0015139445,Satt18473_CNTNAP2:0.0022676546):0.0007514078):0.0007504519,(((Dcap108471_CNTNAP2:0.0022685000,Lhos30470_CNTNAP2:0.0008257172):0.0007530102,(Dcap79929_CNTNAP2:0.0015660393,DdelSJR_CNTNAP2:0.0007536791):0.0015119449):0.0007547946,(((((((((((Fatt_CNTNAP2:0.0007544939,((Gmac39091_CNTNAP2:0.0022655016,Gmel_CNTNAP2:0.0000011355):0.0007548714,(Pcra123188_CNTNAP2:0.0045453181,(Sbre116871_CNTNAP2:0.0000011355,Sbre18437_CNTNAP2:0.0007754253):0.0023299774):0.0000011355):0.0000011355):0.0000011355,Pele_CNTNAP2:0.0007757676):0.0011164902,Ggri_CNTNAP2:0.0059130097):0.0007601243,(Obre_CNTNAP2:0.0019701684,Ohei_CNTNAP2:0.0008029722):0.0043772505):0.0013422845,Lalb_CNTNAP2:0.0104390709):0.0015507332,Oorc_CNTNAP2:0.0084832385):0.0028802980,Ttru_CNTNAP2:0.0015102857):0.0000011355,(Schi_CNTNAP2:0.0037810179,Sflu9837_CNTNAP2:0.0000011355):0.0022642549):0.0000026656,Lhos452_CNTNAP2:0.0022686169):0.0015082491,Tadu79924_CNTNAP2:0.0008089095):0.0000011355,Scly1726_CNTNAP2:0.0022676582):0.0007557608):0.0015099766):0.0000011355,((Satt38219_CNTNAP2:0.0000011355,Sfro7782_CNTNAP2:0.0015435799):0.0000011355,Sfro7784_CNTNAP2:0.0007545737):0.0015133062):0.0037388750,Lacu_CNTNAP2:0.0084420553):0.0099392142,((Dleu_CNTNAP2:0.0039419803,Mmon_CNTNAP2:0.0043438332):0.0045475458,((((Naasi_CNTNAP2:0.0036491050,Npho_CNTNAP2:0.0011979466):0.0017270427,((Pdio_CNTNAP2:0.0044410767,Pspi_CNTNAP2:0.0009806989):0.0015044523,Psin_CASQ1:0.0015606621):0.0024745568):0.0009122389,Pdal_CNTNAP2:0.0070714867):0.0007262699,Ppho_CNTNAP2:0.0040975174):0.0089854724):0.0051402332):0.0025598727,((Igeo_CNTNAP2:0.0229309776,Pbla7349_CNTNAP2:0.0241489832):0.0002480613,Lvex_CNTNAP2:4.2037057867):0.0011999247):0.0042710610):0.0049095139,((Kbre_CNTNAP2:0.0175029690,Ksim_CNTNAP2:0.0095460365):0.0206528226,(Pcat_CNTNAP2:0.0000011355,Pmac_CNTNAP2:0.0010796499):0.0296923039):0.0116161282):0.0066810709,Bmys_CNTNAP2:0.0000011355):0.0000011355):0.0438022282,Hippo_CNTNAP2:0.0636479557):0.0161098380,((Btau_CNTNAP2:0.0361644373,(Chir_CNTNAP2:0.0180187664,Oari_CNTNAP2:0.0171737197):0.0288016918):0.0200511849,Cela_CNTNAP2:0.0461454315):0.1169205345):0.0301562695,Sscr_CNTNAP2:0.1361213437):0.0621690058,((Clfam_CNTNAP2:0.1079354140,Ptig_CNTNAP2:0.1474457760):0.0980099455,Easi_CNTNAP2:0.1172942121):0.0033776265):0.0602325413,Hsap_CNTNAP2:0.1611450703,Mmus_CNTNAP2:0.3605206797);
+
+TIME STAMP
+----------
+
+Date and time: Thu Nov 23 08:34:51 2023
+Total CPU time used: 41930.1 seconds (11h:38m:50s)
+Total wall-clock time used: 11619.6 seconds (3h:13m:39s)
+

@@ -1,0 +1,195 @@
+IQ-TREE multicore version 2.2.0-beta COVID-edition for Linux 64-bit built Dec 21 2021 built Dec 21 2021
+Developed by Bui Quang Minh, James Barbetti, Nguyen Lam Tung,
+Olga Chernomor, Heiko Schmidt, Dominik Schrempf, Michael Woodhams, Ly Trong Nhan.
+
+Host:    awarnach14 (SSE3, 3 GB RAM)
+Command: iqtree -s translated/PCDH15_codon_aligned.translated.fasta -st AA -m WAG+G4 -pre PCDH15_WAG -nt 4
+Seed:    203402 (Using SPRNG - Scalable Parallel Random Number Generator)
+Time:    Fri Jan 26 12:28:24 2024
+Kernel:  SSE2 - 4 threads (4 CPU cores detected)
+
+Reading alignment file translated/PCDH15_codon_aligned.translated.fasta ... Fasta format detected
+Reading fasta file: done in 0.00733809 secs using 92.12% CPU
+Alignment most likely contains protein sequences
+Constructing alignment: done in 0.0102439 secs using 104.9% CPU
+Alignment has 91 sequences with 1784 columns, 1010 distinct patterns
+349 parsimony-informative, 211 singleton sites, 1224 constant sites
+                     Gap/Ambiguity  Composition  p-value
+Analyzing sequences: done in 0.000497291 secs using 91.5% CPU
+   1  Bacu_PCDH15            2.19%    passed     26.64%
+   2  Barn_PCDH15           45.96%    passed     99.62%
+   3  Bbai76728_PCDH15      35.65%    passed     99.96%
+   4  BbonAUS_PCDH15        23.71%    passed    100.00%
+   5  Bbor_PCDH15           25.11%    passed    100.00%
+   6  Bede66737_PCDH15      25.11%    passed    100.00%
+   7  BedeAUS_PCDH15        25.11%    passed    100.00%
+   8  Bmus_PCDH15            2.19%    passed     41.75%
+   9  Bphy_baits_PCDH15     30.27%    passed     99.86%
+  10  Btau_PCDH15            0.50%    failed      0.24%
+  11  Ccom40_PCDH15         30.66%    passed     99.98%
+  12  Cela_PCDH15            8.74%    passed     99.95%
+  13  Chea7320_PCDH15       29.88%    passed    100.00%
+  14  Cmar59905_PCDH15      26.01%    passed     99.98%
+  15  Dcap108471_PCDH15     23.32%    passed    100.00%
+  16  Dcap79929_PCDH15      34.92%    passed     99.98%
+  17  DdelSJR_PCDH15        23.26%    passed    100.00%
+  18  Ddeltrop4525_PCDH15   25.67%    passed    100.00%
+  19  Dleu_PCDH15            0.50%    failed      0.10%
+  20  EausAUS_PCDH15        23.71%    passed    100.00%
+  21  Ecab_PCDH15            0.39%    failed      0.10%
+  22  Egla13086_PCDH15      27.35%    passed     99.97%
+  23  Ejap43864_PCDH15      23.71%    passed    100.00%
+  24  Erob133443_PCDH15     25.84%    passed     99.99%
+  25  Fatt_PCDH15           23.26%    passed    100.00%
+  26  Ggri_PCDH15           23.26%    passed    100.00%
+  27  Gmac39091_PCDH15      23.26%    passed    100.00%
+  28  Gmel_PCDH15            0.28%    failed      0.14%
+  29  Hamp_PCDH15           23.54%    passed    100.00%
+  30  Hippo_PCDH15           2.19%    failed      3.14%
+  31  Igeo_PCDH15           48.99%    passed     98.89%
+  32  Kbre_PCDH15           24.94%    passed     99.98%
+  33  Ksim_PCDH15           31.89%    passed     99.95%
+  34  Lacu_PCDH15           24.78%    passed    100.00%
+  35  Lalb_PCDH15           23.26%    passed    100.00%
+  36  Laus_PCDH15           26.18%    passed     99.98%
+  37  Lbor_PCDH15           32.17%    passed     99.99%
+  38  Lhos30470_PCDH15      34.98%    passed     99.97%
+  39  Lhos452_PCDH15        23.26%    passed    100.00%
+  40  Lobl_PCDH15            2.30%    passed      8.86%
+  41  Lobs_PCDH15           25.39%    passed    100.00%
+  42  LperAUS_PCDH15        23.32%    passed    100.00%
+  43  Lvex_PCDH15           18.89%    failed      0.00%
+  44  Mbid_PCDH15           41.82%    passed     98.93%
+  45  Mbow_PCDH15           23.54%    passed    100.00%
+  46  Mcar_PCDH15           23.54%    passed    100.00%
+  47  Mden_PCDH15           28.14%    passed     99.99%
+  48  Meur_PCDH15           23.54%    passed    100.00%
+  49  Mgin_PCDH15           23.60%    passed    100.00%
+  50  MgraAUS_PCDH15        38.68%    passed     99.97%
+  51  Mhec_PCDH15           23.54%    passed    100.00%
+  52  MlayAUS_PCDH15        23.54%    passed    100.00%
+  53  Mmir_PCDH15           26.35%    passed    100.00%
+  54  Mmon_PCDH15            0.11%    failed      0.03%
+  55  Mper_PCDH15           23.54%    passed    100.00%
+  56  Mpni_PCDH15           23.65%    passed    100.00%
+  57  Mste_PCDH15           23.54%    passed    100.00%
+  58  Naasi_PCDH15           0.39%    failed      0.04%
+  59  Npho_PCDH15           30.89%    passed    100.00%
+  60  Oari_PCDH15            0.56%    failed      0.36%
+  61  Obre_PCDH15           23.26%    passed    100.00%
+  62  Ohei_PCDH15           27.69%    passed    100.00%
+  63  Oorc_PCDH15            1.74%    failed      0.17%
+  64  Pbla7349_PCDH15       32.34%    passed     99.81%
+  65  Pcat_PCDH15            2.24%    passed     30.39%
+  66  Pcra123188_PCDH15     25.34%    passed    100.00%
+  67  Pdal_PCDH15           52.02%    passed     95.56%
+  68  Pdio_PCDH15           26.18%    passed     99.90%
+  69  Pele_PCDH15           25.34%    passed    100.00%
+  70  Pmac_PCDH15           25.28%    passed     99.99%
+  71  Ppho_PCDH15           29.88%    passed     99.65%
+  72  Psin_PCDH15            0.78%    failed      0.05%
+  73  Pspi_PCDH15           29.93%    passed     99.72%
+  74  Satt18473_PCDH15      26.85%    passed    100.00%
+  75  Satt38219_PCDH15      25.39%    passed    100.00%
+  76  Sbre116871_PCDH15     23.26%    passed    100.00%
+  77  Sbre18437_PCDH15      25.45%    passed    100.00%
+  78  Schi_PCDH15           23.21%    passed    100.00%
+  79  Scly1724_PCDH15       42.99%    passed     99.98%
+  80  Scly1726_PCDH15       25.45%    passed    100.00%
+  81  Scoe_PCDH15           31.45%    passed    100.00%
+  82  Sflu9837_PCDH15       23.32%    passed    100.00%
+  83  Sfro7782_PCDH15       37.56%    passed     99.98%
+  84  Sfro7784_PCDH15       23.26%    passed    100.00%
+  85  Slon16012_PCDH15      23.26%    passed    100.00%
+  86  Slon24923_PCDH15      23.26%    passed    100.00%
+  87  Sscr_PCDH15            0.22%    failed      0.10%
+  88  Tadu79924_PCDH15      23.26%    passed    100.00%
+  89  Tshe_PCDH15           23.54%    passed    100.00%
+  90  Ttru_PCDH15            0.22%    failed      0.20%
+  91  Zcav_PCDH15           31.73%    passed    100.00%
+WARNING: 1 sequences contain more than 50% gaps/ambiguity
+****  TOTAL                 22.75%  13 sequences failed composition chi2 test (p-value<5%; df=19)
+NOTE: BedeAUS_PCDH15 is identical to Bede66737_PCDH15 but kept for subsequent analysis
+NOTE: Gmac39091_PCDH15 is identical to Fatt_PCDH15 but kept for subsequent analysis
+NOTE: MlayAUS_PCDH15 is identical to Mcar_PCDH15 but kept for subsequent analysis
+Checking for duplicate sequences: done in 0.00155445 secs using 215.3% CPU
+Identifying sites to remove: done in 0.0075655 secs using 128.1% CPU
+NOTE: 2 identical sequences (see below) will be ignored for subsequent analysis
+NOTE: Sbre116871_PCDH15 (identical to Fatt_PCDH15) is ignored but added at the end
+NOTE: Mste_PCDH15 (identical to Mcar_PCDH15) is ignored but added at the end
+Alignment was printed to PCDH15_WAG.uniqueseq.phy
+
+For your convenience alignment with unique sequences printed to PCDH15_WAG.uniqueseq.phy
+
+Create initial parsimony tree by phylogenetic likelihood library (PLL)... 0.004 seconds
+
+NOTE: 56 MB RAM (0 GB) is required!
+Estimate model parameters (epsilon = 0.100)
+1. Initial log-likelihood: -25220.838
+2. Current log-likelihood: -21767.258
+3. Current log-likelihood: -21527.136
+4. Current log-likelihood: -21499.571
+Optimal log-likelihood: -21499.516
+Gamma shape alpha: 0.105
+Parameters optimization took 4 rounds (11.188 sec)
+Wrote distance file to... 
+Computing ML distances based on estimated model parameters...
+Calculating distance matrix: done in 1.98262 secs using 399.9% CPU
+Computing ML distances took 1.984514 sec (of wall-clock time) 7.930037 sec (of CPU time)
+Setting up auxiliary I and S matrices: done in 0.00161926 secs
+Constructing RapidNJ tree: done in 0.0628185 secs using 71.15% CPU
+Computing RapidNJ tree took 0.064623 sec (of wall-clock time) 0.044828 sec (of CPU time)
+ERROR: Alignment sequence Bacu_PCDH15 does not appear in the tree
+ERROR: Alignment sequence Barn_PCDH15 does not appear in the tree
+ERROR: Alignment sequence Bbai76728_PCDH15 does not appear in the tree
+ERROR: Alignment sequence BbonAUS_PCDH15 does not appear in the tree
+ERROR: Alignment sequence Bbor_PCDH15 does not appear in the tree
+ERROR: Alignment sequence Bede66737_PCDH15 does not appear in the tree
+ERROR: Alignment sequence BedeAUS_PCDH15 does not appear in the tree
+ERROR: Alignment sequence Bmus_PCDH15 does not appear in the tree
+ERROR: Alignment sequence Bphy_baits_PCDH15 does not appear in the tree
+ERROR: Alignment sequence Btau_PCDH15 does not appear in the tree
+ERROR: Alignment sequence Cela_PCDH15 does not appear in the tree
+ERROR: Alignment sequence Cmar59905_PCDH15 does not appear in the tree
+ERROR: Alignment sequence Dleu_PCDH15 does not appear in the tree
+ERROR: Alignment sequence EausAUS_PCDH15 does not appear in the tree
+ERROR: Alignment sequence Ecab_PCDH15 does not appear in the tree
+ERROR: Alignment sequence Egla13086_PCDH15 does not appear in the tree
+ERROR: Alignment sequence Ejap43864_PCDH15 does not appear in the tree
+ERROR: Alignment sequence Erob133443_PCDH15 does not appear in the tree
+ERROR: Alignment sequence Hamp_PCDH15 does not appear in the tree
+ERROR: Alignment sequence Hippo_PCDH15 does not appear in the tree
+ERROR: Alignment sequence Igeo_PCDH15 does not appear in the tree
+ERROR: Alignment sequence Kbre_PCDH15 does not appear in the tree
+ERROR: Alignment sequence Ksim_PCDH15 does not appear in the tree
+ERROR: Alignment sequence Lhos30470_PCDH15 does not appear in the tree
+ERROR: Alignment sequence Lvex_PCDH15 does not appear in the tree
+ERROR: Alignment sequence Mbid_PCDH15 does not appear in the tree
+ERROR: Alignment sequence Mbow_PCDH15 does not appear in the tree
+ERROR: Alignment sequence Mcar_PCDH15 does not appear in the tree
+ERROR: Alignment sequence Mden_PCDH15 does not appear in the tree
+ERROR: Alignment sequence Meur_PCDH15 does not appear in the tree
+ERROR: Alignment sequence Mgin_PCDH15 does not appear in the tree
+ERROR: Alignment sequence MgraAUS_PCDH15 does not appear in the tree
+ERROR: Alignment sequence Mhec_PCDH15 does not appear in the tree
+ERROR: Alignment sequence MlayAUS_PCDH15 does not appear in the tree
+ERROR: Alignment sequence Mmir_PCDH15 does not appear in the tree
+ERROR: Alignment sequence Mmon_PCDH15 does not appear in the tree
+ERROR: Alignment sequence Mper_PCDH15 does not appear in the tree
+ERROR: Alignment sequence Mpni_PCDH15 does not appear in the tree
+ERROR: Alignment sequence Naasi_PCDH15 does not appear in the tree
+ERROR: Alignment sequence Npho_PCDH15 does not appear in the tree
+ERROR: Alignment sequence Oari_PCDH15 does not appear in the tree
+ERROR: Alignment sequence Pbla7349_PCDH15 does not appear in the tree
+ERROR: Alignment sequence Pcat_PCDH15 does not appear in the tree
+ERROR: Alignment sequence Pdal_PCDH15 does not appear in the tree
+ERROR: Alignment sequence Pdio_PCDH15 does not appear in the tree
+ERROR: Alignment sequence Pmac_PCDH15 does not appear in the tree
+ERROR: Alignment sequence Ppho_PCDH15 does not appear in the tree
+ERROR: Alignment sequence Psin_PCDH15 does not appear in the tree
+ERROR: Alignment sequence Pspi_PCDH15 does not appear in the tree
+ERROR: Alignment sequence Sscr_PCDH15 does not appear in the tree
+ERROR: Alignment sequence Tshe_PCDH15 does not appear in the tree
+ERROR: Alignment sequence Zcav_PCDH15 does not appear in the tree
+(Ccom40_PCDH15,(Chea7320_PCDH15,Laus_PCDH15),((Obre_PCDH15,Ohei_PCDH15),(((((Sfro7782_PCDH15,Ggri_PCDH15),(Lbor_PCDH15,((((Scoe_PCDH15,Dcap108471_PCDH15),DdelSJR_PCDH15),Ddeltrop4525_PCDH15),Lalb_PCDH15))),(((((((Sbre18437_PCDH15,(Sfro7784_PCDH15,Gmel_PCDH15)),LperAUS_PCDH15),Fatt_PCDH15),(((((((Pcra123188_PCDH15,(Lobl_PCDH15,Scly1724_PCDH15)),Sflu9837_PCDH15),Dcap79929_PCDH15),Pele_PCDH15),Tadu79924_PCDH15),Lobs_PCDH15),Satt18473_PCDH15)),Satt38219_PCDH15),Schi_PCDH15),(Gmac39091_PCDH15,Ttru_PCDH15))),Oorc_PCDH15),(((Lhos452_PCDH15,Lacu_PCDH15),Slon16012_PCDH15),(Slon24923_PCDH15,Scly1726_PCDH15)))));
+ERROR: Tree taxa and alignment sequence do not match (see above)

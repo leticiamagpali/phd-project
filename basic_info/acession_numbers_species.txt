@@ -1,0 +1,15 @@
+GCF_009873245.2 Balaenoptera_musculus
+GCA_008795845.1 Balaenoptera_physalus
+GCF_002288925.2 Delphinapterus_leucas
+GCA_002738545.1 Eschrichtius_robustus
+GCF_006547405.1 Globicephala_melas
+GCF_003676395.1 Lagenorhynchus_obliquidens
+GCF_000442215.1 Lipotes_vexillifer
+GCF_005190385.1 Monodon_monoceros
+GCF_003031525.2 Neophocaena_asiaeorientalis_asiaeorientalis
+GCF_000331955.2 Orcinus_orca
+GCF_008692025.1 Phocoena_sinus
+GCF_002837175.2 Physeter_catodon
+GCA_011754075.1 Pontoporia_blainvillei
+GCA_003521335.2 Sousa_chinensis
+GCF_011762595.1 Tursiops_truncatus

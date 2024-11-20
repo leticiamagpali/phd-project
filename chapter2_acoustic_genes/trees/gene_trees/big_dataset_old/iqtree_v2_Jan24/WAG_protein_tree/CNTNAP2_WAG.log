@@ -1,0 +1,195 @@
+IQ-TREE multicore version 2.2.0-beta COVID-edition for Linux 64-bit built Dec 21 2021 built Dec 21 2021
+Developed by Bui Quang Minh, James Barbetti, Nguyen Lam Tung,
+Olga Chernomor, Heiko Schmidt, Dominik Schrempf, Michael Woodhams, Ly Trong Nhan.
+
+Host:    awarnach14 (SSE3, 3 GB RAM)
+Command: iqtree -s translated/CNTNAP2_codon_aligned.translated.fasta -st AA -m WAG+G4 -pre CNTNAP2_WAG -nt 4
+Seed:    252829 (Using SPRNG - Scalable Parallel Random Number Generator)
+Time:    Fri Jan 26 12:28:13 2024
+Kernel:  SSE2 - 4 threads (4 CPU cores detected)
+
+Reading alignment file translated/CNTNAP2_codon_aligned.translated.fasta ... Fasta format detected
+Reading fasta file: done in 0.00572106 secs using 67.98% CPU
+Alignment most likely contains protein sequences
+Constructing alignment: done in 0.00777308 secs using 115.3% CPU
+Alignment has 91 sequences with 1331 columns, 738 distinct patterns
+111 parsimony-informative, 98 singleton sites, 1122 constant sites
+                      Gap/Ambiguity  Composition  p-value
+Analyzing sequences: done in 0.000317091 secs
+   1  Bacu_CNTNAP2            3.98%    passed    100.00%
+   2  Barn_CNTNAP2           48.01%    passed     97.65%
+   3  Bbai76728_CNTNAP2      10.07%    passed    100.00%
+   4  BbonAUS_CNTNAP2         6.09%    passed    100.00%
+   5  Bbor_CNTNAP2            0.00%    passed    100.00%
+   6  Bede66737_CNTNAP2       0.00%    passed    100.00%
+   7  BedeAUS_CNTNAP2         5.86%    passed    100.00%
+   8  Bmus_CNTNAP2            0.00%    passed    100.00%
+   9  Bphy_baits_CNTNAP2      4.51%    passed    100.00%
+  10  Btau_CNTNAP2            0.00%    passed    100.00%
+  11  Ccom40_CNTNAP2          4.28%    passed    100.00%
+  12  Cela_CNTNAP2            0.00%    passed    100.00%
+  13  Chea7320_CNTNAP2        0.00%    passed    100.00%
+  14  Chir_CNTNAP2            0.00%    passed    100.00%
+  15  Cmar59905_CNTNAP2       3.61%    passed    100.00%
+  16  Dcap108471_CNTNAP2      0.15%    passed    100.00%
+  17  Dcap79929_CNTNAP2       3.76%    passed    100.00%
+  18  DdelSJR_CNTNAP2         0.15%    passed    100.00%
+  19  Ddeltrop4525_CNTNAP2    3.38%    passed    100.00%
+  20  Dleu_CNTNAP2            0.00%    passed    100.00%
+  21  Easi_CNTNAP2            0.08%    passed    100.00%
+  22  EausAUS_CNTNAP2         0.08%    passed    100.00%
+  23  Egla13086_CNTNAP2       0.08%    passed    100.00%
+  24  Ejap43864_CNTNAP2       0.08%    passed    100.00%
+  25  Erob133443_CNTNAP2      0.00%    passed    100.00%
+  26  Fatt_CNTNAP2            0.00%    passed    100.00%
+  27  Ggri_CNTNAP2            2.48%    passed    100.00%
+  28  Gmac39091_CNTNAP2       0.00%    passed    100.00%
+  29  Gmel_CNTNAP2            0.00%    passed    100.00%
+  30  Hamp_CNTNAP2            0.15%    passed    100.00%
+  31  Hippo_CNTNAP2          10.07%    passed    100.00%
+  32  Igeo_CNTNAP2           21.94%    passed     97.30%
+  33  Kbre_CNTNAP2            0.08%    passed    100.00%
+  34  Ksim_CNTNAP2            3.76%    passed    100.00%
+  35  Lacu_CNTNAP2            0.45%    passed    100.00%
+  36  Lalb_CNTNAP2            0.00%    passed    100.00%
+  37  Laus_CNTNAP2            0.00%    passed    100.00%
+  38  Lbor_CNTNAP2            6.61%    passed    100.00%
+  39  Lhos30470_CNTNAP2       8.11%    passed    100.00%
+  40  Lhos452_CNTNAP2         0.23%    passed    100.00%
+  41  Lobl_CNTNAP2            0.00%    passed    100.00%
+  42  Lobs_CNTNAP2            2.70%    passed    100.00%
+  43  LperAUS_CNTNAP2         0.83%    passed    100.00%
+  44  Mbid_CNTNAP2           34.71%    passed     99.03%
+  45  Mbow_CNTNAP2            5.03%    passed    100.00%
+  46  Mcar_CNTNAP2            2.48%    passed    100.00%
+  47  Mden_CNTNAP2           26.15%    passed     99.96%
+  48  Meur_CNTNAP2            5.86%    passed    100.00%
+  49  Mgin_CNTNAP2            0.15%    passed    100.00%
+  50  MgraAUS_CNTNAP2        34.03%    passed     80.06%
+  51  Mhec_CNTNAP2           10.67%    passed    100.00%
+  52  MlayAUS_CNTNAP2         2.18%    passed    100.00%
+  53  Mmir_CNTNAP2           13.37%    passed    100.00%
+  54  Mmon_CNTNAP2            0.00%    passed    100.00%
+  55  Mper_CNTNAP2            2.63%    passed    100.00%
+  56  Mpni_CNTNAP2            0.15%    passed    100.00%
+  57  Mste_CNTNAP2            0.15%    passed    100.00%
+  58  Naasi_CNTNAP2           0.00%    passed    100.00%
+  59  Npho_CNTNAP2            6.76%    passed    100.00%
+  60  Oari_CNTNAP2            0.00%    passed    100.00%
+  61  Obre_CNTNAP2            0.00%    passed    100.00%
+  62  Ohei_CNTNAP2            5.86%    passed    100.00%
+  63  Oorc_CNTNAP2            0.00%    passed    100.00%
+  64  Pbla7349_CNTNAP2        7.29%    passed    100.00%
+  65  Pcat_CNTNAP2            1.58%    passed    100.00%
+  66  Pcra123188_CNTNAP2      0.00%    passed    100.00%
+  67  Pdal_CNTNAP2           51.92%    passed     99.79%
+  68  Pdio_CNTNAP2            0.00%    passed    100.00%
+  69  Pele_CNTNAP2            2.48%    passed    100.00%
+  70  Pmac_CNTNAP2           30.50%    passed     99.77%
+  71  Ppho_CNTNAP2            0.08%    passed    100.00%
+  72  Psin_CASQ1              0.00%    passed    100.00%
+  73  Pspi_CNTNAP2           16.60%    passed    100.00%
+  74  Satt18473_CNTNAP2       0.15%    passed    100.00%
+  75  Satt38219_CNTNAP2       6.69%    passed    100.00%
+  76  Sbre116871_CNTNAP2      2.63%    passed    100.00%
+  77  Sbre18437_CNTNAP2       2.63%    passed    100.00%
+  78  Schi_CNTNAP2            0.15%    passed    100.00%
+  79  Scly1724_CNTNAP2       32.98%    passed     98.91%
+  80  Scly1726_CNTNAP2        0.15%    passed    100.00%
+  81  Scoe_CNTNAP2            0.00%    passed    100.00%
+  82  Sflu9837_CNTNAP2        0.00%    passed    100.00%
+  83  Sfro7782_CNTNAP2        2.10%    passed    100.00%
+  84  Sfro7784_CNTNAP2        0.15%    passed    100.00%
+  85  Slon16012_CNTNAP2       0.15%    passed    100.00%
+  86  Slon24923_CNTNAP2       2.63%    passed    100.00%
+  87  Sscr_CNTNAP2            0.30%    passed    100.00%
+  88  Tadu79924_CNTNAP2       6.01%    passed    100.00%
+  89  Tshe_CNTNAP2            2.48%    passed    100.00%
+  90  Ttru_CNTNAP2            0.00%    passed    100.00%
+  91  Zcav_CNTNAP2            5.79%    passed    100.00%
+WARNING: 1 sequences contain more than 50% gaps/ambiguity
+****  TOTAL                   5.24%  0 sequences failed composition chi2 test (p-value<5%; df=19)
+NOTE: Satt18473_CNTNAP2 is identical to DdelSJR_CNTNAP2 but kept for subsequent analysis
+NOTE: Mmon_CNTNAP2 is identical to Dleu_CNTNAP2 but kept for subsequent analysis
+NOTE: Egla13086_CNTNAP2 is identical to EausAUS_CNTNAP2 but kept for subsequent analysis
+NOTE: Sbre18437_CNTNAP2 is identical to Sbre116871_CNTNAP2 but kept for subsequent analysis
+Checking for duplicate sequences: done in 0.00120718 secs using 161.9% CPU
+Identifying sites to remove: done in 0.00567692 secs using 79.71% CPU
+NOTE: 1 identical sequences (see below) will be ignored for subsequent analysis
+NOTE: Ejap43864_CNTNAP2 (identical to EausAUS_CNTNAP2) is ignored but added at the end
+Alignment was printed to CNTNAP2_WAG.uniqueseq.phy
+
+For your convenience alignment with unique sequences printed to CNTNAP2_WAG.uniqueseq.phy
+
+Create initial parsimony tree by phylogenetic likelihood library (PLL)... 0.003 seconds
+
+NOTE: 42 MB RAM (0 GB) is required!
+Estimate model parameters (epsilon = 0.100)
+1. Initial log-likelihood: -10818.031
+2. Current log-likelihood: -10054.029
+3. Current log-likelihood: -9879.433
+4. Current log-likelihood: -9873.661
+Optimal log-likelihood: -9873.655
+Gamma shape alpha: 0.123
+Parameters optimization took 4 rounds (8.669 sec)
+Wrote distance file to... 
+Computing ML distances based on estimated model parameters...
+Calculating distance matrix: done in 2.10701 secs using 399.7% CPU
+Computing ML distances took 2.108581 sec (of wall-clock time) 8.424234 sec (of CPU time)
+Setting up auxiliary I and S matrices: done in 0.00084679 secs using 166.5% CPU
+Constructing RapidNJ tree: done in 0.0586542 secs using 55.48% CPU
+Computing RapidNJ tree took 0.059696 sec (of wall-clock time) 0.034185 sec (of CPU time)
+ERROR: Alignment sequence Bacu_CNTNAP2 does not appear in the tree
+ERROR: Alignment sequence Barn_CNTNAP2 does not appear in the tree
+ERROR: Alignment sequence Bbai76728_CNTNAP2 does not appear in the tree
+ERROR: Alignment sequence BbonAUS_CNTNAP2 does not appear in the tree
+ERROR: Alignment sequence Bbor_CNTNAP2 does not appear in the tree
+ERROR: Alignment sequence Bede66737_CNTNAP2 does not appear in the tree
+ERROR: Alignment sequence BedeAUS_CNTNAP2 does not appear in the tree
+ERROR: Alignment sequence Bmus_CNTNAP2 does not appear in the tree
+ERROR: Alignment sequence Bphy_baits_CNTNAP2 does not appear in the tree
+ERROR: Alignment sequence Btau_CNTNAP2 does not appear in the tree
+ERROR: Alignment sequence Cela_CNTNAP2 does not appear in the tree
+ERROR: Alignment sequence Chir_CNTNAP2 does not appear in the tree
+ERROR: Alignment sequence Cmar59905_CNTNAP2 does not appear in the tree
+ERROR: Alignment sequence Dleu_CNTNAP2 does not appear in the tree
+ERROR: Alignment sequence Easi_CNTNAP2 does not appear in the tree
+ERROR: Alignment sequence EausAUS_CNTNAP2 does not appear in the tree
+ERROR: Alignment sequence Egla13086_CNTNAP2 does not appear in the tree
+ERROR: Alignment sequence Erob133443_CNTNAP2 does not appear in the tree
+ERROR: Alignment sequence Hamp_CNTNAP2 does not appear in the tree
+ERROR: Alignment sequence Hippo_CNTNAP2 does not appear in the tree
+ERROR: Alignment sequence Igeo_CNTNAP2 does not appear in the tree
+ERROR: Alignment sequence Kbre_CNTNAP2 does not appear in the tree
+ERROR: Alignment sequence Ksim_CNTNAP2 does not appear in the tree
+ERROR: Alignment sequence Mbid_CNTNAP2 does not appear in the tree
+ERROR: Alignment sequence Mbow_CNTNAP2 does not appear in the tree
+ERROR: Alignment sequence Mcar_CNTNAP2 does not appear in the tree
+ERROR: Alignment sequence Mden_CNTNAP2 does not appear in the tree
+ERROR: Alignment sequence Meur_CNTNAP2 does not appear in the tree
+ERROR: Alignment sequence Mgin_CNTNAP2 does not appear in the tree
+ERROR: Alignment sequence MgraAUS_CNTNAP2 does not appear in the tree
+ERROR: Alignment sequence Mhec_CNTNAP2 does not appear in the tree
+ERROR: Alignment sequence MlayAUS_CNTNAP2 does not appear in the tree
+ERROR: Alignment sequence Mmir_CNTNAP2 does not appear in the tree
+ERROR: Alignment sequence Mmon_CNTNAP2 does not appear in the tree
+ERROR: Alignment sequence Mper_CNTNAP2 does not appear in the tree
+ERROR: Alignment sequence Mpni_CNTNAP2 does not appear in the tree
+ERROR: Alignment sequence Mste_CNTNAP2 does not appear in the tree
+ERROR: Alignment sequence Naasi_CNTNAP2 does not appear in the tree
+ERROR: Alignment sequence Npho_CNTNAP2 does not appear in the tree
+ERROR: Alignment sequence Oari_CNTNAP2 does not appear in the tree
+ERROR: Alignment sequence Pbla7349_CNTNAP2 does not appear in the tree
+ERROR: Alignment sequence Pcat_CNTNAP2 does not appear in the tree
+ERROR: Alignment sequence Pdal_CNTNAP2 does not appear in the tree
+ERROR: Alignment sequence Pdio_CNTNAP2 does not appear in the tree
+ERROR: Alignment sequence Pmac_CNTNAP2 does not appear in the tree
+ERROR: Alignment sequence Ppho_CNTNAP2 does not appear in the tree
+ERROR: Alignment sequence Psin_CASQ1 does not appear in the tree
+ERROR: Alignment sequence Pspi_CNTNAP2 does not appear in the tree
+ERROR: Alignment sequence Scly1724_CNTNAP2 does not appear in the tree
+ERROR: Alignment sequence Sscr_CNTNAP2 does not appear in the tree
+ERROR: Alignment sequence Tshe_CNTNAP2 does not appear in the tree
+ERROR: Alignment sequence Zcav_CNTNAP2 does not appear in the tree
+(Ddeltrop4525_CNTNAP2,Lobs_CNTNAP2,(((Slon24923_CNTNAP2,(Laus_CNTNAP2,Lbor_CNTNAP2)),Ccom40_CNTNAP2),((((((Sbre116871_CNTNAP2,Sbre18437_CNTNAP2),Oorc_CNTNAP2),(((Pele_CNTNAP2,((Ohei_CNTNAP2,Obre_CNTNAP2),Lalb_CNTNAP2)),Ggri_CNTNAP2),((Pcra123188_CNTNAP2,Lacu_CNTNAP2),((Fatt_CNTNAP2,Gmac39091_CNTNAP2),Gmel_CNTNAP2)))),((Slon16012_CNTNAP2,Ttru_CNTNAP2),(((LperAUS_CNTNAP2,(((((Scoe_CNTNAP2,((Sfro7782_CNTNAP2,Satt18473_CNTNAP2),DdelSJR_CNTNAP2)),Sfro7784_CNTNAP2),(Dcap108471_CNTNAP2,Satt38219_CNTNAP2)),Lhos30470_CNTNAP2),Dcap79929_CNTNAP2)),Lhos452_CNTNAP2),Scly1726_CNTNAP2))),((Schi_CNTNAP2,Sflu9837_CNTNAP2),Lobl_CNTNAP2)),(Chea7320_CNTNAP2,Tadu79924_CNTNAP2))));
+ERROR: Tree taxa and alignment sequence do not match (see above)

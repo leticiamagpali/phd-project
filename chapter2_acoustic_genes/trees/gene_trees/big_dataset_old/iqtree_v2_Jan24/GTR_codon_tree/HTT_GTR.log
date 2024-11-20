@@ -1,0 +1,145 @@
+IQ-TREE multicore version 2.2.0-beta COVID-edition for Linux 64-bit built Dec 21 2021 built Dec 21 2021
+Developed by Bui Quang Minh, James Barbetti, Nguyen Lam Tung,
+Olga Chernomor, Heiko Schmidt, Dominik Schrempf, Michael Woodhams, Ly Trong Nhan.
+
+Host:    awarnach10 (SSE3, 3 GB RAM)
+Command: iqtree -s codon_alignments_v2_Jan24/HTT_codon_aligned.phy -m GTR+G4 -pre HTT_GTR -nt 4
+Seed:    443391 (Using SPRNG - Scalable Parallel Random Number Generator)
+Time:    Mon Jan 29 16:11:23 2024
+Kernel:  SSE2 - 4 threads (4 CPU cores detected)
+
+Reading alignment file codon_alignments_v2_Jan24/HTT_codon_aligned.phy ... Fasta format detected
+Reading fasta file: done in 0.0411058 secs using 92.2% CPU
+Alignment most likely contains DNA/RNA sequences
+Constructing alignment: done in 0.0484769 secs using 79.77% CPU
+WARNING: 3 sites contain only gaps or ambiguous characters.
+Alignment has 93 sequences with 9393 columns, 3675 distinct patterns
+1729 parsimony-informative, 1376 singleton sites, 6288 constant sites
+                  Gap/Ambiguity  Composition  p-value
+Analyzing sequences: done in 0.00173376 secs using 99.44% CPU
+   1  Bacu_HTT            0.10%    passed     56.38%
+   2  Barn_HTT           54.33%    failed      0.07%
+   3  Bbai76728_HTT      19.51%    passed     85.10%
+   4  BbonAUS_HTT        18.94%    passed     89.94%
+   5  Bbor_HTT           25.93%    passed     82.10%
+   6  Bede66737_HTT      22.87%    passed     99.32%
+   7  BedeAUS_HTT        25.14%    passed     99.69%
+   8  Bmus_HTT            0.06%    passed     59.59%
+   9  Bmys_HTT            2.71%    passed     67.16%
+  10  Bphy_HTT           12.46%    passed     87.89%
+  11  Bphy_baits_HTT     23.19%    passed     82.41%
+  12  Btau_HTT            0.19%    failed      0.00%
+  13  Ccom40_HTT         34.14%    failed      2.19%
+  14  Cela_HTT            0.10%    failed      0.00%
+  15  Chea7320_HTT       21.24%    passed     85.07%
+  16  Cmar59905_HTT      21.88%    passed     96.69%
+  17  Dcap108471_HTT     16.70%    passed     82.95%
+  18  Dcap79929_HTT      16.48%    passed     91.74%
+  19  DdelSJR_HTT        18.36%    passed     81.72%
+  20  Ddeltrop4525_HTT   16.77%    passed     69.96%
+  21  Dleu_HTT            0.29%    passed     84.81%
+  22  EausAUS_HTT        21.37%    passed     67.48%
+  23  Ecab_HTT            0.22%    failed      0.00%
+  24  Egla13086_HTT      11.37%    passed     88.87%
+  25  Ejap43864_HTT      17.18%    passed     66.18%
+  26  Erob133443_HTT     26.29%    passed     38.74%
+  27  Fatt_HTT           18.62%    passed     93.23%
+  28  Ggri_HTT           15.71%    passed     86.40%
+  29  Gmac39091_HTT      18.21%    passed     92.23%
+  30  Gmel_HTT            0.26%    passed     74.41%
+  31  Hamp_HTT           18.94%    passed     90.19%
+  32  Hippo_HTT           0.35%    passed     12.95%
+  33  Igeo_HTT           30.73%    passed     84.01%
+  34  Kbre_HTT           15.14%    passed     89.42%
+  35  Ksim_HTT           18.88%    passed     91.54%
+  36  Lacu_HTT           21.11%    passed     96.53%
+  37  Lalb_HTT           17.82%    passed     91.16%
+  38  Laus_HTT           20.86%    passed     77.59%
+  39  Lbor_HTT           28.11%    passed     24.36%
+  40  Lhos30470_HTT      14.50%    passed     86.75%
+  41  Lhos452_HTT        18.84%    passed     79.57%
+  42  Lobl_HTT            0.26%    passed     74.97%
+  43  Lobs_HTT           17.57%    passed     98.34%
+  44  LperAUS_HTT        24.47%    passed     37.36%
+  45  Lvex_HTT            0.89%    passed     82.80%
+  46  Mbid_HTT           29.77%    passed     12.49%
+  47  Mbow_HTT           22.90%    passed     61.58%
+  48  Mcar_HTT           29.86%    passed     29.44%
+  49  Mden_HTT           32.03%    failed      4.37%
+  50  Meur_HTT           22.96%    passed     53.50%
+  51  Mgin_HTT           21.49%    passed     99.25%
+  52  MgraAUS_HTT        54.90%    failed      1.17%
+  53  Mhec_HTT           27.82%    passed     23.36%
+  54  MlayAUS_HTT        29.96%    passed     13.09%
+  55  Mmir_HTT           29.00%    failed      3.68%
+  56  Mmon_HTT            0.32%    passed     83.16%
+  57  Mnov_HTT           17.95%    passed     75.28%
+  58  Mper_HTT           20.47%    passed     69.68%
+  59  Mpni_HTT           23.76%    passed     33.73%
+  60  Mste_HTT           17.15%    passed     81.22%
+  61  Naasi_HTT           0.87%    passed     78.57%
+  62  Npho_HTT            4.22%    passed     88.76%
+  63  Oari_HTT            0.22%    failed      0.00%
+  64  Obre_HTT           19.51%    passed     93.59%
+  65  Ohei_HTT           16.26%    passed     85.92%
+  66  Oorc_HTT            0.29%    passed     79.07%
+  67  Pbla7349_HTT       22.74%    passed     82.68%
+  68  Pcra123188_HTT     23.60%    passed     79.98%
+  69  Pdal_HTT           56.91%    passed     50.28%
+  70  Pdio_HTT           16.10%    passed     96.68%
+  71  Pele_HTT           21.14%    passed     95.34%
+  72  Pcat_HTT            0.13%    passed     61.71%
+  73  Pmac_HTT           58.32%    failed      3.75%
+  74  Ppho_HTT           24.62%    passed     80.34%
+  75  Psin_HTT            0.26%    passed     70.34%
+  76  Pspi_HTT           33.63%    passed     24.00%
+  77  Satt18473_HTT      18.11%    passed     97.63%
+  78  Satt38219_HTT      30.66%    passed     49.58%
+  79  Sbre116871_HTT     17.76%    passed     94.31%
+  80  Sbre18437_HTT      20.79%    passed     89.74%
+  81  Schi_HTT           17.12%    passed     69.63%
+  82  Scly1724_HTT       65.31%    failed      0.00%
+  83  Scly1726_HTT       17.21%    passed     88.03%
+  84  Scoe_HTT           20.12%    passed     96.09%
+  85  Sflu9837_HTT       18.30%    passed     93.08%
+  86  Sfro7782_HTT       19.90%    passed     81.85%
+  87  Sfro7784_HTT       15.04%    passed     89.71%
+  88  Slon16012_HTT      22.29%    passed     57.81%
+  89  Slon24923_HTT      19.42%    passed     95.26%
+  90  Tadu79924_HTT      22.07%    passed     90.27%
+  91  Tshe_HTT           20.92%    passed     40.97%
+  92  Ttru_HTT            0.32%    passed     80.34%
+  93  Zcav_HTT           28.49%    passed     14.40%
+WARNING: 5 sequences contain more than 50% gaps/ambiguity
+****  TOTAL              19.16%  11 sequences failed composition chi2 test (p-value<5%; df=3)
+Checking for duplicate sequences: done in 0.00565973 secs using 49.17% CPU
+
+Create initial parsimony tree by phylogenetic likelihood library (PLL)... 0.011 seconds
+
+NOTE: 44 MB RAM (0 GB) is required!
+Estimate model parameters (epsilon = 0.100)
+1. Initial log-likelihood: -79681.421
+2. Current log-likelihood: -69305.094
+3. Current log-likelihood: -67545.102
+4. Current log-likelihood: -67158.122
+5. Current log-likelihood: -67105.983
+6. Current log-likelihood: -67097.106
+7. Current log-likelihood: -67095.333
+8. Current log-likelihood: -67094.982
+Optimal log-likelihood: -67094.852
+Rate parameters:  A-C: 1.02408  A-G: 6.81841  A-T: 0.34256  C-G: 1.18765  C-T: 6.81822  G-T: 1.00000
+Base frequencies:  A: 0.216  C: 0.288  G: 0.276  T: 0.220
+Gamma shape alpha: 0.147
+Parameters optimization took 8 rounds (12.013 sec)
+Wrote distance file to... 
+Computing ML distances based on estimated model parameters...
+Calculating distance matrix: done in 0.0716154 secs using 407.9% CPU
+Computing ML distances took 0.078290 sec (of wall-clock time) 0.300674 sec (of CPU time)
+Setting up auxiliary I and S matrices: done in 0.000880571 secs using 168.6% CPU
+Constructing RapidNJ tree: done in 0.0612603 secs using 39.19% CPU
+Computing RapidNJ tree took 0.062813 sec (of wall-clock time) 0.026666 sec (of CPU time)
+ERROR: Alignment sequence Bacu_HTT does not appear in the tree
+ERROR: Alignment sequence Schi_HTT does not appear in the tree
+ERROR: Alignment sequence Ttru_HTT does not appear in the tree
+(Scoe_HTT,Lhos30470_HTT,(((((((((((((Barn_HTT,Mden_HTT),((Ccom40_HTT,Scly1724_HTT),Pspi_HTT)),((((((Bbai76728_HTT,Mbid_HTT),((Hamp_HTT,((((((Mbow_HTT,Mcar_HTT),Mgin_HTT),Mper_HTT),(Mhec_HTT,(Mpni_HTT,Mste_HTT))),Mmir_HTT),MlayAUS_HTT)),MgraAUS_HTT)),Zcav_HTT),Meur_HTT),Tshe_HTT),((((((BbonAUS_HTT,((Bmus_HTT,Mnov_HTT),(Bphy_HTT,Bphy_baits_HTT))),Erob133443_HTT),(Bbor_HTT,(Bede66737_HTT,BedeAUS_HTT))),((Bmys_HTT,(Egla13086_HTT,Ejap43864_HTT)),EausAUS_HTT)),Cmar59905_HTT),(((Pcat_HTT,Pmac_HTT),(Kbre_HTT,Ksim_HTT)),((((Btau_HTT,Oari_HTT),Cela_HTT),Hippo_HTT),Ecab_HTT))))),((Pbla7349_HTT,Lvex_HTT),Igeo_HTT)),((((Npho_HTT,Naasi_HTT),Pdal_HTT),(Ppho_HTT,(Psin_HTT,Pdio_HTT))),(Mmon_HTT,Dleu_HTT))),((((Lobl_HTT,Lobs_HTT),LperAUS_HTT),Lbor_HTT),(Chea7320_HTT,Laus_HTT))),(Obre_HTT,Ohei_HTT)),(Oorc_HTT,Lacu_HTT)),(((((Pcra123188_HTT,Gmac39091_HTT),((Sbre18437_HTT,(Fatt_HTT,Lalb_HTT)),Dcap108471_HTT)),Pele_HTT),((Sbre116871_HTT,Ggri_HTT),Gmel_HTT)),Sflu9837_HTT)),Slon16012_HTT),(Lhos452_HTT,Scly1726_HTT)),Slon24923_HTT),((Dcap79929_HTT,(DdelSJR_HTT,Ddeltrop4525_HTT)),(((Sfro7782_HTT,Tadu79924_HTT),(Satt18473_HTT,Satt38219_HTT)),Sfro7784_HTT))));
+ERROR: Tree taxa and alignment sequence do not match (see above)

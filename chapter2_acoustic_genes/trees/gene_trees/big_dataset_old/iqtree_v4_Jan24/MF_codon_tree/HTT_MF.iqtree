@@ -1,0 +1,322 @@
+IQ-TREE 2.2.0-beta COVID-edition built Dec 21 2021
+
+Input file name: codon_alignments_v4_Jan24/HTT_codon_aligned.phy
+Type of analysis: ModelFinder + tree reconstruction
+Random seed number: 691773
+
+REFERENCES
+----------
+
+To cite IQ-TREE please use:
+
+Bui Quang Minh, Heiko A. Schmidt, Olga Chernomor, Dominik Schrempf,
+Michael D. Woodhams, Arndt von Haeseler, and Robert Lanfear (2020)
+IQ-TREE 2: New models and efficient methods for phylogenetic inference
+in the genomic era. Mol. Biol. Evol., in press.
+https://doi.org/10.1093/molbev/msaa015
+
+To cite ModelFinder please use: 
+
+Subha Kalyaanamoorthy, Bui Quang Minh, Thomas KF Wong, Arndt von Haeseler,
+and Lars S Jermiin (2017) ModelFinder: Fast model selection for
+accurate phylogenetic estimates. Nature Methods, 14:587–589.
+https://doi.org/10.1038/nmeth.4285
+
+SEQUENCE ALIGNMENT
+------------------
+
+Input data: 88 sequences with 3130 codon sites
+Number of constant sites: 1739 (= 55.5591% of all sites)
+Number of invariant (constant or ambiguous constant) sites: 1739 (= 55.5591% of all sites)
+Number of parsimony informative sites: 777
+Number of distinct site patterns: 2749
+
+ModelFinder
+-----------
+
+Best-fit model according to BIC: KOSI07+F+G4
+
+List of models sorted by BIC scores: 
+
+Model                  LogL         AIC      w-AIC        AICc     w-AICc         BIC      w-BIC
+KOSI07+F+G4      -32560.509   65589.018 +    0.551   65627.008 +    0.593   67004.434 +    0.962
+KOSI07+F+I+G4    -32559.714   65589.429 +    0.449   65627.757 +    0.407   67010.894 -   0.0381
+KOSI07+F3X4+G4   -32804.679   65975.358 - 7.06e-85   65998.217 - 1.46e-81   67082.286 -  1.2e-17
+KOSI07+F3X4+I+G4  -32803.730   65975.460 - 6.71e-85   65998.577 - 1.22e-81   67088.437 - 5.52e-19
+SCHN05+F+G4      -32633.424   65734.849 - 1.19e-32   65772.839 - 1.28e-32   67150.265 - 2.07e-32
+SCHN05+F+I+G4    -32633.197   65736.395 - 5.48e-33   65774.722 - 4.98e-33   67157.860 - 4.65e-34
+SCHN05+F3X4+G4   -32978.113   66322.225 - 3.37e-160   66345.085 - 6.99e-157   67429.153 - 5.71e-93
+SCHN05+F3X4+I+G4  -32977.355   66322.711 - 2.64e-160   66345.828 - 4.82e-157   67435.688 - 2.18e-94
+KOSI07+FU+I+G4   -33057.704   66465.409 - 2.73e-191   66486.262 - 1.54e-187   67523.947 - 1.49e-113
+KOSI07+FU+G4     -33062.127   66472.255 - 8.89e-193   66492.864 - 5.68e-189   67524.744 - 9.99e-114
+MG+F3X4+I+G4     -33028.556   66427.112 - 5.64e-183   66450.488 - 9.04e-180   67546.137 - 2.26e-118
+MG+F3X4+G4       -33032.709   66433.418 - 2.41e-184   66456.536 - 4.4e-181   67546.395 - 1.99e-118
+MGK+F3X4+I+G4    -33028.588   66429.177 - 2.01e-183   66452.814 - 2.83e-180   67554.251 - 3.91e-120
+MGK+F3X4+G4      -33032.900   66435.800 - 7.33e-185   66459.177 - 1.17e-181   67554.826 - 2.93e-120
+SCHN05+FU+I+G4   -33098.486   66546.972 - 5.3e-209   66567.825 -   3e-205   67605.510 - 2.89e-131
+SCHN05+FU+G4     -33103.492   66554.983 - 9.65e-211   66575.592 - 6.17e-207   67607.472 - 1.08e-131
+GY+F3X4+I+G4     -33056.494   66484.988 - 1.53e-195   66508.625 - 2.15e-192   67610.063 - 2.97e-132
+GY+F3X4+G4       -33064.673   66499.345 - 1.16e-198   66522.722 - 1.87e-195   67618.371 - 4.66e-134
+GY+F+I+G4        -32858.346   66190.693 - 1.23e-131   66229.701 - 7.93e-132   67624.256 - 2.46e-135
+GY+F+G4          -32862.906   66197.812 - 3.49e-133   66236.480 - 2.68e-133   67625.327 - 1.44e-135
+KOSI07+F1X4+I+G4  -33142.089   66640.177 - 3.05e-229   66661.771 - 1.19e-225   67716.862 - 1.91e-155
+KOSI07+F1X4+G4   -33147.579   66649.159 - 3.43e-231   66670.504 - 1.51e-227   67719.794 - 4.41e-156
+GY+F1X4+I+G4     -33245.470   66850.940 - 5.23e-275   66873.036 - 1.59e-271   67939.722 - 7.73e-204
+GY+F1X4+G4       -33249.790   66857.580 - 1.89e-276   66879.424 - 6.51e-273   67940.313 - 5.75e-204
+MG+F1X4+G4       -33281.874   66919.749 - 5.98e-290   66941.343 - 2.34e-286   67996.433 - 3.74e-216
+MG+F1X4+I+G4     -33277.927   66913.854 - 1.14e-288   66935.698 - 3.93e-285   67996.587 - 3.47e-216
+MGK+F1X4+G4      -33281.297   66920.595 - 3.92e-290   66942.439 - 1.35e-286   68003.328 - 1.19e-217
+MGK+F1X4+I+G4    -33277.300   66914.599 - 7.85e-289   66936.695 - 2.39e-285   68003.381 - 1.16e-217
+GY+F3X4+I        -33285.416   66940.831 - 1.58e-294   66964.208 - 2.53e-291   68059.857 - 6.32e-230
+SCHN05+F1X4+I+G4  -33346.654   67049.308 - 4.4e-318   67070.902 - 1.72e-314   68125.992 - 2.75e-244
+SCHN05+F1X4+G4   -33354.264   67062.529 - 5.92e-321   67083.875 - 2.62e-317   68133.165 - 7.63e-246
+GY+F3X4          -33818.846   68005.691 -        0   68028.808 -        0   69118.668 -        0
+
+AIC, w-AIC   : Akaike information criterion scores and weights.
+AICc, w-AICc : Corrected AIC scores and weights.
+BIC, w-BIC   : Bayesian information criterion scores and weights.
+
+Plus signs denote the 95% confidence sets.
+Minus signs denote significant exclusion.
+
+SUBSTITUTION PROCESS
+--------------------
+
+Model of substitution: KOSI07+F+G4
+
+State frequencies: (empirical counts from alignment)
+
+  pi(AAA) = 0.0135  pi(AAC) = 0.0151  pi(AAG) = 0.0209  pi(AAT) = 0.0074
+  pi(ACA) = 0.0096  pi(ACC) = 0.0240  pi(ACG) = 0.0126  pi(ACT) = 0.0097
+  pi(AGA) = 0.0113  pi(AGC) = 0.0285  pi(AGG) = 0.0161  pi(AGT) = 0.0108
+  pi(ATA) = 0.0064  pi(ATC) = 0.0244  pi(ATG) = 0.0211  pi(ATT) = 0.0127
+  pi(CAA) = 0.0072  pi(CAC) = 0.0222  pi(CAG) = 0.0449  pi(CAT) = 0.0067
+  pi(CCA) = 0.0098  pi(CCC) = 0.0181  pi(CCG) = 0.0140  pi(CCT) = 0.0151
+  pi(CGA) = 0.0022  pi(CGC) = 0.0087  pi(CGG) = 0.0108  pi(CGT) = 0.0044
+  pi(CTA) = 0.0063  pi(CTC) = 0.0276  pi(CTG) = 0.0574  pi(CTT) = 0.0177
+  pi(GAA) = 0.0204  pi(GAC) = 0.0318  pi(GAG) = 0.0394  pi(GAT) = 0.0157
+  pi(GCA) = 0.0161  pi(GCC) = 0.0332  pi(GCG) = 0.0105  pi(GCT) = 0.0204
+  pi(GGA) = 0.0105  pi(GGC) = 0.0167  pi(GGG) = 0.0148  pi(GGT) = 0.0055
+  pi(GTA) = 0.0042  pi(GTC) = 0.0240  pi(GTG) = 0.0397  pi(GTT) = 0.0111
+  pi(TAC) = 0.0149  pi(TAT) = 0.0057  pi(TCA) = 0.0127  pi(TCC) = 0.0196
+  pi(TCG) = 0.0064  pi(TCT) = 0.0183  pi(TGC) = 0.0128  pi(TGG) = 0.0103
+  pi(TGT) = 0.0102  pi(TTA) = 0.0086  pi(TTC) = 0.0175  pi(TTG) = 0.0183
+  pi(TTT) = 0.0137
+Model of rate heterogeneity: Gamma with 4 categories
+Gamma shape alpha: 0.6020
+
+ Category  Relative_rate  Proportion
+  1         0.0535         0.2500
+  2         0.3134         0.2500
+  3         0.8823         0.2500
+  4         2.7508         0.2500
+Relative rates are computed as MEAN of the portion of the Gamma distribution falling in the category.
+
+MAXIMUM LIKELIHOOD TREE
+-----------------------
+
+Log-likelihood of the tree: -32560.5090 (s.e. 507.8905)
+Unconstrained log-likelihood (without tree): -24583.9639
+Number of free parameters (#branches + #model parameters): 234
+Akaike information criterion (AIC) score: 65589.0180
+Corrected Akaike information criterion (AICc) score: 65627.0077
+Bayesian information criterion (BIC) score: 67004.4345
+
+Total tree length (sum of branch lengths): 1.2453
+Sum of internal branch lengths: 0.4794 (38.5016% of tree length)
+
+WARNING: 10 near-zero internal branches (<0.0003) should be treated with caution
+         Such branches are denoted by '**' in the figure below
+
+NOTE: Tree is UNROOTED although outgroup taxon 'Bacu_HTT' is drawn at root
+
+NOTE: Branch lengths are interpreted as number of nucleotide substitutions per codon site!
+      Rescale them by 1/3 if you want to have #nt substitutions per nt site
+
++--Bacu_HTT
+|
+|                                                         +----Barn_HTT
+|                                            +------------|
+|                                            |            +--Mden_HTT
+|                                         +**|
+|                                         |  +----Bbai76728_HTT
+|                                      +--|
+|                                      |  |     +--Hamp_HTT
+|                                      |  |  +--|
+|                                      |  |  |  |     +------Mbid_HTT
+|                                      |  |  |  |  +--|
+|                                      |  |  |  |  |  |     +--Mbow_HTT
+|                                      |  |  |  |  |  |  +--|
+|                                      |  |  |  |  |  |  |  |  +--------------Mcar_HTT
+|                                      |  |  |  |  |  |  |  +--|
+|                                      |  |  |  |  |  |  |     +--MlayAUS_HTT
+|                                      |  |  |  |  |  +--|
+|                                      |  |  |  |  |     |  +--MgraAUS_HTT
+|                                      |  |  |  |  |     +--|
+|                                      |  |  |  |  |        |  +--Mhec_HTT
+|                                      |  |  |  |  |        +--|
+|                                      |  |  |  |  |           |     +--Mper_HTT
+|                                      |  |  |  |  |           |  +--|
+|                                      |  |  |  |  |           |  |  +--Mpni_HTT
+|                                      |  |  |  |  |           +--|
+|                                      |  |  |  |  |              +--Mste_HTT
+|                                      |  |  |  +--|
+|                                      |  |  |     |     +--Meur_HTT
+|                                      |  |  |     |  +**|
+|                                      |  |  |     |  |  +--Mmir_HTT
+|                                      |  |  |     +--|
+|                                      |  |  |        +--Mgin_HTT
+|                                      |  +**|
+|                                      |     +----Zcav_HTT
+|                          +-----------|
+|                          |           +---Tshe_HTT
+|                       +--|
+|                       |  |                                                    +--Ccom40_HTT
+|                       |  |                                     +--------------|
+|                       |  |                                     |              +--Scly1724_HTT
+|                       |  |                                  +**|
+|                       |  |                                  |  +--Scly1726_HTT
+|                       |  |                               +--|
+|                       |  |                               |  |  +--Dcap79929_HTT
+|                       |  |                               |  +--|
+|                       |  |                               |     |  +--DdelSJR_HTT
+|                       |  |                               |     +--|
+|                       |  |                               |        +--Ddeltrop4525_HTT
+|                       |  |                            +**|
+|                       |  |                            |  +--Slon24923_HTT
+|                       |  |                         +--|
+|                       |  |                         |  +--Lhos452_HTT
+|                       |  |                      +--|
+|                       |  |                      |  +--Slon16012_HTT
+|                       |  |                   +--|
+|                       |  |                   |  |     +--Lhos30470_HTT
+|                       |  |                   |  |  +--|
+|                       |  |                   |  |  |  |  +---Schi_HTT
+|                       |  |                   |  |  |  +--|
+|                       |  |                   |  |  |     +--Ttru_HTT
+|                       |  |                   |  +--|
+|                       |  |                   |     |           +--Satt18473_HTT
+|                       |  |                   |     |        +--|
+|                       |  |                   |     |        |  +--Satt38219_HTT
+|                       |  |                   |     |     +--|
+|                       |  |                   |     |     |  |  +--Sfro7782_HTT
+|                       |  |                   |     |     |  +--|
+|                       |  |                   |     |     |     +--Sfro7784_HTT
+|                       |  |                   |     |  +--|
+|                       |  |                   |     |  |  +--Tadu79924_HTT
+|                       |  |                   |     +**|
+|                       |  |                   |        +--Scoe_HTT
+|                       |  |                +--|
+|                       |  |                |  +--Sflu9837_HTT
+|                       |  |             +--|
+|                       |  |             |  |        +--Chea7320_HTT
+|                       |  |             |  |     +--|
+|                       |  |             |  |     |  +--Laus_HTT
+|                       |  |             |  |  +--|
+|                       |  |             |  |  |  |     +--Lbor_HTT
+|                       |  |             |  |  |  |  +--|
+|                       |  |             |  |  |  |  |  +--LperAUS_HTT
+|                       |  |             |  |  |  +**|
+|                       |  |             |  |  |     |  +--Lobl_HTT
+|                       |  |             |  |  |     +--|
+|                       |  |             |  |  |        +--Lobs_HTT
+|                       |  |             |  +--|
+|                       |  |             |     |                           +--Dcap108471_HTT
+|                       |  |             |     |                        +--|
+|                       |  |             |     |                        |  +---Lalb_HTT
+|                       |  |             |     |                 +------|
+|                       |  |             |     |                 |      |     +----------------Fatt_HTT
+|                       |  |             |     |                 |      |  +--|
+|                       |  |             |     |                 |      |  |  +--Pcra123188_HTT
+|                       |  |             |     |                 |      +**|
+|                       |  |             |     |                 |         +--Gmac39091_HTT
+|                       |  |             |     |              +**|
+|                       |  |             |     |              |  +--Gmel_HTT
+|                       |  |             |     |           +**|
+|                       |  |             |     |           |  +--Pele_HTT
+|                       |  |             |     |        +--|
+|                       |  |             |     |        |  +--Ggri_HTT
+|                       |  |             |     |     +--|
+|                       |  |             |     |     |  |  +--Sbre116871_HTT
+|                       |  |             |     |     |  +--|
+|                       |  |             |     |     |     +--Sbre18437_HTT
+|                       |  |             |     |  +--|
+|                       |  |             |     |  |  +--Oorc_HTT
+|                       |  |             |     +--|
+|                       |  |             |        |  +--Obre_HTT
+|                       |  |             |        +--|
+|                       |  |             |           +--Ohei_HTT
+|                       |  |          +--|
+|                       |  |          |  +------Lacu_HTT
+|                       |  |     +----|
+|                       |  |     |    |     +--Dleu_HTT
+|                       |  |     |    |  +--|
+|                       |  |     |    |  |  +--Mmon_HTT
+|                       |  |     |    +--|
+|                       |  |     |       |              +----Naasi_HTT
+|                       |  |     |       |     +--------|
+|                       |  |     |       |     |        +--Npho_HTT
+|                       |  |     |       |  +--|
+|                       |  |     |       |  |  +---Pdal_HTT
+|                       |  |     |       +--|
+|                       |  |     |          |        +--Pdio_HTT
+|                       |  |     |          |     +--|
+|                       |  |     |          |     |  +-------------Pspi_HTT
+|                       |  |     |          |  +--|
+|                       |  |     |          |  |  +--Psin_HTT
+|                       |  |     |          +--|
+|                       |  |     |             +--Ppho_HTT
+|                       |  |  +--|
+|                       |  |  |  |  +------Igeo_HTT
+|                       |  |  |  +--|
+|                       |  |  |     +---------Pbla7349_HTT
+|                       |  +--|
+|                       |     +----------------------------------Lvex_HTT
+|                +------|
+|                |      |                  +-----Kbre_HTT
+|                |      |      +-----------|
+|                |      |      |           +-----Ksim_HTT
+|                |      +------|
+|                |             |          +--Pcat_HTT
+|                |             +----------|
+|                |                        +--Pmac_HTT
+|             +--|
+|             |  |  +--Bmys_HTT
+|             |  +--|
+|             |     |  +--EausAUS_HTT
+|             |     +--|
+|             |        |  +--Egla13086_HTT
+|             |        +--|
+|             |           +--Ejap43864_HTT
+|          +--|
+|          |  +------Cmar59905_HTT
+|       +--|
+|       |  +---Erob133443_HTT
+|    +--|
+|    |  |     +--Bphy_HTT
+|    |  |  +--|
+|    |  |  |  +--Bphy_baits_HTT
+|    |  +--|
+|    |     +---------Mnov_HTT
++----|
+|    |     +--Bbor_HTT
+|    |  +--|
+|    |  |  |  +--Bede66737_HTT
+|    |  |  +--|
+|    |  |     +--BedeAUS_HTT
+|    +--|
+|       +---Bmus_HTT
+|
++--BbonAUS_HTT
+
+Tree in newick format:
+
+(Bacu_HTT:0.0063024547,(((((((((((Barn_HTT:0.0140417359,Mden_HTT:0.0061112036):0.0356615575,Bbai76728_HTT:0.0159214567):0.0000023306,((Hamp_HTT:0.0060593981,((Mbid_HTT:0.0215407982,((Mbow_HTT:0.0040794313,(Mcar_HTT:0.0422357415,MlayAUS_HTT:0.0050670299):0.0008224273):0.0008117350,(MgraAUS_HTT:0.0045274381,(Mhec_HTT:0.0068997332,((Mper_HTT:0.0039285900,Mpni_HTT:0.0044433076):0.0008834139,Mste_HTT:0.0047697316):0.0005530982):0.0018847899):0.0012193186):0.0012664504):0.0008117682,((Meur_HTT:0.0101692577,Mmir_HTT:0.0049460237):0.0000026658,Mgin_HTT:0.0045723969):0.0015845119):0.0030874264):0.0026875327,Zcav_HTT:0.0146301097):0.0000026658):0.0062932768,Tshe_HTT:0.0112523770):0.0334214667,(((((((((((((Ccom40_HTT:0.0072018435,Scly1724_HTT:0.0077453069):0.0410273767,Scly1726_HTT:0.0027426051):0.0000023033,(Dcap79929_HTT:0.0007885762,(DdelSJR_HTT:0.0013254019,Ddeltrop4525_HTT:0.0016316858):0.0016362172):0.0038839694):0.0008012786,Slon24923_HTT:0.0041541548):0.0000026632,Lhos452_HTT:0.0034454330):0.0006871513,Slon16012_HTT:0.0021983895):0.0012201908,((Lhos30470_HTT:0.0017347368,(Schi_HTT:0.0125940267,Ttru_HTT:0.0044362486):0.0022938311):0.0003805991,((((Satt18473_HTT:0.0019320594,Satt38219_HTT:0.0033578741):0.0008622960,(Sfro7782_HTT:0.0018779840,Sfro7784_HTT:0.0060487893):0.0005843478):0.0014369444,Tadu79924_HTT:0.0022248623):0.0012610550,Scoe_HTT:0.0062065355):0.0000020523):0.0014191604):0.0022281455,Sflu9837_HTT:0.0034531259):0.0007361391,(((Chea7320_HTT:0.0021923577,Laus_HTT:0.0004337528):0.0020333972,((Lbor_HTT:0.0023697079,LperAUS_HTT:0.0017904906):0.0004220420,(Lobl_HTT:0.0023149331,Lobs_HTT:0.0024452116):0.0005011237):0.0000026658):0.0057625452,((((((((Dcap108471_HTT:0.0084458194,Lalb_HTT:0.0122426257):0.0043128968,((Fatt_HTT:0.0460082092,Pcra123188_HTT:0.0022261430):0.0003841869,Gmac39091_HTT:0.0004124541):0.0000026632):0.0194810312,Gmel_HTT:0.0029438804):0.0000026658,Pele_HTT:0.0025507849):0.0000013153,Ggri_HTT:0.0051303805):0.0004198075,(Sbre116871_HTT:0.0005321700,Sbre18437_HTT:0.0016334793):0.0030471025):0.0015211007,Oorc_HTT:0.0088821699):0.0014603355,(Obre_HTT:0.0016750929,Ohei_HTT:0.0032306946):0.0017907538):0.0008515757):0.0004601263):0.0029056561,Lacu_HTT:0.0202808791):0.0080550782,((Dleu_HTT:0.0033458320,Mmon_HTT:0.0016772366):0.0063007943,(((Naasi_HTT:0.0143328880,Npho_HTT:0.0016687528):0.0254962225,Pdal_HTT:0.0116408018):0.0056016734,(((Pdio_HTT:0.0032902425,Pspi_HTT:0.0392472146):0.0010367748,Psin_HTT:0.0021515061):0.0013411177,Ppho_HTT:0.0021999617):0.0015522064):0.0094222090):0.0079717174):0.0151022636,(Igeo_HTT:0.0189258601,Pbla7349_HTT:0.0283166017):0.0076752269):0.0016807195,Lvex_HTT:0.0964901322):0.0103405796):0.0054418543,((Kbre_HTT:0.0177632826,Ksim_HTT:0.0174410380):0.0327158825,(Pcat_HTT:0.0007000113,Pmac_HTT:0.0032222340):0.0310567898):0.0212387979):0.0205767655,(Bmys_HTT:0.0055847625,(EausAUS_HTT:0.0027330216,(Egla13086_HTT:0.0060728313,Ejap43864_HTT:0.0030218053):0.0075797515):0.0021477242):0.0059402737):0.0058048316,Cmar59905_HTT:0.0202170499):0.0038462337,Erob133443_HTT:0.0131408241):0.0031356807,((Bphy_HTT:0.0017537822,Bphy_baits_HTT:0.0014240233):0.0068348644,Mnov_HTT:0.0276765734):0.0091278852):0.0008584076,((Bbor_HTT:0.0045626042,(Bede66737_HTT:0.0010148334,BedeAUS_HTT:0.0050574378):0.0022214729):0.0051344100,Bmus_HTT:0.0131277370):0.0037180788):0.0136669447,BbonAUS_HTT:0.0036799007);
+
+TIME STAMP
+----------
+
+Date and time: Thu Jan 25 09:01:35 2024
+Total CPU time used: 55939.4 seconds (15h:32m:19s)
+Total wall-clock time used: 15335.3 seconds (4h:15m:35s)
+

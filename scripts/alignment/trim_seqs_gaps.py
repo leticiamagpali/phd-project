@@ -1,8 +1,8 @@
 from Bio import AlignIO
 from Bio import SeqIO
 
-INPUT_FILE = "/Users/leticiamagpali/Library/CloudStorage/GoogleDrive-leticiamagpali@gmail.com/My Drive/phd_leticia/phd_project/chapter1_acoustic_genes/alignments/big_dataset/aligned/codon_align_fasta/RYR2_codon_aligned.fasta"
-OUTPUT_FILE = "/Users/leticiamagpali/Library/CloudStorage/GoogleDrive-leticiamagpali@gmail.com/My Drive/phd_leticia/phd_project/chapter1_acoustic_genes/alignments/big_dataset/aligned/codon_align_fasta/trimmed/RYR2_codon_aligned_filtered.fasta"
+INPUT_FILE = "/Users/leticiamagpali/Library/CloudStorage/GoogleDrive-leticiamagpali@gmail.com/My Drive/phd_leticia/phd_project/chapter1_acoustic_genes/alignments/big_dataset/aligned/codon_align/codon_align_fasta/RYR2_codon_aligned.fasta"
+OUTPUT_FILE = "/Users/leticiamagpali/Library/CloudStorage/GoogleDrive-leticiamagpali@gmail.com/My Drive/phd_leticia/phd_project/chapter1_acoustic_genes/alignments/big_dataset/aligned/codon_align/codon_align_fasta/trimmed/RYR2_codon_aligned_filtered.fasta"
 MAX_GAP_PERCENTAGE = 50.0  # maximum allowed gap percentage
 
 # Read the alignment

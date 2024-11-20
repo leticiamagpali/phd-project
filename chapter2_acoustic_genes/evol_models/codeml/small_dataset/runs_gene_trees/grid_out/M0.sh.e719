@@ -1,0 +1,4 @@
+Traceback (most recent call last):
+  File "/misc/pool1/home/leticiamagpali/phd/evol_models/codeml/small_dataset/run-codeml.py", line 18, in <module>
+    for folder in os.listdir(RUN_FOLDER):
+FileNotFoundError: [Errno 2] No such file or directory: '/home/leticiamagpali/phd/evol_models/codeml/small_dataset/runs_gene_trees/runs_gene_trees/M0'

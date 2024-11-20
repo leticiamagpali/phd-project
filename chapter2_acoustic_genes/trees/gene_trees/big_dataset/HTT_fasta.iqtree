@@ -1,0 +1,298 @@
+IQ-TREE 2.2.0-beta COVID-edition built Dec 21 2021
+
+Input file name: codon_align_fasta/HTT_codon_aligned.fasta
+Type of analysis: ModelFinder + tree reconstruction
+Random seed number: 671265
+
+REFERENCES
+----------
+
+To cite IQ-TREE please use:
+
+Bui Quang Minh, Heiko A. Schmidt, Olga Chernomor, Dominik Schrempf,
+Michael D. Woodhams, Arndt von Haeseler, and Robert Lanfear (2020)
+IQ-TREE 2: New models and efficient methods for phylogenetic inference
+in the genomic era. Mol. Biol. Evol., in press.
+https://doi.org/10.1093/molbev/msaa015
+
+To cite ModelFinder please use: 
+
+Subha Kalyaanamoorthy, Bui Quang Minh, Thomas KF Wong, Arndt von Haeseler,
+and Lars S Jermiin (2017) ModelFinder: Fast model selection for
+accurate phylogenetic estimates. Nature Methods, 14:587–589.
+https://doi.org/10.1038/nmeth.4285
+
+SEQUENCE ALIGNMENT
+------------------
+
+Input data: 83 sequences with 2653 codon sites
+Number of constant sites: 1591 (= 59.9698% of all sites)
+Number of invariant (constant or ambiguous constant) sites: 1591 (= 59.9698% of all sites)
+Number of parsimony informative sites: 620
+Number of distinct site patterns: 2135
+
+ModelFinder
+-----------
+
+Best-fit model according to BIC: MG+F3X4+R3
+
+List of models sorted by BIC scores: 
+
+Model                  LogL         AIC      w-AIC        AICc     w-AICc         BIC      w-BIC
+MG+F3X4+R3       -23710.831   47775.663 -  8.3e-44   47801.122 - 6.78e-40   48817.033 +    0.982
+MGK+F3X4+R3      -23710.890   47777.780 - 2.88e-44   47803.537 - 2.03e-40   48825.033 -    0.018
+GY+F3X4+R3       -23757.466   47870.931 - 1.71e-64   47896.689 -  1.2e-60   48918.185 - 1.06e-22
+GY+F+R3          -23559.634   47577.268 +        1   47620.743 +        1   48924.577 - 4.36e-24
+GY+F3X4+R4       -23756.681   47873.363 - 5.06e-65   47899.722 - 2.63e-61   48932.383 - 8.79e-26
+GY+F3X4+R2       -23797.831   47947.661 - 3.72e-81   47972.824 - 3.52e-77   48983.148 - 8.33e-37
+GY+F3X4+G4       -23805.904   47961.808 - 3.15e-84   47986.677 - 3.46e-80   48991.411 - 1.34e-38
+GY+F3X4+I+G4     -23804.719   47961.438 - 3.79e-84   47986.601 - 3.59e-80   48996.924 - 8.49e-40
+GY+F3X4+I        -23861.673   48073.345 - 1.9e-108   48098.214 - 2.08e-104   49102.948 - 8.06e-63
+GY+F1X4+R3       -23920.872   48185.743 - 7.44e-133   48209.740 - 1.26e-128   49197.696 - 2.15e-83
+MG+F1X4+R3       -23931.728   48205.455 - 3.9e-137   48229.165 - 7.64e-133   49211.525 - 2.13e-86
+MGK+F1X4+R3      -23931.329   48206.658 - 2.14e-137   48230.654 - 3.63e-133   49218.610 - 6.17e-88
+GY+F3X4          -24056.330   48460.661 - 1.49e-192   48485.237 - 1.89e-188   49484.381 - 1.2e-145
+SCHN05+F+R3      -23849.903   48153.805 - 6.41e-126   48196.491 - 9.51e-126   49489.348 -   1e-146
+SCHN05+F3X4+R3   -24136.849   48625.697 - 2.17e-228   48650.860 - 2.06e-224   49661.184 - 4.86e-184
+KOSI07+F+R3      -23958.971   48371.942 - 2.75e-173   48414.628 - 4.08e-173   49707.485 - 4.29e-194
+SCHN05+FU+R3     -24200.853   48735.705 - 2.81e-252   48758.285 - 9.68e-248   49718.241 - 1.98e-196
+KOSI07+F3X4+R3   -24166.890   48685.781 - 1.95e-241   48710.944 - 1.84e-237   49721.267 - 4.37e-197
+KOSI07+FU+R3     -24367.921   49069.842 -        0   49092.422 - 2.68e-320   50052.378 - 5.5e-269
+SCHN05+F1X4+R3   -24417.118   49174.236 -        0   49197.661 -        0   50174.422 - 1.73e-295
+KOSI07+F1X4+R3   -24440.724   49221.447 -        0   49244.872 -        0   50221.633 - 9.7e-306
+
+AIC, w-AIC   : Akaike information criterion scores and weights.
+AICc, w-AICc : Corrected AIC scores and weights.
+BIC, w-BIC   : Bayesian information criterion scores and weights.
+
+Plus signs denote the 95% confidence sets.
+Minus signs denote significant exclusion.
+
+SUBSTITUTION PROCESS
+--------------------
+
+Model of substitution: MG+F3X4+R3
+
+State frequencies: 
+  pi(AAA) = 0.0087  pi(AAC) = 0.0223  pi(AAG) = 0.0215  pi(AAT) = 0.0120
+  pi(ACA) = 0.0083  pi(ACC) = 0.0212  pi(ACG) = 0.0204  pi(ACT) = 0.0114
+  pi(AGA) = 0.0059  pi(AGC) = 0.0151  pi(AGG) = 0.0145  pi(AGT) = 0.0081
+  pi(ATA) = 0.0106  pi(ATC) = 0.0270  pi(ATG) = 0.0261  pi(ATT) = 0.0145
+  pi(CAA) = 0.0097  pi(CAC) = 0.0248  pi(CAG) = 0.0240  pi(CAT) = 0.0134
+  pi(CCA) = 0.0092  pi(CCC) = 0.0236  pi(CCG) = 0.0228  pi(CCT) = 0.0127
+  pi(CGA) = 0.0066  pi(CGC) = 0.0168  pi(CGG) = 0.0162  pi(CGT) = 0.0090
+  pi(CTA) = 0.0118  pi(CTC) = 0.0301  pi(CTG) = 0.0291  pi(CTT) = 0.0162
+  pi(GAA) = 0.0115  pi(GAC) = 0.0293  pi(GAG) = 0.0283  pi(GAT) = 0.0158
+  pi(GCA) = 0.0109  pi(GCC) = 0.0279  pi(GCG) = 0.0269  pi(GCT) = 0.0150
+  pi(GGA) = 0.0078  pi(GGC) = 0.0198  pi(GGG) = 0.0191  pi(GGT) = 0.0107
+  pi(GTA) = 0.0139  pi(GTC) = 0.0356  pi(GTG) = 0.0344  pi(GTT) = 0.0191
+  pi(TAC) = 0.0159  pi(TAT) = 0.0085  pi(TCA) = 0.0059  pi(TCC) = 0.0151
+  pi(TCG) = 0.0145  pi(TCT) = 0.0081  pi(TGC) = 0.0107  pi(TGG) = 0.0103
+  pi(TGT) = 0.0058  pi(TTA) = 0.0075  pi(TTC) = 0.0192  pi(TTG) = 0.0186
+  pi(TTT) = 0.0103
+Model of rate heterogeneity: FreeRate with 3 categories
+Site proportion and rates:  (0.7678,0.4358) (0.2308,2.7239) (0.0014,26.3540)
+
+ Category  Relative_rate  Proportion
+  1         0.4358         0.7678
+  2         2.7239         0.2308
+  3         26.3540        0.0014
+
+MAXIMUM LIKELIHOOD TREE
+-----------------------
+
+Log-likelihood of the tree: -23669.7101 (s.e. 368.5549)
+Unconstrained log-likelihood (without tree): -19924.3699
+Number of free parameters (#branches + #model parameters): 177
+Akaike information criterion (AIC) score: 47693.4202
+Corrected Akaike information criterion (AICc) score: 47718.8796
+Bayesian information criterion (BIC) score: 48734.7902
+
+Total tree length (sum of branch lengths): 0.7984
+Sum of internal branch lengths: 0.3039 (38.0670% of tree length)
+
+WARNING: 8 near-zero internal branches (<0.0004) should be treated with caution
+         Such branches are denoted by '**' in the figure below
+
+NOTE: Tree is UNROOTED although outgroup taxon 'Bacu' is drawn at root
+
+NOTE: Branch lengths are interpreted as number of nucleotide substitutions per codon site!
+      Rescale them by 1/3 if you want to have #nt substitutions per nt site
+
++--Bacu
+|
+|                                                +-----Bbai
+|                                             +--|
+|                                             |  +----Zcav
+|                                          +--|
+|                                          |  |  +--Hamp
+|                                          |  +--|
+|                                          |     |     +--Mbid
+|                                          |     |  +--|
+|                                          |     |  |  |     +--Mbow
+|                                          |     |  |  |  +--|
+|                                          |     |  |  |  |  |  +--Mcar
+|                                          |     |  |  |  |  +--|
+|                                          |     |  |  |  |     +--Mlay
+|                                          |     |  |  +--|
+|                                          |     |  |     |     +--Mden
+|                                          |     |  |     |  +--|
+|                                          |     |  |     |  |  |     +--Mper
+|                                          |     |  |     |  |  |  +--|
+|                                          |     |  |     |  |  |  |  +--Mpni
+|                                          |     |  |     |  |  +**|
+|                                          |     |  |     |  |     +--Mste
+|                                          |     |  |     +--|
+|                                          |     |  |        +--Mhec
+|                                          |     +--|
+|                                          |        |     +---Meur
+|                                          |        |  +**|
+|                                          |        |  |  +--Mgin
+|                                          |        +--|
+|                                          |           +--Mmir
+|                               +----------|
+|                               |          +----Tshe
+|                            +--|
+|                            |  |                                +--Ccom
+|                            |  |                             +--|
+|                            |  |                             |  |  +--Chea
+|                            |  |                             |  +**|
+|                            |  |                             |     +--Laus
+|                            |  |                          +--|
+|                            |  |                          |  |     +--Lbor
+|                            |  |                          |  |  +--|
+|                            |  |                          |  |  |  +--Lper
+|                            |  |                          |  +**|
+|                            |  |                          |     |  +--Lobl
+|                            |  |                          |     +--|
+|                            |  |                          |        +--Lobs
+|                            |  |                       +--|
+|                            |  |                       |  |           +--Dcap108471
+|                            |  |                       |  |        +--|
+|                            |  |                       |  |        |  |  +--Dcap79929
+|                            |  |                       |  |        |  +--|
+|                            |  |                       |  |        |     |  +--Ddel
+|                            |  |                       |  |        |     +--|
+|                            |  |                       |  |        |        +--Ddeltrop
+|                            |  |                       |  |     +--|
+|                            |  |                       |  |     |  |  +-----Schi
+|                            |  |                       |  |     |  +--|
+|                            |  |                       |  |     |     +--Ttru
+|                            |  |                       |  |  +--|
+|                            |  |                       |  |  |  |           +--Lhos30470
+|                            |  |                       |  |  |  |        +--|
+|                            |  |                       |  |  |  |        |  |  +--Lhos452
+|                            |  |                       |  |  |  |        |  +--|
+|                            |  |                       |  |  |  |        |     |  +--Scly1726
+|                            |  |                       |  |  |  |        |     +--|
+|                            |  |                       |  |  |  |        |        +--Slon16012
+|                            |  |                       |  |  |  |     +--|
+|                            |  |                       |  |  |  |     |  +--Slon24923
+|                            |  |                       |  |  |  |  +--|
+|                            |  |                       |  |  |  |  |  +--Scoe
+|                            |  |                       |  |  |  +**|
+|                            |  |                       |  |  |     |        +--Satt18473
+|                            |  |                       |  |  |     |     +--|
+|                            |  |                       |  |  |     |     |  |  +--Satt38219
+|                            |  |                       |  |  |     |     |  +--|
+|                            |  |                       |  |  |     |     |     +--Sfro7784
+|                            |  |                       |  |  |     |  +--|
+|                            |  |                       |  |  |     |  |  +--Sfro7782
+|                            |  |                       |  |  |     +--|
+|                            |  |                       |  |  |        +--Tadu
+|                            |  |                       |  +--|
+|                            |  |                       |     +--Sflu
+|                            |  |                    +--|
+|                            |  |                    |  |  +--Obre
+|                            |  |                    |  +--|
+|                            |  |                    |     +--Ohei
+|                            |  |                 +--|
+|                            |  |                 |  |              +--Fatt
+|                            |  |                 |  |           +**|
+|                            |  |                 |  |           |  +--Gmel
+|                            |  |                 |  |        +**|
+|                            |  |                 |  |        |  |  +--Pcra
+|                            |  |                 |  |        |  +--|
+|                            |  |                 |  |        |     +--Pele
+|                            |  |                 |  |     +**|
+|                            |  |                 |  |     |  +--Gmac
+|                            |  |                 |  |  +--|
+|                            |  |                 |  |  |  +--Ggri
+|                            |  |                 |  +--|
+|                            |  |                 |     |  +--Sbre116871
+|                            |  |                 |     +--|
+|                            |  |                 |        +--Sbre18437
+|                            |  |              +--|
+|                            |  |              |  |  +----Lalb
+|                            |  |              |  +--|
+|                            |  |              |     +---Oorc
+|                            |  |           +--|
+|                            |  |           |  +-------Lacu
+|                            |  |    +------|
+|                            |  |    |      |      +--Dleu
+|                            |  |    |      |   +--|
+|                            |  |    |      |   |  +--Mmon
+|                            |  |    |      +---|
+|                            |  |    |          |      +--Naasi
+|                            |  |    |          |   +--|
+|                            |  |    |          |   |  +--Npho
+|                            |  |    |          +---|
+|                            |  |    |              |        +--Pdio
+|                            |  |    |              |     +--|
+|                            |  |    |              |     |  +---Pspi
+|                            |  |    |              |  +--|
+|                            |  |    |              |  |  +--Psin
+|                            |  |    |              +--|
+|                            |  |    |                 +--Ppho
+|                            |  +----|
+|                            |       |     +--------Igeo
+|                            |       |  +--|
+|                            |       |  |  +------------Pbla
+|                            |       +--|
+|                            |          +----------------Lvex
+|                 +----------|
+|                 |          |                        +------Kbre
+|                 |          |         +--------------|
+|                 |          |         |              +-------Ksim
+|                 |          +---------|
+|                 |                    +-------------Pcat
+|              +--|
+|              |  |  +--Bmys
+|              |  +--|
+|              |     |  +--Eaus
+|              |     +--|
+|              |        |  +--Egla
+|              |        +--|
+|              |           +--Ejap
+|           +--|
+|           |  +--------Cmar
+|        +--|
+|        |  +----Erob
+|     +--|
+|     |  |      +--Bphy
+|     |  |   +--|
+|     |  |   |  +--Bphy_baits
+|     |  +---|
+|     |      +-----Mnov
++-----|
+|     |     +--Bbor
+|     |  +--|
+|     |  |  |  +--Bede66737
+|     |  |  +--|
+|     |  |     +--BedeAUS
+|     +--|
+|        +-----Bmus
+|
++--Bbon
+
+Tree in newick format:
+
+(Bacu:0.0043326807,((((((((((Bbai:0.0138686828,Zcav:0.0118077778):0.0011924480,(Hamp:0.0051003995,((Mbid:0.0080297841,((Mbow:0.0037159577,(Mcar:0.0067635557,Mlay:0.0051268191):0.0009648849):0.0005503970,((Mden:0.0067849335,((Mper:0.0037732359,Mpni:0.0043732693):0.0013067067,Mste:0.0041576754):0.0003750409):0.0007503575,Mhec:0.0068795855):0.0019579492):0.0011699821):0.0003982554,((Meur:0.0098785902,Mgin:0.0040351909):0.0000021499,Mmir:0.0047044632):0.0013982336):0.0019245373):0.0026449294):0.0041380553,Tshe:0.0106397831):0.0233528267,(((((((((Ccom:0.0078650592,(Chea:0.0021543044,Laus:0.0004223997):0.0000009974):0.0019588883,((Lbor:0.0023878027,Lper:0.0018236428):0.0004304210,(Lobl:0.0026693773,Lobs:0.0025350870):0.0005386197):0.0000025787):0.0063604263,((((Dcap108471:0.0016475869,(Dcap79929:0.0008345781,(Ddel:0.0008954770,Ddeltrop:0.0012397722):0.0017034913):0.0011066063):0.0035449110,(Schi:0.0132587779,Ttru:0.0035608094):0.0008376048):0.0014684629,((((Lhos30470:0.0008348931,(Lhos452:0.0005084493,(Scly1726:0.0021664615,Slon16012:0.0016508239):0.0008095627):0.0015029048):0.0004160817,Slon24923:0.0037898782):0.0004326743,Scoe:0.0055373865):0.0004117094,(((Satt18473:0.0024136616,(Satt38219:0.0032358240,Sfro7784:0.0043892883):0.0005176677):0.0006190224,Sfro7782:0.0016299468):0.0008139613,Tadu:0.0021868093):0.0007696876):0.0000022179):0.0040064750,Sflu:0.0017597410):0.0009052020):0.0009861026,(Obre:0.0016918906,Ohei:0.0034210233):0.0015550625):0.0009247132,(((((Fatt:0.0026731003,Gmel:0.0023087621):0.0000009974,(Pcra:0.0017950295,Pele:0.0021946598):0.0004342580):0.0000009974,Gmac:0.0004171966):0.0000021661,Ggri:0.0042408627):0.0011076972,(Sbre116871:0.0005139497,Sbre18437:0.0016341859):0.0019653059):0.0026573316):0.0012284993,(Lalb:0.0116251043,Oorc:0.0085216349):0.0011467343):0.0011641059,Lacu:0.0165274869):0.0072658623,((Dleu:0.0027064927,Mmon:0.0015514079):0.0050994085,((Naasi:0.0016489142,Npho:0.0026898961):0.0034343534,(((Pdio:0.0029198812,Pspi:0.0083663851):0.0009075750,Psin:0.0017085674):0.0013859653,Ppho:0.0018647787):0.0019034598):0.0099884367):0.0087643591):0.0163184088,((Igeo:0.0191633156,Pbla:0.0270439077):0.0072376332,Lvex:0.0367577212):0.0031985462):0.0105113653):0.0034991425,((Kbre:0.0145427723,Ksim:0.0165921403):0.0325171853,Pcat:0.0299272971):0.0219345609):0.0233404573,(Bmys:0.0054621906,(Eaus:0.0023375232,(Egla:0.0009879038,Ejap:0.0032960587):0.0014265436):0.0026847497):0.0046596755):0.0062052558,Cmar:0.0201613036):0.0040045783,Erob:0.0121160405):0.0034759226,((Bphy:0.0017835876,Bphy_baits:0.0012821358):0.0055048001,Mnov:0.0123009713):0.0084410136):0.0010754676,((Bbor:0.0046559065,(Bede66737:0.0010513798,BedeAUS:0.0018279725):0.0022823821):0.0048732288,Bmus:0.0128021818):0.0039449926):0.0135644350,Bbon:0.0039621930);
+
+TIME STAMP
+----------
+
+Date and time: Tue Oct  1 06:38:35 2024
+Total CPU time used: 118984 seconds (33h:3m:4s)
+Total wall-clock time used: 2917.06 seconds (0h:48m:37s)
+

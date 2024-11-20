@@ -1,0 +1,315 @@
+IQ-TREE 2.2.0-beta COVID-edition built Dec 21 2021
+
+Input file name: codon_alignments_v4_Jan24/PCDH15_codon_aligned.phy
+Type of analysis: ModelFinder + tree reconstruction
+Random seed number: 868035
+
+REFERENCES
+----------
+
+To cite IQ-TREE please use:
+
+Bui Quang Minh, Heiko A. Schmidt, Olga Chernomor, Dominik Schrempf,
+Michael D. Woodhams, Arndt von Haeseler, and Robert Lanfear (2020)
+IQ-TREE 2: New models and efficient methods for phylogenetic inference
+in the genomic era. Mol. Biol. Evol., in press.
+https://doi.org/10.1093/molbev/msaa015
+
+To cite ModelFinder please use: 
+
+Subha Kalyaanamoorthy, Bui Quang Minh, Thomas KF Wong, Arndt von Haeseler,
+and Lars S Jermiin (2017) ModelFinder: Fast model selection for
+accurate phylogenetic estimates. Nature Methods, 14:587–589.
+https://doi.org/10.1038/nmeth.4285
+
+SEQUENCE ALIGNMENT
+------------------
+
+Input data: 85 sequences with 1784 codon sites
+Number of constant sites: 1025 (= 57.4552% of all sites)
+Number of invariant (constant or ambiguous constant) sites: 1025 (= 57.4552% of all sites)
+Number of parsimony informative sites: 492
+Number of distinct site patterns: 1367
+
+ModelFinder
+-----------
+
+Best-fit model according to BIC: KOSI07+F3X4+G4
+
+List of models sorted by BIC scores: 
+
+Model                  LogL         AIC      w-AIC        AICc     w-AICc         BIC      w-BIC
+KOSI07+F3X4+G4   -16988.326   34330.651 - 5.37e-39   34369.887 - 7.04e-33   35301.782 +    0.919
+KOSI07+F3X4+I+G4  -16987.434   34330.868 - 4.82e-39   34370.572 -    5e-33   35307.486 +   0.0531
+KOSI07+FU+G4     -17025.581   34387.162 - 2.88e-51   34422.322 - 2.89e-44   35308.913 -    0.026
+KOSI07+FU+I+G4   -17024.680   34387.360 - 2.61e-51   34422.961 -  2.1e-44   35314.598 -  0.00152
+MG+F3X4+G4       -17031.091   34418.182 - 5.28e-58   34457.886 - 5.48e-52   35394.799 - 5.82e-21
+MG+F3X4+I+G4     -17029.386   34416.771 - 1.07e-57   34456.946 - 8.77e-52   35398.875 - 7.59e-22
+MGK+F3X4+G4      -17031.091   34420.182 - 1.94e-58   34460.357 - 1.59e-52   35402.286 - 1.38e-22
+MGK+F3X4+I+G4    -17029.385   34418.769 - 3.94e-58   34459.418 - 2.55e-52   35406.360 -  1.8e-23
+KOSI07+F+G4      -16849.787   34155.574 +    0.559   34222.728 +    0.635   35406.522 - 1.66e-23
+KOSI07+F+I+G4    -16849.025   34156.051 +    0.441   34223.837 +    0.365   35412.485 - 8.41e-25
+GY+F3X4+G4       -17050.265   34458.530 - 9.15e-67   34498.705 -  7.5e-61   35440.634 - 6.49e-31
+GY+F3X4+I+G4     -17047.858   34455.715 - 3.74e-66   34496.364 - 2.42e-60   35443.306 - 1.71e-31
+KOSI07+F1X4+G4   -17107.424   34556.847 -  4.1e-88   34593.339 - 2.12e-81   35495.058 - 9.86e-43
+KOSI07+F1X4+I+G4  -17106.761   34557.523 - 2.92e-88   34594.464 - 1.21e-81   35501.220 - 4.53e-44
+GY+F+G4          -16905.981   34271.962 - 2.98e-26   34340.384 -  1.8e-26   35533.883 - 3.66e-51
+GY+F+I+G4        -16904.065   34270.130 - 7.45e-26   34339.192 - 3.26e-26   35537.538 - 5.88e-52
+GY+F1X4+G4       -17122.594   34591.187 - 1.43e-95   34628.581 - 4.71e-89   35540.371 - 1.43e-52
+GY+F1X4+I+G4     -17121.162   34590.325 -  2.2e-95   34628.174 - 5.77e-89   35544.995 - 1.41e-53
+MG+F1X4+G4       -17136.224   34616.448 - 4.68e-101   34653.390 - 1.93e-94   35560.146 - 7.25e-57
+MG+F1X4+I+G4     -17134.495   34614.990 - 9.7e-101   34652.384 - 3.19e-94   35564.174 - 9.68e-58
+MGK+F1X4+G4      -17136.154   34618.307 - 1.85e-101   34655.701 - 6.08e-95   35567.491 - 1.84e-58
+MGK+F1X4+I+G4    -17134.421   34616.841 - 3.84e-101   34654.691 - 1.01e-94   35571.512 - 2.47e-59
+GY+F3X4+I        -17171.813   34701.625 - 1.49e-119   34741.800 - 1.22e-113   35683.729 - 1.06e-83
+SCHN05+FU+G4     -17217.471   34770.942 - 1.32e-134   34806.102 - 1.33e-127   35692.693 -  1.2e-85
+SCHN05+FU+I+G4   -17216.343   34770.686 - 1.51e-134   34806.287 - 1.22e-127   35697.923 - 8.76e-87
+SCHN05+F3X4+G4   -17253.484   34860.968 - 3.74e-154   34900.203 - 4.91e-148   35832.099 - 6.41e-116
+SCHN05+F3X4+I+G4  -17252.043   34860.086 - 5.82e-154   34899.790 - 6.04e-148   35836.703 - 6.41e-117
+SCHN05+F+G4      -17081.962   34619.923 - 8.23e-102   34687.077 - 9.35e-102   35870.871 - 2.44e-124
+SCHN05+F+I+G4    -17080.627   34619.254 - 1.15e-101   34687.040 - 9.52e-102   35875.688 - 2.19e-125
+SCHN05+F1X4+G4   -17359.767   35061.533 - 1.05e-197   35098.025 - 5.43e-191   35999.744 - 2.53e-152
+SCHN05+F1X4+I+G4  -17358.600   35061.200 - 1.24e-197   35098.141 - 5.12e-191   36004.898 - 1.92e-153
+GY+F3X4          -17715.708   35787.415 -        0   35827.119 -        0   36764.033 - 2.75e-318
+
+AIC, w-AIC   : Akaike information criterion scores and weights.
+AICc, w-AICc : Corrected AIC scores and weights.
+BIC, w-BIC   : Bayesian information criterion scores and weights.
+
+Plus signs denote the 95% confidence sets.
+Minus signs denote significant exclusion.
+
+SUBSTITUTION PROCESS
+--------------------
+
+Model of substitution: KOSI07+F3X4+G4
+
+State frequencies: 
+  pi(AAA) = 0.0251  pi(AAC) = 0.0212  pi(AAG) = 0.0180  pi(AAT) = 0.0324
+  pi(ACA) = 0.0198  pi(ACC) = 0.0167  pi(ACG) = 0.0142  pi(ACT) = 0.0255
+  pi(AGA) = 0.0114  pi(AGC) = 0.0096  pi(AGG) = 0.0082  pi(AGT) = 0.0147
+  pi(ATA) = 0.0240  pi(ATC) = 0.0203  pi(ATG) = 0.0172  pi(ATT) = 0.0310
+  pi(CAA) = 0.0170  pi(CAC) = 0.0143  pi(CAG) = 0.0122  pi(CAT) = 0.0219
+  pi(CCA) = 0.0134  pi(CCC) = 0.0113  pi(CCG) = 0.0096  pi(CCT) = 0.0173
+  pi(CGA) = 0.0077  pi(CGC) = 0.0065  pi(CGG) = 0.0055  pi(CGT) = 0.0100
+  pi(CTA) = 0.0162  pi(CTC) = 0.0137  pi(CTG) = 0.0116  pi(CTT) = 0.0209
+  pi(GAA) = 0.0298  pi(GAC) = 0.0251  pi(GAG) = 0.0213  pi(GAT) = 0.0384
+  pi(GCA) = 0.0234  pi(GCC) = 0.0198  pi(GCG) = 0.0168  pi(GCT) = 0.0303
+  pi(GGA) = 0.0135  pi(GGC) = 0.0114  pi(GGG) = 0.0097  pi(GGT) = 0.0175
+  pi(GTA) = 0.0284  pi(GTC) = 0.0240  pi(GTG) = 0.0204  pi(GTT) = 0.0367
+  pi(TAC) = 0.0096  pi(TAT) = 0.0146  pi(TCA) = 0.0089  pi(TCC) = 0.0075
+  pi(TCG) = 0.0064  pi(TCT) = 0.0115  pi(TGC) = 0.0044  pi(TGG) = 0.0037
+  pi(TGT) = 0.0067  pi(TTA) = 0.0108  pi(TTC) = 0.0092  pi(TTG) = 0.0078
+  pi(TTT) = 0.0140
+Model of rate heterogeneity: Gamma with 4 categories
+Gamma shape alpha: 0.3880
+
+ Category  Relative_rate  Proportion
+  1         0.0150         0.2500
+  2         0.1728         0.2500
+  3         0.7180         0.2500
+  4         3.0942         0.2500
+Relative rates are computed as MEAN of the portion of the Gamma distribution falling in the category.
+
+MAXIMUM LIKELIHOOD TREE
+-----------------------
+
+Log-likelihood of the tree: -16988.3257 (s.e. 311.1480)
+Unconstrained log-likelihood (without tree): -12527.6716
+Number of free parameters (#branches + #model parameters): 177
+Akaike information criterion (AIC) score: 34330.6513
+Corrected Akaike information criterion (AICc) score: 34369.8867
+Bayesian information criterion (BIC) score: 35301.7819
+
+Total tree length (sum of branch lengths): 1.3422
+Sum of internal branch lengths: 0.7981 (59.4651% of tree length)
+
+WARNING: 26 near-zero internal branches (<0.0006) should be treated with caution
+         Such branches are denoted by '**' in the figure below
+
+NOTE: Tree is UNROOTED although outgroup taxon 'Bacu_PCDH15' is drawn at root
+
+NOTE: Branch lengths are interpreted as number of nucleotide substitutions per codon site!
+      Rescale them by 1/3 if you want to have #nt substitutions per nt site
+
++--Bacu_PCDH15
+|
+|                       +--Barn_PCDH15
+|                    +--|
+|                    |  +**Bbai76728_PCDH15
+|                 +--|
+|                 |  |        +--Hamp_PCDH15
+|                 |  |     +--|
+|                 |  |     |  |        +--Mbid_PCDH15
+|                 |  |     |  |     +**|
+|                 |  |     |  |     |  |  +--Meur_PCDH15
+|                 |  |     |  |     |  +**|
+|                 |  |     |  |     |     +--Mmir_PCDH15
+|                 |  |     |  |  +--|
+|                 |  |     |  |  |  +--Mgin_PCDH15
+|                 |  |     |  +--|
+|                 |  |     |     |     +--Mbow_PCDH15
+|                 |  |     |     |  +--|
+|                 |  |     |     |  |  |  +--Mcar_PCDH15
+|                 |  |     |     |  |  +**|
+|                 |  |     |     |  |     +--MlayAUS_PCDH15
+|                 |  |     |     +**|
+|                 |  |     |        |        +--Mden_PCDH15
+|                 |  |     |        |     +**|
+|                 |  |     |        |     |  |     +--Mper_PCDH15
+|                 |  |     |        |     |  |  +--|
+|                 |  |     |        |     |  |  |  +--Mpni_PCDH15
+|                 |  |     |        |     |  +--|
+|                 |  |     |        |     |     +--Mste_PCDH15
+|                 |  |     |        |  +--|
+|                 |  |     |        |  |  +--MgraAUS_PCDH15
+|                 |  |     |        +--|
+|                 |  |     |           +--Mhec_PCDH15
+|                 |  |  +--|
+|                 |  |  |  +--Tshe_PCDH15
+|                 |  +--|
+|                 |     +--Zcav_PCDH15
+|              +--|
+|              |  |                                   +--Ccom40_PCDH15
+|              |  |                                +**|
+|              |  |                                |  +**Chea7320_PCDH15
+|              |  |                             +--|
+|              |  |                             |  +--Laus_PCDH15
+|              |  |                          +**|
+|              |  |                          |  |  +---Lobl_PCDH15
+|              |  |                          |  +--|
+|              |  |                          |     +--Lobs_PCDH15
+|              |  |                       +**|
+|              |  |                       |  +--LperAUS_PCDH15
+|              |  |                    +--|
+|              |  |                    |  +--Lbor_PCDH15
+|              |  |                 +--|
+|              |  |                 |  |                                      +**Dcap108471_PCDH15
+|              |  |                 |  |                                   +--|
+|              |  |                 |  |                                   |  |  +--DdelSJR_PCDH15
+|              |  |                 |  |                                   |  +**|
+|              |  |                 |  |                                   |     |     +--Ddeltrop4525_PCDH15
+|              |  |                 |  |                                   |     |  +--|
+|              |  |                 |  |                                   |     |  |  +--Sfro7782_PCDH15
+|              |  |                 |  |                                   |     +**|
+|              |  |                 |  |                                   |        |  +--Scly1726_PCDH15
+|              |  |                 |  |                                   |        +--|
+|              |  |                 |  |                                   |           +--Slon24923_PCDH15
+|              |  |                 |  |                                +**|
+|              |  |                 |  |                                |  |  +--Lhos452_PCDH15
+|              |  |                 |  |                                |  +--|
+|              |  |                 |  |                                |     +--Slon16012_PCDH15
+|              |  |                 |  |                             +**|
+|              |  |                 |  |                             |  |  +--Satt18473_PCDH15
+|              |  |                 |  |                             |  +--|
+|              |  |                 |  |                             |     +--Satt38219_PCDH15
+|              |  |                 |  |                          +**|
+|              |  |                 |  |                          |  +--Sfro7784_PCDH15
+|              |  |                 |  |                       +**|
+|              |  |                 |  |                       |  +--Dcap79929_PCDH15
+|              |  |                 |  |                    +**|
+|              |  |                 |  |                    |  +--Schi_PCDH15
+|              |  |                 |  |                 +**|
+|              |  |                 |  |                 |  |  +--Scoe_PCDH15
+|              |  |                 |  |                 |  +--|
+|              |  |                 |  |                 |     +--Tadu79924_PCDH15
+|              |  |                 |  |              +--|
+|              |  |                 |  |              |  +--Scly1724_PCDH15
+|              |  |                 |  |           +**|
+|              |  |                 |  |           |  |        +--Fatt_PCDH15
+|              |  |                 |  |           |  |     +**|
+|              |  |                 |  |           |  |     |  |     +--Gmac39091_PCDH15
+|              |  |                 |  |           |  |     |  |  +**|
+|              |  |                 |  |           |  |     |  |  |  +--Pele_PCDH15
+|              |  |                 |  |           |  |     |  +**|
+|              |  |                 |  |           |  |     |     |  +--Sbre116871_PCDH15
+|              |  |                 |  |           |  |     |     +--|
+|              |  |                 |  |           |  |     |        +**Sbre18437_PCDH15
+|              |  |                 |  |           |  |  +--|
+|              |  |                 |  |           |  |  |  +--Pcra123188_PCDH15
+|              |  |                 |  |           |  +**|
+|              |  |                 |  |           |     +--Ggri_PCDH15
+|              |  |                 |  |        +--|
+|              |  |                 |  |        |  +--Lhos30470_PCDH15
+|              |  |                 |  |     +--|
+|              |  |                 |  |     |  +--Lalb_PCDH15
+|              |  |                 |  |  +--|
+|              |  |                 |  |  |  +--Lacu_PCDH15
+|              |  |                 |  +**|
+|              |  |                 |     |  +--Obre_PCDH15
+|              |  |                 |     +--|
+|              |  |                 |        +--Ohei_PCDH15
+|              |  |          +------|
+|              |  |          |      |                                       +--Dleu_PCDH15
+|              |  |          |      |                                    +--|
+|              |  |          |      |                                    |  +--Mmon_PCDH15
+|              |  |          |      |                                 +--|
+|              |  |          |      |                                 |  |           +----Naasi_PCDH15
+|              |  |          |      |                                 |  |        +--|
+|              |  |          |      |                                 |  |        |  +--Npho_PCDH15
+|              |  |          |      |                                 |  |     +--|
+|              |  |          |      |                                 |  |     |  +--Ppho_PCDH15
+|              |  |          |      |                                 |  |  +**|
+|              |  |          |      |                                 |  |  |  |     +--Pdio_PCDH15
+|              |  |          |      |                                 |  |  |  |  +**|
+|              |  |          |      |                                 |  |  |  |  |  +--Pspi_PCDH15
+|              |  |          |      |                                 |  |  |  +--|
+|              |  |          |      |                                 |  |  |     +--Psin_PCDH15
+|              |  |          |      |                                 |  +--|
+|              |  |          |      |                                 |     +--Pdal_PCDH15
+|              |  |          |      |                              +--|
+|              |  |          |      |                              |  +--Lvex_PCDH15
+|              |  |          |      +------------------------------|
+|              |  |          |                                     |     +---Gmel_PCDH15
+|              |  |          |                                     |  +--|
+|              |  |          |                                     |  |  |  +--Sflu9837_PCDH15
+|              |  |          |                                     |  |  +--|
+|              |  |          |                                     |  |     +--Ttru_PCDH15
+|              |  |          |                                     +**|
+|              |  |          |                                        +--Oorc_PCDH15
+|              |  |  +-------|
+|              |  |  |       |  +--Igeo_PCDH15
+|              |  |  |       +--|
+|              |  |  |          +--Pbla7349_PCDH15
+|              |  +--|
+|              |     |     +--Kbre_PCDH15
+|              |     |  +--|
+|              |     |  |  +--Ksim_PCDH15
+|              |     +--|
+|              |        |  +--Pcat_PCDH15
+|              |        +--|
+|              |           +--Pmac_PCDH15
+|           +--|
+|           |  +--Cmar59905_PCDH15
+|        +--|
+|        |  |  +--EausAUS_PCDH15
+|        |  +--|
+|        |     |  +--Egla13086_PCDH15
+|        |     +--|
+|        |        +--Ejap43864_PCDH15
+|     +--|
+|     |  +--Erob133443_PCDH15
+|  +**|
+|  |  |  +--Bbor_PCDH15
+|  |  +--|
+|  |     |     +**Bede66737_PCDH15
+|  |     |  +--|
+|  |     |  |  +**BedeAUS_PCDH15
+|  |     +--|
+|  |        +--Bmus_PCDH15
++--|
+|  +--Bphy_baits_PCDH15
+|
++--BbonAUS_PCDH15
+
+Tree in newick format:
+
+(Bacu_PCDH15:0.0088252488,((((((((Barn_PCDH15:0.0060016127,Bbai76728_PCDH15:0.0000013557):0.0097300864,(((Hamp_PCDH15:0.0060305822,(((Mbid_PCDH15:0.0094172459,(Meur_PCDH15:0.0050077300,Mmir_PCDH15:0.0031304175):0.0000013557):0.0000013557,Mgin_PCDH15:0.0030008261):0.0020008504,((Mbow_PCDH15:0.0030038411,(Mcar_PCDH15:0.0050086803,MlayAUS_PCDH15:0.0020006688):0.0000013557):0.0010000530,(((Mden_PCDH15:0.0084475268,((Mper_PCDH15:0.0026080872,Mpni_PCDH15:0.0013951717):0.0019994971,Mste_PCDH15:0.0013934170):0.0016069998):0.0000013557,MgraAUS_PCDH15:0.0111442718):0.0010015183,Mhec_PCDH15:0.0030050059):0.0009989208):0.0000013557):0.0040135248):0.0020701858,Tshe_PCDH15:0.0110209847):0.0009854230,Zcav_PCDH15:0.0069201717):0.0041206220):0.0159277949,(((((((((Ccom40_PCDH15:0.0068537789,Chea7320_PCDH15:0.0000013557):0.0000013557,Laus_PCDH15:0.0053632951):0.0020525976,(Lobl_PCDH15:0.0468108209,Lobs_PCDH15:0.0008659353):0.0078589568):0.0000013557,LperAUS_PCDH15:0.0009946422):0.0000013557,Lbor_PCDH15:0.0023635871):0.0141097071,(((((((((((((Dcap108471_PCDH15:0.0000013557,(DdelSJR_PCDH15:0.0009941875,((Ddeltrop4525_PCDH15:0.0020391767,Sfro7782_PCDH15:0.0050527619):0.0010091695,(Scly1726_PCDH15:0.0010273208,Slon24923_PCDH15:0.0009940179):0.0009943074):0.0000013557):0.0000013557):0.0009941170,(Lhos452_PCDH15:0.0019896019,Slon16012_PCDH15:0.0019927911):0.0009930357):0.0000013557,(Satt18473_PCDH15:0.0021760009,Satt38219_PCDH15:0.0020654730):0.0010317332):0.0000013557,Sfro7784_PCDH15:0.0049832770):0.0000013557,Dcap79929_PCDH15:0.0011977383):0.0000013557,Schi_PCDH15:0.0049750861):0.0000013557,(Scoe_PCDH15:0.0011198063,Tadu79924_PCDH15:0.0014947351):0.0014934558):0.0000013557,Scly1724_PCDH15:0.0013315471):0.0019854869,(((Fatt_PCDH15:0.0019897583,((Gmac39091_PCDH15:0.0019892009,Pele_PCDH15:0.0010293248):0.0000013557,(Sbre116871_PCDH15:0.0026521761,Sbre18437_PCDH15:0.0000013557):0.0013252881):0.0000013557):0.0000013557,Pcra123188_PCDH15:0.0030918133):0.0009950344,Ggri_PCDH15:0.0039840983):0.0000013557):0.0000013557,Lhos30470_PCDH15:0.0023849215):0.0009942159,Lalb_PCDH15:0.0049869759):0.0010442421,Lacu_PCDH15:0.0062574211):0.0009903045,(Obre_PCDH15:0.0066726870,Ohei_PCDH15:0.0010617678):0.0093499885):0.0000013557):0.0396551896,((((Dleu_PCDH15:0.0065312969,Mmon_PCDH15:0.0017522630):0.0060328515,((((Naasi_PCDH15:0.0584938510,Npho_PCDH15:0.0019855788):0.0028948020,Ppho_PCDH15:0.0011880351):0.0010392304,((Pdio_PCDH15:0.0031736884,Pspi_PCDH15:0.0023036694):0.0000025086,Psin_PCDH15:0.0075855187):0.0008998787):0.0000013557,Pdal_PCDH15:0.0018059795):0.0113812581):0.0045022998,Lvex_PCDH15:0.0293516937):0.0202007433,((Gmel_PCDH15:0.0417620200,(Sflu9837_PCDH15:0.0051082806,Ttru_PCDH15:0.0020038810):0.0020974381):0.0029597895,Oorc_PCDH15:0.0054507912):0.0000023506):0.3330571555):0.0812511189,(Igeo_PCDH15:0.0263986332,Pbla7349_PCDH15:0.0188020142):0.0060828488):0.0864316026,((Kbre_PCDH15:0.0118253685,Ksim_PCDH15:0.0182147109):0.0341699108,(Pcat_PCDH15:0.0008654093,Pmac_PCDH15:0.0010676517):0.0130614347):0.0130558512):0.0016941018):0.0173753415,Cmar59905_PCDH15:0.0219866980):0.0018907581,(EausAUS_PCDH15:0.0020164342,(Egla13086_PCDH15:0.0010868842,Ejap43864_PCDH15:0.0030152945):0.0009973332):0.0161420347):0.0020215467,Erob133443_PCDH15:0.0094090369):0.0009415369,(Bbor_PCDH15:0.0031677707,((Bede66737_PCDH15:0.0000013557,BedeAUS_PCDH15:0.0000013557):0.0042324483,Bmus_PCDH15:0.0117890322):0.0010565772):0.0021356460):0.0000024850,Bphy_baits_PCDH15:0.0105232389):0.0023999371,BbonAUS_PCDH15:0.0010096586);
+
+TIME STAMP
+----------
+
+Date and time: Thu Jan 25 00:31:40 2024
+Total CPU time used: 26991.5 seconds (7h:29m:51s)
+Total wall-clock time used: 7429.02 seconds (2h:3m:49s)
+

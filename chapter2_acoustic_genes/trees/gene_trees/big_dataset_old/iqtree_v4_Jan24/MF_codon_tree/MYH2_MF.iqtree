@@ -1,0 +1,293 @@
+IQ-TREE 2.2.0-beta COVID-edition built Dec 21 2021
+
+Input file name: codon_alignments_v4_Jan24/MYH2_codon_aligned_v2.phy
+Type of analysis: ModelFinder + tree reconstruction
+Random seed number: 653239
+
+REFERENCES
+----------
+
+To cite IQ-TREE please use:
+
+Bui Quang Minh, Heiko A. Schmidt, Olga Chernomor, Dominik Schrempf,
+Michael D. Woodhams, Arndt von Haeseler, and Robert Lanfear (2020)
+IQ-TREE 2: New models and efficient methods for phylogenetic inference
+in the genomic era. Mol. Biol. Evol., in press.
+https://doi.org/10.1093/molbev/msaa015
+
+To cite ModelFinder please use: 
+
+Subha Kalyaanamoorthy, Bui Quang Minh, Thomas KF Wong, Arndt von Haeseler,
+and Lars S Jermiin (2017) ModelFinder: Fast model selection for
+accurate phylogenetic estimates. Nature Methods, 14:587–589.
+https://doi.org/10.1038/nmeth.4285
+
+SEQUENCE ALIGNMENT
+------------------
+
+Input data: 80 sequences with 899 codon sites
+Number of constant sites: 578 (= 64.2937% of all sites)
+Number of invariant (constant or ambiguous constant) sites: 578 (= 64.2937% of all sites)
+Number of parsimony informative sites: 193
+Number of distinct site patterns: 731
+
+ModelFinder
+-----------
+
+Best-fit model according to BIC: KOSI07+F3X4+I+G4
+
+List of models sorted by BIC scores: 
+
+Model                  LogL         AIC      w-AIC        AICc     w-AICc         BIC      w-BIC
+KOSI07+F3X4+I+G4   -9171.958   18679.916 - 9.42e-54   18757.702 - 7.93e-40   19486.531 +    0.583
+KOSI07+F+I+G4     -8998.861   18435.722 +        1   18577.637 +        1   19487.203 +    0.417
+MG+F3X4+I+G4      -9251.790   18841.581 -  7.4e-89   18920.401 - 3.71e-75   19652.998 - 4.15e-37
+MGK+F3X4+I+G4     -9251.791   18843.583 - 2.72e-89   18923.445 -  8.1e-76   19659.801 - 1.38e-38
+SCHN05+F+I+G4     -9086.110   18610.219 - 1.28e-38   18752.134 - 1.28e-38   19661.700 - 5.35e-39
+SCHN05+F3X4+I+G4   -9268.617   18873.234 -  9.9e-96   18951.020 - 8.34e-82   19679.849 - 6.13e-43
+KOSI07+FU+I+G4    -9353.341   19024.681 - 1.29e-128   19093.531 - 9.44e-113   19788.085 - 1.92e-66
+GY+F3X4+I+G4      -9364.037   19068.074 - 4.86e-138   19147.937 - 1.45e-124   19884.292 - 2.47e-87
+SCHN05+FU+I+G4    -9410.486   19138.973 - 1.95e-153   19207.823 - 1.44e-137   19902.377 - 2.92e-91
+GY+F3X4+G4        -9383.117   19104.235 - 6.83e-146   19183.055 - 3.43e-132   19915.652 - 3.83e-94
+GY+F+I+G4         -9275.608   18993.215 - 8.75e-122   19138.155 - 1.93e-122   20054.299 -   3e-124
+KOSI07+F1X4+I+G4   -9528.705   19381.410 - 4.43e-206   19453.166 - 7.61e-191   20159.218 - 4.94e-147
+GY+F3X4+I         -9511.291   19360.582 - 1.48e-201   19439.402 - 7.41e-188   20171.999 - 8.29e-150
+MGK+F1X4+I+G4     -9559.573   19447.146 - 2.36e-220   19520.879 - 1.51e-205   20234.557 - 2.16e-163
+MG+F1X4+I+G4      -9564.510   19455.021 - 4.59e-222   19527.761 - 4.82e-207   20237.630 - 4.64e-164
+GY+F1X4+I+G4      -9599.064   19526.128 - 1.67e-237   19599.861 - 1.06e-222   20313.538 - 1.53e-180
+SCHN05+F1X4+I+G4   -9685.866   19695.731 - 2.47e-274   19767.487 - 4.24e-259   20473.539 - 2.75e-215
+GY+F3X4           -9893.266   20122.532 -        0   20200.318 -        0   20929.148 - 3.2e-314
+
+AIC, w-AIC   : Akaike information criterion scores and weights.
+AICc, w-AICc : Corrected AIC scores and weights.
+BIC, w-BIC   : Bayesian information criterion scores and weights.
+
+Plus signs denote the 95% confidence sets.
+Minus signs denote significant exclusion.
+
+SUBSTITUTION PROCESS
+--------------------
+
+Model of substitution: KOSI07+F3X4+I+G4
+
+State frequencies: 
+  pi(AAA) = 0.0128  pi(AAC) = 0.0536  pi(AAG) = 0.0618  pi(AAT) = 0.0118
+  pi(ACA) = 0.0051  pi(ACC) = 0.0212  pi(ACG) = 0.0244  pi(ACT) = 0.0047
+  pi(AGA) = 0.0038  pi(AGC) = 0.0159  pi(AGG) = 0.0183  pi(AGT) = 0.0035
+  pi(ATA) = 0.0088  pi(ATC) = 0.0367  pi(ATG) = 0.0423  pi(ATT) = 0.0081
+  pi(CAA) = 0.0091  pi(CAC) = 0.0380  pi(CAG) = 0.0437  pi(CAT) = 0.0084
+  pi(CCA) = 0.0036  pi(CCC) = 0.0150  pi(CCG) = 0.0173  pi(CCT) = 0.0033
+  pi(CGA) = 0.0027  pi(CGC) = 0.0112  pi(CGG) = 0.0129  pi(CGT) = 0.0025
+  pi(CTA) = 0.0062  pi(CTC) = 0.0260  pi(CTG) = 0.0299  pi(CTT) = 0.0057
+  pi(GAA) = 0.0127  pi(GAC) = 0.0531  pi(GAG) = 0.0612  pi(GAT) = 0.0117
+  pi(GCA) = 0.0050  pi(GCC) = 0.0210  pi(GCG) = 0.0242  pi(GCT) = 0.0046
+  pi(GGA) = 0.0038  pi(GGC) = 0.0157  pi(GGG) = 0.0181  pi(GGT) = 0.0035
+  pi(GTA) = 0.0087  pi(GTC) = 0.0364  pi(GTG) = 0.0419  pi(GTT) = 0.0080
+  pi(TAC) = 0.0215  pi(TAT) = 0.0047  pi(TCA) = 0.0020  pi(TCC) = 0.0085
+  pi(TCG) = 0.0098  pi(TCT) = 0.0019  pi(TGC) = 0.0064  pi(TGG) = 0.0073
+  pi(TGT) = 0.0014  pi(TTA) = 0.0035  pi(TTC) = 0.0147  pi(TTG) = 0.0170
+  pi(TTT) = 0.0032
+Model of rate heterogeneity: Invar+Gamma with 4 categories
+Proportion of invariable sites: 0.3496
+Gamma shape alpha: 0.5788
+
+ Category  Relative_rate  Proportion
+  0         0              0.3496
+  1         0.0750         0.1626
+  2         0.4617         0.1626
+  3         1.3379         0.1626
+  4         4.2758         0.1626
+Relative rates are computed as MEAN of the portion of the Gamma distribution falling in the category.
+
+MAXIMUM LIKELIHOOD TREE
+-----------------------
+
+Log-likelihood of the tree: -9151.3746 (s.e. 352.6120)
+Unconstrained log-likelihood (without tree): -5829.0711
+Number of free parameters (#branches + #model parameters): 168
+Akaike information criterion (AIC) score: 18638.7492
+Corrected Akaike information criterion (AICc) score: 18716.5355
+Bayesian information criterion (BIC) score: 19445.3647
+
+Total tree length (sum of branch lengths): 2.0123
+Sum of internal branch lengths: 0.5873 (29.1836% of tree length)
+
+WARNING: 22 near-zero internal branches (<0.0011) should be treated with caution
+         Such branches are denoted by '**' in the figure below
+
+NOTE: Tree is UNROOTED although outgroup taxon 'Bacu_MYH2' is drawn at root
+
+NOTE: Branch lengths are interpreted as number of nucleotide substitutions per codon site!
+      Rescale them by 1/3 if you want to have #nt substitutions per nt site
+
++----Bacu_MYH2
+|
+|                           +-----Barn_MYH2
+|                      +----|
+|                      |    +--Bbai76728_MYH2
+|                   +--|
+|                   |  |     +------------Mden_MYH2
+|                   |  |  +--|
+|                   |  |  |  +--Zcav_MYH2
+|                   |  +**|
+|                   |     +--Tshe_MYH2
+|                +**|
+|                |  |  +--Mpni_MYH2
+|                |  +--|
+|                |     +--Mste_MYH2
+|           +----|
+|           |    |           +--Hamp_MYH2
+|           |    |        +**|
+|           |    |        |  |  +--Mbow_MYH2
+|           |    |        |  +--|
+|           |    |        |     +---Mgin_MYH2
+|           |    |     +--|
+|           |    |     |  +--Meur_MYH2
+|           |    |  +--|
+|           |    |  |  |     +**Mcar_MYH2
+|           |    |  |  |  +--|
+|           |    |  |  |  |  |       +--------MgraAUS_MYH2
+|           |    |  |  |  |  +-------|
+|           |    |  |  |  |          +--Mmir_MYH2
+|           |    |  |  +**|
+|           |    |  |     +-----Mper_MYH2
+|           |    +**|
+|           |       |     +--Mbid_MYH2
+|           |       |  +--|
+|           |       |  |  +--MlayAUS_MYH2
+|           |       +--|
+|           |          +--------------Mhec_MYH2
+|        +--|
+|        |  |         +-------Igeo_MYH2
+|        |  |  +------|
+|        |  |  |      +---Pbla7349_MYH2
+|        |  +--|
+|        |     |        +**Kbre_MYH2
+|        |     |    +---|
+|        |     |    |   +---Ksim_MYH2
+|        |     +----|
+|        |          +--------------------Pmac_MYH2
+|     +--|
+|     |  |                                      +----Ccom40_MYH2
+|     |  |                                   +--|
+|     |  |                                   |  +-------------Lbor_MYH2
+|     |  |                                +**|
+|     |  |                                |  |        +--Lhos30470_MYH2
+|     |  |                                |  |     +--|
+|     |  |                                |  |     |  +--Lhos452_MYH2
+|     |  |                                |  +-----|
+|     |  |                                |        +--Scoe_MYH2
+|     |  |                        +-------|
+|     |  |                        |       +--Sflu9837_MYH2
+|     |  |                     +**|
+|     |  |                     |  |                 +--DdelSJR_MYH2
+|     |  |                     |  |              +--|
+|     |  |                     |  |              |  |  +--Ddeltrop4525_MYH2
+|     |  |                     |  |              |  +**|
+|     |  |                     |  |              |     +-------------------------------------------Slon16012_MYH2
+|     |  |                     |  |           +**|
+|     |  |                     |  |           |  +--Schi_MYH2
+|     |  |                     |  |        +**|
+|     |  |                     |  |        |  +--Scly1726_MYH2
+|     |  |                     |  |     +--|
+|     |  |                     |  |     |  +--LperAUS_MYH2
+|     |  |                     |  |  +**|
+|     |  |                     |  |  |  |     +-----Mmon_MYH2
+|     |  |                     |  |  |  |  +--|
+|     |  |                     |  |  |  |  |  +-----------Scly1724_MYH2
+|     |  |                     |  |  |  +--|
+|     |  |                     |  |  |     |  +**Satt38219_MYH2
+|     |  |                     |  |  |     +--|
+|     |  |                     |  |  |        +--Sfro7784_MYH2
+|     |  |                     |  +--|
+|     |  |                     |     |  +--Satt18473_MYH2
+|     |  |                     |     +--|
+|     |  |                     |        +--Sfro7782_MYH2
+|     |  |                  +--|
+|     |  |                  |  +--Tadu79924_MYH2
+|     |  |               +--|
+|     |  |               |  |     +--Dcap108471_MYH2
+|     |  |               |  |  +--|
+|     |  |               |  |  |  +--Slon24923_MYH2
+|     |  |               |  +--|
+|     |  |               |     +**Dcap79929_MYH2
+|     |  |            +**|
+|     |  |            |  +**Ohei_MYH2
+|     |  |         +**|
+|     |  |         |  +--Obre_MYH2
+|     |  |      +**|
+|     |  |      |  |                  +----------Chea7320_MYH2
+|     |  |      |  |               +--|
+|     |  |      |  |               |  +--Lobs_MYH2
+|     |  |      |  |            +**|
+|     |  |      |  |            |  +--Laus_MYH2
+|     |  |      |  |        +---|
+|     |  |      |  |        |   +--Lobl_MYH2
+|     |  |      |  |     +**|
+|     |  |      |  |     |  +--Ggri_MYH2
+|     |  |      |  |  +**|
+|     |  |      |  |  |  |          +--Fatt_MYH2
+|     |  |      |  |  |  |     +----|
+|     |  |      |  |  |  |     |    |  +--Lalb_MYH2
+|     |  |      |  |  |  |     |    +**|
+|     |  |      |  |  |  |     |       +--Pele_MYH2
+|     |  |      |  |  |  |  +**|
+|     |  |      |  |  |  |  |  |  +--Gmac39091_MYH2
+|     |  |      |  |  |  |  |  +--|
+|     |  |      |  |  |  |  |     +-----Gmel_MYH2
+|     |  |      |  |  |  +--|
+|     |  |      |  |  |     +--Pcra123188_MYH2
+|     |  |      |  +--|
+|     |  |      |     |  +**Sbre116871_MYH2
+|     |  |      |     +--|
+|     |  |      |        +--Sbre18437_MYH2
+|     |  |   +--|
+|     |  |   |  +--Lacu_MYH2
+|     |  +---|
+|     |      |  +----------Dleu_MYH2
+|     |      +--|
+|     |         |          +-----Npho_MYH2
+|     |         |       +**|
+|     |         |       |  +--Pdio_MYH2
+|     |         |    +**|
+|     |         |    |  +--Pspi_MYH2
+|     |         +----|
+|     |              +-------------Ppho_MYH2
+|  +--|
+|  |  |    +--Bmys_MYH2
+|  |  +----|
+|  |       |     +---------EausAUS_MYH2
+|  |       |  +--|
+|  |       |  |  +--Egla13086_MYH2
+|  |       +--|
+|  |          +**Ejap43864_MYH2
++--|
+|  |  +------Cmar59905_MYH2
+|  +--|
+|     +---Erob133443_MYH2
+|
+|           +--BbonAUS_MYH2
+|     +-----|
+|     |     |  +--Bbor_MYH2
+|     |     +--|
+|     |        |  +--Bede66737_MYH2
+|     |        +--|
+|     |           +--BedeAUS_MYH2
+|  +**|
+|  |  |  +**Bphy_MYH2
+|  |  +--|
+|  |     +--Bphy_baits_MYH2
++--|
+   +--Bmus49099_MYH2
+
+Tree in newick format:
+
+(Bacu_MYH2:0.0217080531,((((((((Barn_MYH2:0.0252196187,Bbai76728_MYH2:0.0023551112):0.0232597458,((Mden_MYH2:0.0558953137,Zcav_MYH2:0.0152344581):0.0143419408,Tshe_MYH2:0.0161298501):0.0000038756):0.0058503712,(Mpni_MYH2:0.0129422647,Mste_MYH2:0.0112801834):0.0030490530):0.0000023180,((((Hamp_MYH2:0.0068842661,(Mbow_MYH2:0.0031202637,Mgin_MYH2:0.0174208611):0.0088090191):0.0000031503,Meur_MYH2:0.0143362880):0.0018762145,((Mcar_MYH2:0.0000034544,(MgraAUS_MYH2:0.0377036265,Mmir_MYH2:0.0164531048):0.0351157081):0.0036733531,Mper_MYH2:0.0255457591):0.0006265253):0.0095051673,((Mbid_MYH2:0.0103012434,MlayAUS_MYH2:0.0061034501):0.0028843330,Mhec_MYH2:0.0640651357):0.0126636592):0.0000026826):0.0245709167,((Igeo_MYH2:0.0355316718,Pbla7349_MYH2:0.0205115904):0.0315841644,((Kbre_MYH2:0.0000035529,Ksim_MYH2:0.0176864576):0.0193349047,Pmac_MYH2:0.0914104858):0.0209386770):0.0027917872):0.0074812730,(((((((((((Ccom40_MYH2:0.0239831766,Lbor_MYH2:0.0618515600):0.0031792792,((Lhos30470_MYH2:0.0116471849,Lhos452_MYH2:0.0024117975):0.0038475493,Scoe_MYH2:0.0050125378):0.0267447283):0.0000035153,Sflu9837_MYH2:0.0047208265):0.0338651605,((((((DdelSJR_MYH2:0.0022299311,(Ddeltrop4525_MYH2:0.0020975609,Slon16012_MYH2:0.1853652520):0.0000016847):0.0019013101,Schi_MYH2:0.0088011450):0.0000016847,Scly1726_MYH2:0.0018660810):0.0000016847,LperAUS_MYH2:0.0041460714):0.0016725254,((Mmon_MYH2:0.0254403478,Scly1724_MYH2:0.0526294047):0.0157776717,(Satt38219_MYH2:0.0000016845,Sfro7784_MYH2:0.0092769135):0.0041945908):0.0084201219):0.0000029878,(Satt18473_MYH2:0.0039956114,Sfro7782_MYH2:0.0035744207):0.0074852583):0.0016117589):0.0000027825,Tadu79924_MYH2:0.0047605889):0.0016750344,((Dcap108471_MYH2:0.0040286515,Slon24923_MYH2:0.0071963562):0.0022877863,Dcap79929_MYH2:0.0000016845):0.0041622488):0.0049747610,Ohei_MYH2:0.0000016845):0.0000031503,Obre_MYH2:0.0096427698):0.0000033235,((((((Chea7320_MYH2:0.0466022888,Lobs_MYH2:0.0038134656):0.0116291168,Laus_MYH2:0.0063813193):0.0000028355,Lobl_MYH2:0.0045749842):0.0192051525,Ggri_MYH2:0.0156586238):0.0000028833,(((Fatt_MYH2:0.0062016488,(Lalb_MYH2:0.0150008492,Pele_MYH2:0.0022882663):0.0000016847):0.0231989535,(Gmac39091_MYH2:0.0034066680,Gmel_MYH2:0.0288149034):0.0058515002):0.0000016847,Pcra123188_MYH2:0.0043172649):0.0017172266):0.0000016847,(Sbre116871_MYH2:0.0000016845,Sbre18437_MYH2:0.0043674733):0.0060367074):0.0017561475):0.0000031503,Lacu_MYH2:0.0080684944):0.0076508400,(Dleu_MYH2:0.0480987887,(((Npho_MYH2:0.0289695453,Pdio_MYH2:0.0145934645):0.0000029571,Pspi_MYH2:0.0096244716):0.0008184770,Ppho_MYH2:0.0613297670):0.0239419118):0.0060551391):0.0208026313):0.0139256860,(Bmys_MYH2:0.0064934727,((EausAUS_MYH2:0.0420907690,Egla13086_MYH2:0.0017229190):0.0053525661,Ejap43864_MYH2:0.0000016845):0.0049948373):0.0210522281):0.0078300186,(Cmar59905_MYH2:0.0309165622,Erob133443_MYH2:0.0170318707):0.0051350615):0.0036669751,(((BbonAUS_MYH2:0.0085046835,(Bbor_MYH2:0.0074283864,(Bede66737_MYH2:0.0044416856,BedeAUS_MYH2:0.0025773626):0.0022683272):0.0079509651):0.0268797136,(Bphy_MYH2:0.0000016845,Bphy_baits_MYH2:0.0130774559):0.0077666835):0.0000031503,Bmus49099_MYH2:0.0161255936):0.0015721670);
+
+TIME STAMP
+----------
+
+Date and time: Wed Feb  7 22:17:12 2024
+Total CPU time used: 27678.1 seconds (7h:41m:18s)
+Total wall-clock time used: 17952.8 seconds (4h:59m:12s)
+

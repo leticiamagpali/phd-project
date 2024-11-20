@@ -1,0 +1,189 @@
+IQ-TREE 2.2.0-beta COVID-edition built Dec 21 2021
+
+Input file name: ../NLGN3_codon_aligned.fasta
+Type of analysis: ModelFinder + tree reconstruction
+Random seed number: 593256
+
+REFERENCES
+----------
+
+To cite IQ-TREE please use:
+
+Bui Quang Minh, Heiko A. Schmidt, Olga Chernomor, Dominik Schrempf,
+Michael D. Woodhams, Arndt von Haeseler, and Robert Lanfear (2020)
+IQ-TREE 2: New models and efficient methods for phylogenetic inference
+in the genomic era. Mol. Biol. Evol., in press.
+https://doi.org/10.1093/molbev/msaa015
+
+To cite ModelFinder please use: 
+
+Subha Kalyaanamoorthy, Bui Quang Minh, Thomas KF Wong, Arndt von Haeseler,
+and Lars S Jermiin (2017) ModelFinder: Fast model selection for
+accurate phylogenetic estimates. Nature Methods, 14:587–589.
+https://doi.org/10.1038/nmeth.4285
+
+SEQUENCE ALIGNMENT
+------------------
+
+Input data: 18 sequences with 848 codon sites
+Number of constant sites: 742 (= 87.5% of all sites)
+Number of invariant (constant or ambiguous constant) sites: 742 (= 87.5% of all sites)
+Number of parsimony informative sites: 36
+Number of distinct site patterns: 189
+
+ModelFinder
+-----------
+
+Best-fit model according to BIC: MG+F3X4
+
+List of models sorted by BIC scores: 
+
+Model                  LogL         AIC      w-AIC        AICc     w-AICc         BIC      w-BIC
+MG+F3X4           -4143.539    8373.078 -   0.0349    8377.784 +    0.305    8577.022 +    0.836
+MG+F3X4+G4        -4142.699    8373.398 -   0.0297    8378.329 +    0.232    8582.084 +   0.0665
+MG+F3X4+I         -4142.786    8373.572 -   0.0272    8378.503 +    0.213    8582.258 +    0.061
+MGK+F3X4          -4143.539    8375.078 -   0.0128    8380.009 +      0.1    8583.765 -   0.0287
+SCHN05+F3X4       -4152.731    8389.462 - 9.65e-06    8393.949 - 9.43e-05    8588.663 -  0.00248
+MGK+F3X4+G4       -4142.696    8375.392 -    0.011    8380.554 +   0.0764    8588.821 -  0.00229
+MGK+F3X4+I        -4142.783    8375.565 -   0.0101    8380.727 +   0.0701    8588.995 -   0.0021
+SCHN05+F3X4+I     -4152.085    8390.169 - 6.78e-06    8394.876 - 5.93e-05    8594.113 - 0.000163
+GY+F3X4           -4148.729    8385.458 - 7.15e-05    8390.389 - 0.000559    8594.144 -  0.00016
+SCHN05+F3X4+G4    -4152.271    8390.542 - 5.62e-06    8395.249 - 4.92e-05    8594.486 - 0.000135
+GY+F3X4+G4        -4147.676    8385.352 - 7.54e-05    8390.514 - 0.000525    8598.781 - 1.58e-05
+GY+F3X4+I         -4147.785    8385.570 - 6.76e-05    8390.732 - 0.000471    8599.000 - 1.41e-05
+GY+F3X4+R2        -4147.727    8387.453 - 2.64e-05    8392.851 - 0.000163    8605.626 - 5.14e-07
+GY+F3X4+I+G4      -4147.939    8387.879 - 2.13e-05    8393.277 - 0.000132    8606.051 - 4.16e-07
+KOSI07+F3X4       -4162.236    8408.472 - 7.19e-10    8412.959 - 7.02e-09    8607.673 - 1.85e-07
+KOSI07+F3X4+I     -4160.900    8407.799 - 1.01e-09    8412.506 - 8.81e-09    8611.743 - 2.41e-08
+KOSI07+F3X4+G4    -4161.108    8408.217 - 8.17e-10    8412.923 - 7.15e-09    8612.160 - 1.96e-08
+GY+F3X4+R3        -4147.675    8391.349 - 3.76e-06    8397.237 - 1.82e-05    8619.007 - 6.39e-10
+SCHN05+FU         -4213.075    8492.151 - 4.85e-28    8494.907 - 1.13e-26    8648.666 - 2.32e-16
+SCHN05+FU+G4      -4212.178    8492.355 - 4.38e-28    8495.283 - 9.33e-27    8653.613 - 1.95e-17
+SCHN05+FU+I       -4212.215    8492.430 - 4.22e-28    8495.358 - 8.99e-27    8653.688 - 1.88e-17
+KOSI07+FU         -4244.940    8555.880 - 7.04e-42    8558.637 - 1.63e-40    8712.395 - 3.36e-30
+KOSI07+FU+G4      -4243.691    8555.382 - 9.03e-42    8558.310 - 1.92e-40    8716.640 - 4.02e-31
+KOSI07+FU+I       -4243.731    8555.462 - 8.67e-42    8558.390 - 1.85e-40    8716.720 - 3.87e-31
+MG+F1X4           -4237.277    8548.555 - 2.74e-40    8552.027 - 4.45e-39    8724.042 - 9.94e-33
+GY+F1X4           -4235.518    8547.035 - 5.86e-40    8550.699 - 8.64e-39    8727.265 - 1.98e-33
+MG+F1X4+I         -4236.628    8549.257 - 1.93e-40    8552.920 - 2.85e-39    8729.486 - 6.53e-34
+MG+F1X4+G4        -4236.705    8549.409 - 1.79e-40    8553.073 - 2.64e-39    8729.639 - 6.05e-34
+MGK+F1X4          -4237.277    8550.554 - 1.01e-40    8554.218 - 1.49e-39    8730.784 - 3.42e-34
+GY+F1X4+I         -4235.026    8548.053 - 3.52e-40    8551.914 - 4.71e-39    8733.025 - 1.11e-34
+GY+F1X4+G4        -4235.442    8548.883 - 2.33e-40    8552.744 - 3.11e-39    8733.855 - 7.35e-35
+MGK+F1X4+I        -4236.628    8551.257 -  7.1e-41    8555.118 - 9.48e-40    8736.229 - 2.24e-35
+MGK+F1X4+G4       -4236.704    8551.408 - 6.58e-41    8555.270 - 8.79e-40    8736.381 - 2.08e-35
+SCHN05+F1X4       -4248.234    8568.469 -  1.3e-44    8571.754 - 2.32e-43    8739.212 - 5.05e-36
+SCHN05+F1X4+I     -4247.817    8569.635 - 7.26e-45    8573.107 - 1.18e-43    8745.122 - 2.63e-37
+SCHN05+F1X4+G4    -4251.514    8577.029 -  1.8e-46    8580.500 - 2.92e-45    8752.515 - 6.52e-39
+KOSI07+F1X4       -4257.471    8586.942 - 1.27e-48    8590.227 - 2.26e-47    8757.686 - 4.92e-40
+KOSI07+F1X4+I     -4256.305    8586.610 - 1.49e-48    8590.081 - 2.43e-47    8762.096 - 5.42e-41
+KOSI07+F1X4+G4    -4259.189    8592.379 - 8.35e-50    8595.850 - 1.36e-48    8767.865 - 3.03e-42
+SCHN05+F          -4091.511    8369.023 +    0.265    8392.211 - 0.000225    8810.111 - 2.03e-51
+SCHN05+F+G4       -4090.392    8368.783 +    0.299    8392.502 - 0.000194    8814.614 - 2.14e-52
+SCHN05+F+I        -4090.519    8369.038 +    0.263    8392.757 - 0.000171    8814.869 - 1.88e-52
+GY+F              -4092.626    8375.252 -   0.0118    8399.508 - 5.85e-06    8825.826 - 7.86e-55
+GY+F+G4           -4091.114    8374.227 -   0.0196    8399.026 - 7.45e-06    8829.544 - 1.22e-55
+GY+F+I            -4091.290    8374.580 -   0.0165    8399.378 - 6.24e-06    8829.896 - 1.03e-55
+KOSI07+F          -4104.244    8394.489 - 7.82e-07    8417.677 - 6.64e-10    8835.577 -    6e-57
+KOSI07+F+G4       -4102.394    8392.788 - 1.83e-06    8416.507 - 1.19e-09    8838.619 - 1.31e-57
+KOSI07+F+I        -4102.468    8392.935 -  1.7e-06    8416.654 - 1.11e-09    8838.766 - 1.22e-57
+
+AIC, w-AIC   : Akaike information criterion scores and weights.
+AICc, w-AICc : Corrected AIC scores and weights.
+BIC, w-BIC   : Bayesian information criterion scores and weights.
+
+Plus signs denote the 95% confidence sets.
+Minus signs denote significant exclusion.
+
+SUBSTITUTION PROCESS
+--------------------
+
+Model of substitution: MG+F3X4
+
+State frequencies: 
+  pi(AAA) = 0.0075  pi(AAC) = 0.0330  pi(AAG) = 0.0207  pi(AAT) = 0.0138
+  pi(ACA) = 0.0064  pi(ACC) = 0.0284  pi(ACG) = 0.0178  pi(ACT) = 0.0119
+  pi(AGA) = 0.0045  pi(AGC) = 0.0197  pi(AGG) = 0.0124  pi(AGT) = 0.0082
+  pi(ATA) = 0.0066  pi(ATC) = 0.0291  pi(ATG) = 0.0183  pi(ATT) = 0.0121
+  pi(CAA) = 0.0083  pi(CAC) = 0.0367  pi(CAG) = 0.0230  pi(CAT) = 0.0153
+  pi(CCA) = 0.0071  pi(CCC) = 0.0315  pi(CCG) = 0.0198  pi(CCT) = 0.0132
+  pi(CGA) = 0.0050  pi(CGC) = 0.0218  pi(CGG) = 0.0137  pi(CGT) = 0.0091
+  pi(CTA) = 0.0073  pi(CTC) = 0.0323  pi(CTG) = 0.0203  pi(CTT) = 0.0135
+  pi(GAA) = 0.0101  pi(GAC) = 0.0445  pi(GAG) = 0.0279  pi(GAT) = 0.0186
+  pi(GCA) = 0.0087  pi(GCC) = 0.0382  pi(GCG) = 0.0240  pi(GCT) = 0.0160
+  pi(GGA) = 0.0060  pi(GGC) = 0.0265  pi(GGG) = 0.0166  pi(GGT) = 0.0111
+  pi(GTA) = 0.0089  pi(GTC) = 0.0391  pi(GTG) = 0.0246  pi(GTT) = 0.0164
+  pi(TAC) = 0.0205  pi(TAT) = 0.0086  pi(TCA) = 0.0040  pi(TCC) = 0.0176
+  pi(TCG) = 0.0110  pi(TCT) = 0.0073  pi(TGC) = 0.0122  pi(TGG) = 0.0077
+  pi(TGT) = 0.0051  pi(TTA) = 0.0041  pi(TTC) = 0.0180  pi(TTG) = 0.0113
+  pi(TTT) = 0.0075
+Model of rate heterogeneity: Uniform
+
+MAXIMUM LIKELIHOOD TREE
+-----------------------
+
+Log-likelihood of the tree: -4143.5385 (s.e. 69.2705)
+Unconstrained log-likelihood (without tree): -3766.0137
+Number of free parameters (#branches + #model parameters): 43
+Akaike information criterion (AIC) score: 8373.0770
+Corrected Akaike information criterion (AICc) score: 8377.7835
+Bayesian information criterion (BIC) score: 8577.0209
+
+Total tree length (sum of branch lengths): 0.1399
+Sum of internal branch lengths: 0.0380 (27.1591% of tree length)
+
+WARNING: 7 near-zero internal branches (<0.0012) should be treated with caution
+         Such branches are denoted by '**' in the figure below
+
+NOTE: Tree is UNROOTED although outgroup taxon 'Oorc' is drawn at root
+
+NOTE: Branch lengths are interpreted as number of nucleotide substitutions per codon site!
+      Rescale them by 1/3 if you want to have #nt substitutions per nt site
+
++---------Oorc
+|
+|                            +----------Pcat
+|                      +-----|
+|                      |     +-------------------------------Kbre
+|                   +**|
+|                   |  |         +----Bacu
+|                   |  |      +--|
+|                   |  |      |  |  +--Bmus
+|                   |  |      |  +**|
+|                   |  |      |     +----Bric
+|                   |  +------|
+|                   |         +--Egla
+|       +-----------|
+|       |           +---------------------------------Mden
+|  +----|
+|  |    +------------------Lvex
++**|
+|  |     +--Dleu
+|  |  +**|
+|  |  |  +-----Mmon
+|  +--|
+|     |     +--Naasi
+|     +-----|
+|           +--Psin
+|
+|        +------Lobl
+|     +**|
+|     |  +**Gmel
+|  +**|
+|  |  +**Lalb
++--|
+   |  +**Ttru
+   +**|
+      +**Ddel
+
+Tree in newick format:
+
+(Oorc:0.0071506390,(((((Pcat:0.0076175346,Kbre:0.0218680823):0.0047285097,((Bacu:0.0035626479,(Bmus:0.0011865344,Bric:0.0036605891):0.0000010000):0.0011827993,Egla:0.0023867678):0.0048002666):0.0009129327,Mden:0.0235008101):0.0087439663,Lvex:0.0131801077):0.0034744712,((Dleu:0.0011833441,Mmon:0.0047257007):0.0011762957,(Naasi:0.0023673903,Psin:0.0023613397):0.0047419159):0.0023586960):0.0011667242,(((Lobl:0.0048223714,Gmel:0.0011762512):0.0011732078,Lalb:0.0000010000):0.0011743824,(Ttru:0.0000010000,Ddel:0.0011746527):0.0000010000):0.0023690681);
+
+TIME STAMP
+----------
+
+Date and time: Tue Jun 25 17:31:22 2024
+Total CPU time used: 336.362 seconds (0h:5m:36s)
+Total wall-clock time used: 123.134 seconds (0h:2m:3s)
+

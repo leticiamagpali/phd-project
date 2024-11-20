@@ -10,43 +10,57 @@ Each control file for each gene/analysis is stored in its own folder.
 '''
 
 import os
+import sys
 from pathlib import Path
+
+# Text file with analysis name and parameters -> taken as input
+# Control file template taken as a input
+# Hypothesis taken as a input
 
 # Insert here your file locations for codeml
 
-# Edit this one time, and it will stay the same as long as you are working with the same dataset
-ALIGNMENTS_FOLDER = Path(
-    "/home/leticiamagpali/phd/evol_models/codeml/small_dataset/cml_align")
-
-# Change this every time you are running a different hypothesis (every hypothesis has one different LABELLED tree)
-TREES_FOLDER = Path(
-    "/home/leticiamagpali/phd/evol_models/codeml/small_dataset/cml_trees/H2_trees")
-
-# Edit this one time only, to tell the script where your control file template is
-CONTROL_FILE_TEMPLATE = Path(
-    "/home/leticiamagpali/phd/evol_models/codeml/small_dataset/control_file_cml.ctl")
-
-# Change this for every different run
-# this is the folder where all your runs for different genes are, for that particular model
-RUN_FOLDER = Path(
-    "/home/leticiamagpali/phd/evol_models/codeml/small_dataset/runs_models/Amodel-null-H2")
-
-# Change this with the name of the model you are running
-ANALYSIS = "2model"
-
-# Change this with the number/code of your hypothesis
-HYPOTHESIS = "H2"
+RUN_FOLDER = sys.argv[1] #path to runfolder
+PATHS_FILE = sys.argv[2] # file with paths to alignments folder and tree folder one per line
+PARAMETERS_FILE = sys.argv[3] # file with analysis name and a list of codeml parameters, one per line
+HYPOTHESIS = sys.argv[4]
+CONTROL_FILE_TEMPLATE = sys.argv[5] # path or name of control file template
+ # number/code of your hypothesis to be written in folders and outfiles
 
 
-# Insert here your parameters for codeml, according to your model
-BRANCH_MODEL = "2"
-SITE_MODEL = "0"
-CODON_FREQ_MODEL = "7"
-OMEGA = "1"
-FIX_OMEGA = "0"
+# Reading input files and assigning each line of the file to a path variable
+with open(PATHS_FILE, "r") as paths_file:
+    paths = [line.strip() for line in paths_file]
 
-######## RUNNING CODE - NOT FOR EDITING ##############
-######################################################
+ALIGNMENTS_FOLDER, TREES_FOLDER = paths[:2]
+
+# Converting to path
+RUN_FOLDER = Path(RUN_FOLDER)
+ALIGNMENTS_FOLDER = Path(ALIGNMENTS_FOLDER)
+TREES_FOLDER = Path(TREES_FOLDER)
+
+# Print to verify
+print(f"run folder: {RUN_FOLDER}")
+print(f"alignments folder: {ALIGNMENTS_FOLDER}")
+print(f"treees folder: {TREES_FOLDER}")
+
+with open(PARAMETERS_FILE, "r") as parameters_file:
+    parameters = [line.strip() for line in parameters_file]
+
+ANALYSIS, BRANCH_MODEL, SITE_MODEL, CODON_FREQ_MODEL, OMEGA, FIX_OMEGA = parameters[:6]
+
+NCATG = None
+
+if len(parameters) > 6: 
+    NCATG = parameters[6]
+else:
+    None 
+
+print(f"model = {BRANCH_MODEL}")
+print(f"NSsites = {SITE_MODEL}")
+print(f"CodonFreq = {CODON_FREQ_MODEL}")
+print(f"omega = {OMEGA}")
+print(f"fix_omega = {FIX_OMEGA}")
+print(f"ncatG = {NCATG}")
 
 # Creates a dictionary of the codeml template file
 codeml_dictionary = {}
@@ -77,6 +91,10 @@ for alignment in os.listdir(ALIGNMENTS_FOLDER):
         codeml_dictionary["model"] = BRANCH_MODEL
         codeml_dictionary["NSsites"] = SITE_MODEL
         codeml_dictionary["CodonFreq"] = CODON_FREQ_MODEL
+        
+        # Add `NCAT` if it’s not None
+        if NCATG is not None:
+            codeml_dictionary["ncatG"] = NCATG
 
         # Creates a folder to store the ctl file
         run_subfolder = RUN_FOLDER/f"{ANALYSIS}-{HYPOTHESIS}_{gene_name}"

@@ -8,13 +8,15 @@ import os
 import glob
 import csv
 from scipy.stats import chi2
+import re
 
 # Define the path to the master folder
-RUN_FOLDER_1 = sys.argv[1]
-RUN_FOLDER_2 = sys.argv[2]
+RUN_FOLDER_ALT = sys.argv[1]
+RUN_FOLDER_NULL = sys.argv[2]
 OUTPUT_FILE = sys.argv[3]
 
 def get_codeml_results(run_folder):
+    # Creating a dictionary to store all results in a master folder
     folder_results = {}
     # Loop through each subfolder in the master folder
     for subfolder in os.listdir(run_folder): 
@@ -26,19 +28,25 @@ def get_codeml_results(run_folder):
             gene_name = subfolder.split("_")[1]
             model_name = subfolder.split("_")[0]
             # Use glob to find files with "out" in their names in the current subfolder
-            out_files = glob.glob(os.path.join(subfolder_path, '*out*'))
+            outfiles = glob.glob(os.path.join(subfolder_path, '*out*'))
 
             # Loop through the found files and read their contents
-            for filepath in out_files:
-                with open(filepath, "r") as outfile:
+            if outfiles:  # Proceed only if a matching file is found
+                outfile_path = outfiles[0]  # Get the first (and only) match
+                with open(outfile_path, "r") as outfile:
                     for line in outfile:
                         # Check if "lnL" is in the line 
                         # splitting the line and looking for the lnL and np values
                         if "lnL" in line:
-                            parts_lnL = line.split()
-                            lnL_value = parts_lnL[4]
-                            np_value = parts_lnL[3].rstrip("):") #change this
-                            #.lstrip("np:")
+                            if "lnL" in line:
+                                # Regular expression to extract lnL value and np value
+                                match = re.search(r"lnL\(ntime:\s*\d+\s+np:\s*(\d+)\):\s*(-?\d+\.\d+)", line)
+                                if match:
+                                    np_value = match.group(1)  # Captures the value of np
+                                    lnL_value = match.group(2)  # Captures the lnL value
+                                    print(f"np: {np_value}, lnL: {lnL_value}")
+                                else:
+                                    print("Could not parse the lnL line.")
                 
                 # Store results in dictionary by (gene_name, model_name) key
                 folder_results[(gene_name)] = {
@@ -51,8 +59,8 @@ def get_codeml_results(run_folder):
 
 
 # Gather results from both folders
-results_folder1 = get_codeml_results(RUN_FOLDER_1)
-results_folder2 = get_codeml_results(RUN_FOLDER_2)
+results_folder1 = get_codeml_results(RUN_FOLDER_ALT)
+results_folder2 = get_codeml_results(RUN_FOLDER_NULL)
                 
 
 # Merge results for calculations and write to CSV

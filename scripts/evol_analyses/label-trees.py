@@ -38,7 +38,9 @@ class EvolTree2(EvolTree):
 # path to file with foreground clades Asin,Psin:Pcat,Dleu:Ddel
 FOREGROUND = sys.argv[1]
 LABEL = sys.argv[2]  # label
-TREES_FOLDER = sys.argv[3]  # insert here path to trees folder
+HYPOTHESIS = sys.argv[3]
+TREES_FOLDER = sys.argv[4]  # insert here path to trees folder
+OUTPUT_FOLDER = sys.argv[5]
 
 # Takes user input, a string of with the names of foreground branches
 # separated by spaces, and turns it into a list
@@ -50,6 +52,7 @@ foreground_nodes = FOREGROUND.split(",")
 # it will add the user specified label
 for file in os.listdir(TREES_FOLDER):
     if file.endswith(".tre"):
+        gene_name = file.split("_codon.tre")[0]
         tree_path = os.path.join(TREES_FOLDER, file)
         tree = EvolTree2(tree_path)
 
@@ -67,4 +70,4 @@ for file in os.listdir(TREES_FOLDER):
                 common = lim_left.get_common_ancestor(lim_right)
                 tree.mark_tree([common.node_id], marks=[f"${LABEL}"])
 
-        tree.write(outfile=f"{TREES_FOLDER}/{file}", format=13)
+        tree.write(outfile=f"{OUTPUT_FOLDER}/{gene_name}_tree_{HYPOTHESIS}.tre", format=13)

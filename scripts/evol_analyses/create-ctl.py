@@ -22,10 +22,8 @@ from pathlib import Path
 RUN_FOLDER = sys.argv[1] #path to runfolder
 PATHS_FILE = sys.argv[2] # file with paths to alignments folder and tree folder one per line
 PARAMETERS_FILE = sys.argv[3] # file with analysis name and a list of codeml parameters, one per line
-HYPOTHESIS = sys.argv[4]
+HYPOTHESIS = sys.argv[4]  # number/code of your hypothesis to be written in folders and outfiles
 CONTROL_FILE_TEMPLATE = sys.argv[5] # path or name of control file template
- # number/code of your hypothesis to be written in folders and outfiles
-
 
 # Reading input files and assigning each line of the file to a path variable
 with open(PATHS_FILE, "r") as paths_file:

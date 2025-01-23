@@ -52,7 +52,7 @@ foreground_nodes = FOREGROUND.split(",")
 # it will add the user specified label
 for file in os.listdir(TREES_FOLDER):
     if file.endswith(".tre"):
-        gene_name = file.split("_codon.tre")[0]
+        gene_name = file.split("_tree_M0.tre")[0]
         tree_path = os.path.join(TREES_FOLDER, file)
         tree = EvolTree2(tree_path)
 

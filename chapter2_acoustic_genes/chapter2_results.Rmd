@@ -1,0 +1,194 @@
+---
+title: "Chapter2_network_results"
+output: html_document
+date: "2025-01-09"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## 1. Importing packages
+
+```{r}
+library(ggplot2)
+library(dplyr)
+```
+
+
+## 1. Processing codeml tables
+
+```{r}
+
+# Function to process extracted codeml tables
+
+extract_codeml_results <- function(results_folder){
+  # List all .csv files in the folder (no need to check for ".csv" again)
+  csv_files <- list.files(path = results_folder, pattern = "\\.csv$", full.names = TRUE)
+  print(csv_files)
+  
+  # Loop through each .csv file
+  for (file in csv_files) {
+    # Get the file name without the path and the extension
+    file_name <- tools::file_path_sans_ext(basename(file))
+    
+    # Create a variable with the same name as the file and store the result of read.csv
+    assign(file_name, read.csv(file), envir = .GlobalEnv)
+    
+    # Optionally, print the name of the created variable
+    print(paste("Created variable:", file_name))
+}
+    
+  }
+
+```
+
+
+1.1. Small data set, gene tree
+
+```{r}
+
+# Extracting results
+
+extract_codeml_results(results_folder = "evol_models/codeml/small_dataset/runs_gene_trees/results_codeml_smalldata_genetrees/")
+
+sg_objects <- ls(pattern = "results-SG$")
+
+list_databases_SG <- mget(sg_objects)
+
+merged_databases_SG <- merged_data <- rbind(`2model-H1a-results-SG`, `2model-H1b-results-SG`, `2model-H1c-results-SG`, `2model-H2-results-SG`, `2model-H3-results-SG`, `Amodel-H1a-results-SG`, `Amodel-H1b-results-SG`, `Amodel-H1c-results-SG`, `Amodel-H2-results-SG`, `Amodel-H3-results-SG`, `Bmodel-H1a-results-SG`, `Bmodel-H1b-results-SG`, `Bmodel-H1c-results-SG`, `Bmodel-H2-results-SG`,`Bmodel-H3-results-SG`)
+
+```
+
+
+1.2. Big data set, gene tree
+```{r}
+
+extract_codeml_results(results_folder = "evol_models/codeml/big_dataset/runs_gene_trees/results_codeml_bigdata_genetrees/")
+
+bg_objects <- ls(pattern = "results-BG$")
+
+list_databases_BG <- mget(bg_objects)
+
+```
+
+1.3. Writing function to extract significant results and categorize genes
+
+```{r}
+
+# Define a function to extract significant results and map genes to categories
+extract_codeml_signif_results <- function(results_list, threshold, merged_file_path, signif_file_path, gene_categories) {
+  
+  # Initialize an empty data frame to store the merged results
+  merged_results <- data.frame()
+  
+  # Define the gene categories in a dictionary (named list)
+  
+  # Iterate through each database and merge them vertically
+  for (db in results_list) {
+    # Check if the p.value column exists
+    if ("p.value" %in% colnames(db)) {
+      # Merge the dataframes vertically
+      merged_results <- rbind(merged_results, db, row.names = NULL)
+    }
+  }
+  
+    # Add a new column to categorize genes
+  merged_results$Gene_Category <- sapply(merged_results$Gene, function(gene) {
+    category <- NA
+    for (category_name in names(gene_categories)) {
+      if (gene %in% gene_categories[[category_name]]) {
+        category <- category_name
+        break
+      }
+    }
+    return(category)
+  })
+
+  # Ensure that the specified columns are numeric
+  numeric_columns <- c("lnL", "LRT", "np", "df", "p.value")
+  merged_results[numeric_columns] <- lapply(merged_results[numeric_columns], function(x) as.numeric(as.character(x)))
+
+  # Find rows where p.value < threshold and remove NA values
+  rows_to_extract <- which(!is.na(merged_results$p.value) & merged_results$p.value < threshold)
+  
+  # Subset the relevant rows
+  signif_results <- merged_results[rows_to_extract, , drop = FALSE]
+
+  # Save both merged and significant results to CSV
+  write.csv(merged_results, merged_file_path, row.names = FALSE)
+  write.csv(signif_results, signif_file_path, row.names = FALSE)
+  
+  # Reset the row numbers in the final result
+  row.names(signif_results) <- NULL
+  
+  # Return both dataframes
+  return(list(merged_results = merged_results, signif_results = signif_results))
+}
+
+
+```
+
+1.4. Extracting and plotting significant results:
+
+```{r}
+
+# Gene categories
+
+  gene_categories <- list(
+    hearing = c("PCDH15", "OTOF", "MYO7A"),
+    processing = c("CALML6", "HTT", "HSP90AA1"),
+    learning = c("FOXP2", "CNTNAP2", "NLGN3", "NRXN1"),
+    sound_making = c("RYR2", "CASQ1", "CASQ2", "ACTC1", "MYL1", "MYH2")
+  )
+
+# Small database results
+
+# Assuming you have a list of dataframes 'results_list'
+threshold_value <- 0.05
+merged_file <- "merged_results.csv"
+signif_file <- "significant_results.csv"
+
+# Call the function
+results_SG <- extract_codeml_signif_results(list_databases_SG, threshold_value, merged_file, signif_file, gene_categories)
+
+# Access the merged and significant results
+merged_data_SG <- results_SG$merged_results
+significant_data_SG <- results_SG$signif_results
+
+##GGplot merged data
+ggplot(merged_data_SG, aes(x = Model, y = LRT, color = Gene, shape = Gene_Category)) + 
+  geom_point(size = 2) + 
+  theme_minimal() + 
+  labs(title = "LRT values by Model", x = "Model", y = "LRT") +
+  theme(axis.text.x = element_text(angle = 45, hjust = 1))
+
+##GGplot merged data
+ggplot(merged_data_SG, aes(x = Model, y = LRT, color = Gene_Category)) + 
+  geom_point(size = 2) + 
+  theme_minimal() + 
+  labs(title = "LRT values by Model", x = "Model", y = "LRT") +
+  theme(axis.text.x = element_text(angle = 45, hjust = 1))
+
+
+## GGplot significant data
+ggplot(significant_data_SG, aes(x = Model, y = LRT, color = Gene, shape = Gene_Category)) + 
+  geom_point(size = 2) + 
+  theme_minimal() + 
+  labs(title = "Significant LRT values by Model", x = "Model", y = "LRT") +
+  theme(axis.text.x = element_text(angle = 45, hjust = 1))
+
+# Large database results
+
+BG_codeml_results <- extract_codeml_signif_results(list_databases_BG, 0.05)
+BG_codeml_results2 <- BG_codeml_results %>%
+  mutate(gene_category = gene_categories[Gene] %||% "unknown")
+
+ggplot(BG_codeml_results2, aes(x = Model, y = LRT, color = Gene, shape = gene_category)) + 
+  geom_point(size = 2) + 
+  theme_minimal() + 
+  labs(title = "Significant LRT values by Model", x = "Model", y = "LRT") +
+  theme(axis.text.x = element_text(angle = 45, hjust = 1))
+
+```
+

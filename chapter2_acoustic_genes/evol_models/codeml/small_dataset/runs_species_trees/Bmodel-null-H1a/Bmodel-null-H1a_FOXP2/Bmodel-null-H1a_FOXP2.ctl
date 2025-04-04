@@ -1,0 +1,17 @@
+seqfile = /home/leticiamagpali/phd/evol_models/codeml/small_dataset/cml_align/FOXP2_codon_aligned.phy
+treefile = /home/leticiamagpali/phd/evol_models/codeml/small_dataset/cml_trees/species_trees/H1a_trees/FOXP2_tree_H1a.tre
+outfile = out_FOXP2_Bmodel-null-H1a.txt
+noisy = 3
+verbose = 1
+seqtype = 1
+ndata = 1
+icode = 0
+cleandata = 0
+model = 0
+NSsites = 3
+CodonFreq = 7
+estFreq = 0
+clock = 0
+fix_omega = 0
+omega = 0.5
+ncatG = 2

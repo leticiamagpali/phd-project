@@ -1,0 +1,220 @@
+---
+title: "chapter2_trees_results"
+author: "Leticia Magpali"
+format: html
+editor: visual
+---
+
+## Chapter 2 - Phylogenetic trees
+
+### 1. Importing packages
+
+```{r}
+library(ape)
+library(tidyverse)
+library(ggplot2)
+library(ggtree)
+```
+
+### 2. Loading tree files
+
+🌳 **McGowen et al. (2019) species tree**
+
+```{r}
+McGowen2019_tree <- read.tree("trees/species_trees/RAxML_partition_by_gene_best_tree.tre")
+```
+
+*2.1. Small data set*
+
+🍄 Species tree
+
+```{r}
+species_tree_smalldata <- read.tree("trees/species_trees/small_dataset/small-dataset-tree.phy")
+```
+
+🍄 Codon trees
+
+```{r}
+
+ACTC1_tree_sc <- read.tree("trees/gene_trees/small_dataset/ACTC1_tree/ACTC1_codon.treefile")
+
+CALML6_tree_sc <- read.tree("trees/gene_trees/small_dataset/CALML6_tree/CALML6_codon.treefile")
+
+CASQ1_tree_sc <- read.tree("trees/gene_trees/small_dataset/CASQ1_tree/CASQ1_codon.treefile")
+
+CASQ2_tree_sc <- read.tree("trees/gene_trees/small_dataset/CASQ2_tree/CASQ2_codon.treefile")
+
+CNTNAP2_tree_sc <- read.tree("trees/gene_trees/small_dataset/CNTNAP2_tree/CNTNAP2_codon.treefile")
+
+FOXP2_tree_sc <- read.tree("trees/gene_trees/small_dataset/FOXP2_tree/FOXP2_codon.treefile")
+
+HSP90AA1_tree_sc <- read.tree("trees/gene_trees/small_dataset/HSP90AA1_tree/HSP90AA1_codon.treefile")
+
+HTT_tree_sc <- read.tree("trees/gene_trees/small_dataset/HTT_tree/HTT_codon.treefile")
+
+MYH2_tree_sc <- read.tree("trees/gene_trees/small_dataset/MYH2_tree/MYH2_codon.treefile")
+
+MYL1_tree_sc <- read.tree("trees/gene_trees/small_dataset/MYL1_tree/MYL1_codon.treefile")
+
+MYO7A_tree_sc <- read.tree("trees/gene_trees/small_dataset/MYO7A_tree/MYO7A_codon.treefile")
+
+NLGN3_tree_sc <- read.tree("trees/gene_trees/small_dataset/NLGN3_tree/NLGN3_codon.treefile")
+
+NRXN1_tree_sc <- read.tree("trees/gene_trees/small_dataset/NRXN1_tree/NRXN1_codon.treefile")
+
+OTOF_tree_sc <- read.tree("trees/gene_trees/small_dataset/OTOF_tree/OTOF_codon.treefile")
+
+PCDH15_tree_sc <- read.tree("trees/gene_trees/small_dataset/PCDH15_tree/PCDH15_codon.treefile")
+
+RYR2_tree_sc <- read.tree("trees/gene_trees/small_dataset/RYR2_tree/RYR2_codon.treefile")
+```
+
+*2.2. Large data set*
+
+### 3. Visualizing trees with ggplot
+
+*3.1. Species trees*
+
+*🍄 McGowen et al.*
+
+```{r}
+ggtree(McGowen2019_tree) + geom_treescale() + geom_tiplab()
+```
+
+*3.2. Codon trees, small data set*
+
+Trees are visualized and checked for: longest/shortest branches, mismatches with species tree
+
+🍄 ACTC1
+
+-   Phocenidae (Psin+Naasi) looses monophyly
+
+```{r}
+ggtree(ACTC1_tree_sc) + geom_treescale() + geom_tiplab()
+```
+
+🍄 CALML6
+
+-   Phocenidae (Psin+Naasi) looses monophyly
+
+```{r}
+ggtree(CALML6_tree_sc) + geom_treescale() + geom_tiplab()
+```
+
+🍄 CASQ1
+
+-   Igeo + Pbla broken
+
+-   C.heavisidi, C.commersonii, L.australis broken by Lbor
+
+```{r}
+ggtree(CASQ1_tree_sc) + geom_treescale() + geom_tiplab()
+```
+
+🍄 CASQ2
+
+-   Igeo + Pbla monophyly broken
+
+```{r}
+ggtree(CASQ2_tree_sc) + geom_treescale() + geom_tiplab()
+```
+
+🍄 CNTNAP2
+
+-   Igeo + Pbla monophyly broken
+
+-   C.heavisidi, C.commersonii, L.australis broken by Lbor
+
+```{r}
+ggtree(CNTNAP2_tree_sc) + geom_treescale() + geom_tiplab()
+```
+
+🍄 FOXP2
+
+-   O.brevirostris + O.heinsohni broken
+
+-   C.heavisidi, C.commersonii, L.australis broken
+
+```{r}
+ggtree(FOXP2_tree_sc) + geom_treescale() + geom_tiplab()
+```
+
+🍄 HSP90AA1
+
+-   O.brevirostris + O.heinsohni broken
+
+-   Igeo + Pbla monophyly broken
+
+```{r}
+ggtree(HSP90AA1_tree_sc) + geom_treescale() + geom_tiplab()
+```
+
+🍄 HTT
+
+-   All foreground clades preserved!
+
+```{r}
+ggtree(HTT_tree_sc) + geom_treescale() + geom_tiplab()
+```
+
+🍄 MYH2
+
+```{r}
+ggtree(MYH2_tree_sc) + geom_treescale() + geom_tiplab()
+```
+
+🍄 MYL1
+
+-   Phocenidae broken
+
+```{r}
+ggtree(MYL1_tree_sc) + geom_treescale() + geom_tiplab()
+```
+
+🍄 MYO7A
+
+-   All foreground clades preserved!
+
+```{r}
+ggtree(MYO7A_tree_sc) + geom_treescale() + geom_tiplab()
+```
+
+🍄 NLGN3
+
+-   All foreground clades preserved! (we have 5 of them)
+
+```{r}
+ggtree(NLGN3_tree_sc) + geom_treescale() + geom_tiplab()
+```
+
+🍄 NRXN1
+
+-   All foreground clades preserved! (but only 3 of them here)
+
+```{r}
+ggtree(NRXN1_tree_sc) + geom_treescale() + geom_tiplab()
+```
+
+🍄 OTOF
+
+-   C.heavisidi, C.commersonii, L.australis broken by Lbor
+
+```{r}
+ggtree(OTOF_tree_sc) + geom_treescale() + geom_tiplab()
+```
+
+🍄 PCDH15
+
+-   All foreground clades preserved!
+
+```{r}
+ggtree(PCDH15_tree_sc) + geom_treescale() + geom_tiplab()
+```
+
+🍄 RYR2
+
+-   All foreground clades preserved!
+
+```{r}
+ggtree(RYR2_tree_sc) + geom_treescale() + geom_tiplab()
+```
